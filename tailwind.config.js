@@ -24,6 +24,7 @@ module.exports = {
       gray: colors.gray,
       pink: colors.pink,
       blue: colors.blue,
+      slate: colors.slate,
       frcpink: "#fab4ff",
       frcyellow: "#ffca5f",
       frcpurple: "#fa5fff",
