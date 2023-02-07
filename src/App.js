@@ -1,7 +1,7 @@
 function App() {
   return (
-    <div className="bg-slate-400">
-      <h1 className="text-6xl px-[600px] text-emerald-400">SpartaSite!</h1>
+    <div className="bg-gradient-to-r from-frcpurple to-frcyellow">
+      <h1 className="font-scoutcond font-black italic text-6xl py-[3rem] pl-[20rem] text-white">SPARTABOTS 2976</h1>
     </div>
   );
 }
