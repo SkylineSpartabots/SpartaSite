@@ -90,7 +90,7 @@ export default function Footer() {
                     md:justify-start
                 "
             >
-              <svg
+              {/* <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
@@ -118,14 +118,14 @@ export default function Footer() {
                   transform="translate(-997.34 -410.67)"
                   fill="url(#b)"
                 />
-              </svg>
-              FRC101 by the Spartabots
+              </svg> */}
+              Spartasite by the Spartabots
             </h6>
             <p>
-              FRC101 is a learning resource for new FRC students or veterans who
-              want to brush up their skills. Team 2976 brought our vision to
-              life this past season, and we're so excited to share it with
-              everyone!
+              The Spartasite is the online home of the Spartabots. Here, we
+              share our accomplishments, goals, and values. Team 2976 is always
+              reaching for the stars, and we're so excited to share our journey
+              with everyone!
             </p>
           </div>
           <div class="">

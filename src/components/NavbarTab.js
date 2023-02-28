@@ -5,7 +5,7 @@ const NavbarTab = ({ path, text }) => {
   return (
     <Link
       to={path}
-      className={`transition ease-in-out block text-center text-md rounded text-white w-[100px] py-4  ${
+      className={`flex-initial transition ease-in-out block text-center text-md rounded text-white w-[100px] py-4  ${
         location.pathname === path ? "font-semibold" : ""
       } hover: hover:scale-110`}
     >
