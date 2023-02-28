@@ -3,12 +3,13 @@ import React from "react";
 const FontDemo = () => {
   return (
     <div>
-      <div className="block max-w-[100rem] mx-auto rounded-[2rem] my-10 items-center bg-gradient-to-r from-frcpurple to-frcyellow">
+      {/* <div className="block max-w-[100rem] mx-auto rounded-[2rem] my-10 items-center bg-gradient-to-r from-frcpurple to-frcyellow">
         <h1 className="font-scoutcond font-black italic text-6xl py-[3rem] pl-[5rem] text-white">
           SPARTABOTS 2976
         </h1>
-      </div>
-      <div className="block max-w-[100rem] mx-auto rounded-[2rem] mb-10 h-screen bg-black">
+      </div> */}
+      <div className="h-[150px]"></div>
+      <div className="block max-w-[100rem] mx-auto rounded-[2rem] mb-10 min-h-screen bg-black overflow-hidden ">
         <div className="mx-10 my-10">
           <div>
             <h1 className="inline font-scoutcond font-black italic text-[10rem] text-transparent bg-clip-text leading-none bg-gradient-to-r from-white via-frcyellow to-frcpurple">

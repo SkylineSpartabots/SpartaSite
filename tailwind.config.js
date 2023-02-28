@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -11,27 +10,16 @@ module.exports = {
       display: ["Oswald"],
       body: ['"Open Sans"'],
     },
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      black: colors.black,
-      white: colors.white,
-      gray: colors.gray,
-      emerald: colors.emerald,
-      indigo: colors.indigo,
-      yellow: colors.yellow,
-      red: colors.red,
-      gray: colors.gray,
-      pink: colors.pink,
-      blue: colors.blue,
-      slate: colors.slate,
-      frcpink: "#fab4ff",
-      frcyellow: "#ffca5f",
-      frcpurple: "#fa5fff",
-      frcblue: "#0099ff",
-      redditorange: "#FF4604",
-    },
     extend: {
+      colors: {
+        frcpink: "#fab4ff",
+        frcyellow: "#ffca5f",
+        frcpurple: "#fa5fff",
+        frcblue: "#0099ff",
+        redditorange: "#FF4604",
+        transparent: "transparent",
+        current: "currentColor",
+      },
       backgroundSize: {
         "size-200": "200% 200%",
       },

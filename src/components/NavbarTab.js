@@ -5,9 +5,9 @@ const NavbarTab = ({ path, text }) => {
   return (
     <Link
       to={path}
-      className={`transition ease-in-out block text-center rounded text-white px-4 py-4 w-[150px] ${
-        location.pathname === path ? "bg-emerald-500" : ""
-      } hover:bg-emerald-500 hover:scale-110`}
+      className={`transition ease-in-out block text-center rounded text-white px-2 py-4 w-[100px] ${
+        location.pathname === path ? "bg-frcblue" : ""
+      } hover:bg-frcblue hover:scale-110`}
     >
       {text}
     </Link>
