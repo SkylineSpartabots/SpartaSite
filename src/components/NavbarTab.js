@@ -5,11 +5,12 @@ const NavbarTab = ({ path, text }) => {
   return (
     <Link
       to={path}
-      className={`transition ease-in-out block text-center rounded text-white px-2 py-4 w-[100px] ${
-        location.pathname === path ? "bg-frcblue" : ""
-      } hover:bg-frcblue hover:scale-110`}
+      className={`transition ease-in-out block text-center text-md rounded text-white w-[100px] py-4  ${
+        location.pathname === path ? "font-semibold" : ""
+      } hover: hover:scale-110`}
     >
       {text}
+      {location.pathname === path ? <hr className="mx-auto w-16"></hr> : <></>}
     </Link>
   );
 };

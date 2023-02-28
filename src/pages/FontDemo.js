@@ -1,6 +1,9 @@
-import React from "react";
+import { useEffect } from "react";
 
 const FontDemo = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       {/* <div className="block max-w-[100rem] mx-auto rounded-[2rem] my-10 items-center bg-gradient-to-r from-frcpurple to-frcyellow">
