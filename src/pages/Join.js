@@ -8,7 +8,7 @@ const Join = () => {
   return (
     <div>
       <Heading title="JOIN US" subtitle="BECOME A SPARTABOT" />
-      <div className="flex flex-col bg-gray-100 p-8 gap-8">
+      <div className="flex flex-col bg-gray-100 p-8 gap-8 items-center">
         <div className="box">
           <h1 className="title">Students</h1>
           <p className="font-productsans">

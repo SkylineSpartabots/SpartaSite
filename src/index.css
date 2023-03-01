@@ -19,7 +19,7 @@ code {
 }
 
 .box {
-  @apply max-w-[1000px] flex-1 w-full  bg-white rounded py-4 px-6;
+  @apply max-w-[1000px] flex-1 w-full bg-white rounded py-4 px-6;
 }
 .title {
   @apply w-fit font-scoutcond uppercase pb-4 font-black text-4xl sm:text-5xl;

@@ -20,7 +20,7 @@ const Navbar = () => {
           <NavbarTab text="Home" path="/" />
           <NavbarTab text="About" path="/about" />
           <NavbarTab text="Join" path="/join" />
-          <NavbarTab text="Font Demo" path="/fontDemo" />
+          {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}
         </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           {menuOpen ? (
@@ -56,11 +56,11 @@ const Navbar = () => {
           path="/join"
           onClick={() => setMenuOpen((prev) => false)}
         />
-        <NavbarTab
+        {/* <NavbarTab
           text="Font Demo"
           path="/fontDemo"
           onClick={() => setMenuOpen((prev) => false)}
-        />
+        /> */}
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="">
       <Heading title="ABOUT US" subtitle="THE SPARTABOTS" />
-      <div className="bg-slate-100 flex flex-col gap-8 p-8">
+      <div className="bg-slate-100 flex flex-col gap-8 p-8 items-center ">
         <div className="box">
           <h1 className="title">Club Overview</h1>
           <p className="font-productsans text-base ">
