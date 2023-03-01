@@ -1,4 +1,4 @@
-@import url('./fonts/stylesheet.css');
+@import url("./fonts/stylesheet.css");
 
 @tailwind base;
 @tailwind components;
@@ -6,14 +6,21 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.box {
+  @apply max-w-[1000px] flex-1 w-full  bg-white rounded py-4 px-6;
+}
+.title {
+  @apply w-fit font-scoutcond uppercase pb-4 font-black text-4xl sm:text-5xl;
 }

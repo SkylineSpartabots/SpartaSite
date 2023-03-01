@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Sponsors = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="pt-[135px] p-8 bg-gray-100 flex flex-col items-center gap-8">
       <div className="max-w-[1000px] flex-1 w-full text-center bg-gray-700 rounded p-4">
@@ -6,8 +11,10 @@ const Sponsors = () => {
           Sponsors
         </h1>
       </div>
-      <div className="max-w-[1000px] flex-1 w-full text-center bg-white rounded p-4">
-        <h1 className="font-scountcond font-black text-5xl">2023</h1>
+      <div className="box">
+        <h1 className="font-scountcond font-black text-5xl mx-auto w-fit">
+          2023
+        </h1>
       </div>
     </div>
   );

@@ -19,6 +19,7 @@ const Navbar = () => {
         <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded">
           <NavbarTab text="Home" path="/" />
           <NavbarTab text="About" path="/about" />
+          <NavbarTab text="Join" path="/join" />
           <NavbarTab text="Font Demo" path="/fontDemo" />
         </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -48,6 +49,11 @@ const Navbar = () => {
         <NavbarTab
           text="About"
           path="/about"
+          onClick={() => setMenuOpen((prev) => false)}
+        />
+        <NavbarTab
+          text="Join"
+          path="/join"
           onClick={() => setMenuOpen((prev) => false)}
         />
         <NavbarTab

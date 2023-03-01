@@ -5,6 +5,7 @@ import Sponsors from "./pages/Sponsors";
 import FontDemo from "./pages/FontDemo";
 import About from "./pages/About";
 import Footer from "./components/Footer";
+import Join from "./pages/Join";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/fontDemo" element={<FontDemo />} />
         <Route path="/about" element={<About />} />
         <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/join" element={<Join />} />
       </Routes>
       <Footer />
     </Router>

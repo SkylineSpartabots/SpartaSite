@@ -1,6 +1,4 @@
-import React from "react";
-
-const TextSection = ({ title, text }) => {
+const Card = ({ title, text }) => {
   return (
     <div className="flex flex-col sm:flex-row flex-1 px-6 py-4 max-w-[1000px] bg-white rounded gap-4 min-h-[300px]">
       <div className="flex-1 max-w-[500px] break-words">
@@ -12,4 +10,4 @@ const TextSection = ({ title, text }) => {
   );
 };
 
-export default TextSection;
+export default Card;
