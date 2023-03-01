@@ -1,4 +1,5 @@
 import Heading from "../components/Heading";
+import teamNumberImage from "../images/TeamNumber.JPG";
 import { useEffect } from "react";
 
 const Join = () => {
@@ -7,7 +8,11 @@ const Join = () => {
   }, []);
   return (
     <div>
-      <Heading title="JOIN US" subtitle="BECOME A SPARTABOT" />
+      <Heading
+        title="JOIN US"
+        subtitle="BECOME A SPARTABOT"
+        image={teamNumberImage}
+      />
       <div className="flex flex-col bg-gray-100 p-8 gap-8 items-center">
         <div className="box">
           <h1 className="title">Students</h1>

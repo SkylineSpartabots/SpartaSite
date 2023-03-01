@@ -10,7 +10,7 @@ const Navbar = () => {
     <div
       className={`${
         menuOpen ? "h-[300px]" : ""
-      }flex flex-col fixed bg-gradient-to-r from-frcpurple to-frcyellow z-10 px-4 sm:px-[75px] py-4 sm:py-6 w-full text-white`}
+      }flex flex-col fixed bg-gradient-to-r from-frcpurple to-frcyellow z-20 px-4 sm:px-[75px] py-4 sm:py-6 w-full text-white`}
     >
       <nav className={`flex flex-row items-center justify-between`}>
         <h1 className="font-scoutcond font-black text-4xl sm:text-5xl text-center">

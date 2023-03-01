@@ -2,6 +2,10 @@ import Card from "../components/Card.js";
 import Heading from "../components/Heading.js";
 import InfoBlock from "../components/InfoBlock.js";
 import { useEffect } from "react";
+import intakeImage from "../images/Intake.jpeg";
+import groupImage from "../images/GroupPhoto.JPG";
+import competitionImage from "../images/Competition.jpeg";
+import botImage from "../images/Bot.jpeg";
 
 const Home = () => {
   useEffect(() => {
@@ -9,27 +13,33 @@ const Home = () => {
   }, []);
   return (
     <div className="">
-      <Heading title="THE SPARTABOTS" subtitle="FRC TEAM 2976" />
+      <Heading
+        title="THE SPARTABOTS"
+        subtitle="FRC TEAM 2976"
+        image={intakeImage}
+      />
       <div className="bg-slate-100 flex flex-col gap-8 items-center p-8">
         <Card
           title="ABOUT US"
           text="Created in 2008, our team participates in the FIRST Robotics
               Competition as team 2976. We are a high school club operating at
               Skyline High School, Sammamish, WA."
+          image={groupImage}
         />
         <Card
           title="WHAT IS FIRST ROBOTICS?"
           text="The FIRST Robotics Competition is an international high school
            robotics competition operated by FIRST. The game of the competition
             changes each year to keep the excitement fresh."
+          image={competitionImage}
         />
         <Card
           title="WHY SHOULD I JOIN?"
           text="Being part of a FIRST
          robotics team is fun! It doesn't matter whether you have experience 
          with robots or not, you'll gain amazing experiences and valuable skills
-          you can carry to college, and robotics club also looks great on college
-           apps."
+          you can carry to college, and even in life."
+          image={botImage}
         />
         {/* <hr className="py-2 border-gray-300 w-[1000px]"></hr> */}
         <div

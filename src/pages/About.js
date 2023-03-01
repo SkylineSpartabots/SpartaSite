@@ -1,6 +1,7 @@
 import Heading from "../components/Heading";
 import Button from "../components/Button";
 import { useEffect } from "react";
+import botImage from "../images/Bot2.JPG";
 
 const About = () => {
   useEffect(() => {
@@ -8,7 +9,7 @@ const About = () => {
   }, []);
   return (
     <div className="">
-      <Heading title="ABOUT US" subtitle="THE SPARTABOTS" />
+      <Heading title="ABOUT US" subtitle="THE SPARTABOTS" image={botImage} />
       <div className="bg-slate-100 flex flex-col gap-8 p-8 items-center ">
         <div className="box">
           <h1 className="title">Club Overview</h1>
@@ -83,7 +84,7 @@ const About = () => {
             parts. If you're interested in helping to sponsor our club, please
             send us an email!
           </p>
-          <div className="w-fit pt-8 pb-4">
+          <div className="w-fit pt-8 pb-4 mx-auto sm:mx-0">
             <Button text="Sponsors" path="/sponsors" />
           </div>
         </div>
