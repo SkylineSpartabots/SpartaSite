@@ -4,7 +4,7 @@ const Button = ({ text, path }) => {
   return (
     <Link
       to={path}
-      className="max-w-[100px] p-2 bg-frcblue rounded font-productsans"
+      className=" min-w-[100px] p-4 bg-frcblue rounded text-white font-productsans "
     >
       {text}
     </Link>
