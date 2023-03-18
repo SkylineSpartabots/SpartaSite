@@ -1,5 +1,5 @@
 import Heading from "../components/Heading";
-import teamNumberImage from "../images/TeamNumber.JPG";
+import teamNumberImage from "../images/TeamNumber-min.JPG";
 import { useEffect } from "react";
 
 const Join = () => {

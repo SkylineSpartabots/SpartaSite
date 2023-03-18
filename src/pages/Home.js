@@ -2,9 +2,9 @@ import Card from "../components/Card.js";
 import Heading from "../components/Heading.js";
 import InfoBlock from "../components/InfoBlock.js";
 import { useEffect } from "react";
-import intakeImage from "../images/Intake.jpeg";
-import groupImage from "../images/GroupPhoto.JPG";
-import competitionImage from "../images/Competition.jpeg";
+import intakeImage from "../images/Intake-min.jpeg";
+import groupImage from "../images/GroupPhoto-min.JPG";
+import competitionImage from "../images/Competition-min.jpeg";
 import botImage from "../images/Bot.jpeg";
 
 const Home = () => {

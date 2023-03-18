@@ -12,9 +12,10 @@ const Sponsors = () => {
         </h1>
       </div>
       <div className="box">
-        <h1 className="font-scountcond font-black text-5xl mx-auto w-fit">
+        <h1 className="font-scountcond font-black text-5xl mx-auto w-fit pb-4">
           2023
         </h1>
+        <p className="font-productsans text-center">Microsoft</p>
       </div>
     </div>
   );

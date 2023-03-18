@@ -1,7 +1,7 @@
 import Heading from "../components/Heading";
 import Button from "../components/Button";
 import { useEffect } from "react";
-import botImage from "../images/Bot2.JPG";
+import botImage from "../images/Bot2-min.JPG";
 
 const About = () => {
   useEffect(() => {

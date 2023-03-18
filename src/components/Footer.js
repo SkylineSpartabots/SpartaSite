@@ -2,24 +2,24 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer class="text-center lg:text-left bg-gray-200 text-gray-600">
-      <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
-        <div class="mr-12 hidden lg:block">
+    <footer className="text-center lg:text-left bg-gray-200 text-gray-600">
+      <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
+        <div className="mr-12 hidden lg:block">
           <span>Check us out on Social Media:</span>
         </div>
-        <div class="flex justify-center">
+        <div className="flex justify-center">
           <a
             href="https://www.twitter.com/spartabots"
             target="_blank"
             rel="noreferrer"
-            class="mr-6 text-gray-600"
+            className="mr-6 text-gray-600"
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="twitter"
-              class="svg-inline--fa fa-twitter w-4"
+              className="svg-inline--fa fa-twitter w-4"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -34,14 +34,14 @@ export default function Footer() {
             href="https://www.youtube.com/spartabots"
             target="_blank"
             rel="noreferrer"
-            class="mr-6 text-gray-600"
+            className="mr-6 text-gray-600"
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="google"
-              class="svg-inline--fa fa-google w-3.5"
+              className="svg-inline--fa fa-google w-3.5"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 488 512"
@@ -56,14 +56,14 @@ export default function Footer() {
             href="https://www.instagram.com/spartabots2976"
             target="_blank"
             rel="noreferrer"
-            class="mr-6 text-gray-600"
+            className="mr-6 text-gray-600"
           >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="instagram"
-              class="svg-inline--fa fa-instagram w-3.5"
+              className="svg-inline--fa fa-instagram w-3.5"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -76,11 +76,11 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div class="mx-6 py-10 text-center md:text-left">
-        <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="">
+      <div className="mx-6 py-10 text-center md:text-left">
+        <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="">
             <h6
-              class="
+              className="
                     uppercase
                     font-semibold
                     mb-4
@@ -95,7 +95,7 @@ export default function Footer() {
                 focusable="false"
                 data-prefix="fas"
                 data-icon="cubes"
-                class="svg-inline--fa fa-cubes w-8 mr-3"
+                className="svg-inline--fa fa-cubes w-8 mr-3"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 2049.08 1338.67"
@@ -128,77 +128,77 @@ export default function Footer() {
               with everyone!
             </p>
           </div>
-          <div class="">
-            <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          <div className="">
+            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Learn
             </h6>
-            <p class="mb-4">
-              <a href="/learn/three" class="text-gray-600">
+            <p className="mb-4">
+              <a href="/learn/three" className="text-gray-600">
                 Onshape
               </a>
             </p>
-            <p class="mb-4">
-              <a href="/learn/two" class="text-gray-600">
+            <p className="mb-4">
+              <a href="/learn/two" className="text-gray-600">
                 Design
               </a>
             </p>
-            <p class="mb-4">
-              <a href="#!" class="text-gray-600">
+            <p className="mb-4">
+              <a href="#!" className="text-gray-600">
                 Fabrication
               </a>
             </p>
             <p>
-              <a href="#!" class="text-gray-600">
+              <a href="#!" className="text-gray-600">
                 Management
               </a>
             </p>
           </div>
-          <div class="">
-            <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          <div className="">
+            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Useful links
             </h6>
-            <p class="mb-4">
+            <p className="mb-4">
               <a
                 href="https://learn.onshape.com/"
                 target="_blank"
                 rel="noreferrer"
-                class="text-gray-600"
+                className="text-gray-600"
               >
                 Onshape Learning Center
               </a>
             </p>
-            <p class="mb-4">
+            <p className="mb-4">
               <a
                 href="https://www.youtube.com/spartabots"
                 target="_blank"
                 rel="noreferrer"
-                class="text-gray-600"
+                className="text-gray-600"
               >
                 Spartabots Youtube
               </a>
             </p>
-            <p class="mb-4">
-              <a href="/check" class="text-gray-600">
+            <p className="mb-4">
+              <a href="/check" className="text-gray-600">
                 Check Your Understanding
               </a>
             </p>
             <p>
-              <a href="/design" class="text-gray-600">
+              <a href="/design" className="text-gray-600">
                 Design Calculator
               </a>
             </p>
           </div>
-          <div class="">
-            <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          <div className="">
+            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Contact
             </h6>
-            <p class="flex items-center justify-center md:justify-start mb-4">
+            <p className="flex items-center justify-center md:justify-start mb-4">
               <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
                 data-icon="envelope"
-                class="svg-inline--fa fa-envelope w-4 mr-4"
+                className="svg-inline--fa fa-envelope w-4 mr-4"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -210,13 +210,13 @@ export default function Footer() {
               </svg>
               skyline.spartabots@gmail.com
             </p>
-            <p class="flex items-center justify-center md:justify-start mb-4">
+            <p className="flex items-center justify-center md:justify-start mb-4">
               <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
                 data-icon="phone"
-                class="svg-inline--fa fa-phone w-4 mr-4"
+                className="svg-inline--fa fa-phone w-4 mr-4"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -231,10 +231,10 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div class="text-center p-6 bg-gray-200">
+      <div className="text-center p-6 bg-gray-200">
         <span>© 2022 Copyright:</span>
         <a
-          class="text-gray-600 font-semibold"
+          className="text-gray-600 font-semibold"
           href="https://www.spartabots.org/"
         >
           {" "}
