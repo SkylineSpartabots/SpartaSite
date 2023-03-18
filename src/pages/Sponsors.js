@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import InfoBlock from "../components/InfoBlock.js";
-import MicrosoftImage from "../images/microsoft.png";
+import MicrosoftImage from "../images/microsoft.svg";
 
 const Sponsors = () => {
   useEffect(() => {
@@ -16,17 +15,12 @@ const Sponsors = () => {
       <div className="box">
         <div className="font-productsans text-center text-emerald-800 text-5xl">Microsoft Corporation</div>
         <div className="w-full w-full">
-          <img src={MicrosoftImage} className="object-cover w-full h-full items-center" alt="" />
+          <img src={MicrosoftImage} className="object-cover w-full h-full items-center p-8" alt="" />
         </div>  
-        <InfoBlock
-          title="Boeing"
-          text="4,000 dollars"
-          />
-        <h1 className="font-scountcond font-black text-5xl mx-auto w-fit pb-4">
-          2023
-        </h1>
-        <p className="font-productsans text-center">Microsoft</p>
       </div>
+      <h1 className="font-scountcond font-black text-5xl mx-auto w-fit pb-4">
+        2023
+      </h1>
     </div>
   );
 };
