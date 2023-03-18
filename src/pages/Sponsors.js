@@ -12,15 +12,15 @@ const Sponsors = () => {
           Sponsors
         </h1>
       </div>
-      <div className="box">
-        <div className="font-productsans text-center text-emerald-800 text-5xl">Microsoft Corporation</div>
-        <div className="w-full w-full">
-          <img src={MicrosoftImage} className="object-cover w-full h-full items-center p-8" alt="" />
-        </div>  
+      <div className="box flex flex-col items-center">
+        <h1 className="font-scountcond font-black text-5xl w-fit pb-4">2023</h1>
+        {/* <div className="font-productsans text-center text-emerald-800 text-5xl">Microsoft Corporation</div> */}
+        <img
+          src={MicrosoftImage}
+          className="w-full max-w-[500px] h-full"
+          alt=""
+        />
       </div>
-      <h1 className="font-scountcond font-black text-5xl mx-auto w-fit pb-4">
-        2023
-      </h1>
     </div>
   );
 };
