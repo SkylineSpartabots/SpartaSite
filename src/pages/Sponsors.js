@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import MicrosoftImage from "../images/microsoft.svg";
 import TMobileImage from "../images/TMobile.webp"
 import TMobileSquare from "../images/TMobileSquare.svg"
+import FirstTechImage from "../images/FirstTechBW.svg"
+
 const Sponsors = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -26,6 +28,12 @@ const Sponsors = () => {
           src={TMobileImage}
           className="w-full max-w-[300px] h-full"
           alt="T-Mobile Logo"
+        />
+        <span className="h-[10px]"/>
+        <img
+          src={FirstTechImage}
+          className="w-full max-w-[300px] h-full"
+          alt="First Tech Credit Union Logo"
         />
       </div>
     </div>
