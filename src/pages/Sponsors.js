@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import MicrosoftImage from "../images/microsoft.svg";
-
+import TMobileImage from "../images/TMobile.webp"
+import TMobileSquare from "../images/TMobileSquare.svg"
 const Sponsors = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -17,8 +18,14 @@ const Sponsors = () => {
         {/* <div className="font-productsans text-center text-emerald-800 text-5xl">Microsoft Corporation</div> */}
         <img
           src={MicrosoftImage}
-          className="w-full max-w-[500px] h-full"
-          alt=""
+          className="w-full max-w-[300px] h-full"
+          alt="Microsoft Logo"
+        />
+        <span className="h-[10px]"/>
+        <img
+          src={TMobileImage}
+          className="w-full max-w-[300px] h-full"
+          alt="T-Mobile Logo"
         />
       </div>
     </div>

@@ -1,0 +1,101 @@
+<svg x="0px" y="0px" viewBox="0 0 52.000001 52.000001" xml:space="preserve" width="52" height="52" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#e20074" d="M0 0h52v52H0z"/>
+  <path d="M17.8312 31.94155h-7.42858v-7.42857h7.41547v7.42857zM10.40261 7.42857v12.62988h2.22726v-.36684c0-5.9481 3.3409-9.65583 9.65583-9.65583h.36685V36.776c0 3.70774-1.48048 5.20131-5.20131 5.20131h-1.11363v2.5941h19.31166v-2.5941h-1.11363c-3.70773 0-5.2013-1.48047-5.2013-5.2013V10.02267h.36683c6.31495 0 9.65584 3.70773 9.65584 9.65583v.36684h2.22726V7.42857Zm23.76619 24.51298h7.42857v-7.42857h-7.41547v7.42857z" fill="#fff"/>
+<script xmlns="">{
+            document.currentScript.dataset.injected = true;
+            const o = JSON.parse(decodeURIComponent(escape(atob('eyJ1c2VyQWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA4LjAuMC4wIFNhZmFyaS81MzcuMzYiLCJhcHBWZXJzaW9uIjoiNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMDguMC4wLjAgU2FmYXJpLzUzNy4zNiIsInBsYXRmb3JtIjoiV2luZG93cyIsInZlbmRvciI6Ikdvb2dsZSBJbmMuIiwicHJvZHVjdCI6IkdlY2tvIiwib3NjcHUiOiJbZGVsZXRlXSIsImJ1aWxkSUQiOiJbZGVsZXRlXSIsInByb2R1Y3RTdWIiOiIyMDAzMDEwNyIsInVzZXJBZ2VudERhdGFCdWlsZGVyIjp7InAiOnsidWEiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA4LjAuMC4wIFNhZmFyaS81MzcuMzYiLCJicm93c2VyIjp7Im5hbWUiOiJDaHJvbWUiLCJ2ZXJzaW9uIjoiMTA4LjAuMC4wIiwibWFqb3IiOiIxMDgifSwiZW5naW5lIjp7Im5hbWUiOiJCbGluayIsInZlcnNpb24iOiIxMDguMC4wLjAifSwib3MiOnsibmFtZSI6IldpbmRvd3MiLCJ2ZXJzaW9uIjoiMTAifSwiZGV2aWNlIjp7fSwiY3B1Ijp7ImFyY2hpdGVjdHVyZSI6ImFtZDY0In19LCJ1YSI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMDguMC4wLjAgU2FmYXJpLzUzNy4zNiJ9fQ=='))));
+
+            if (o.userAgentDataBuilder) {
+              const v = new class NavigatorUAData {
+                #p;
+
+                constructor({p, ua}) {
+                  this.#p = p;
+
+                  const version = p.browser.major;
+                  const name = p.browser.name === 'Chrome' ? 'Google Chrome' : p.browser.name;
+
+                  this.brands = [{
+                    brand: name,
+                    version
+                  }, {
+                    brand: 'Chromium',
+                    version
+                  }, {
+                    brand: 'Not=A?Brand',
+                    version: '24'
+                  }];
+
+                  this.mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+
+                  // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform
+                  this.platform = 'Unknown';
+                  if (p.os &amp;&amp; p.os.name) {
+                    const name = p.os.name.toLowerCase();
+                    if (name.includes('mac')) {
+                      this.platform = 'macOS';
+                    }
+                    else if (name.includes('debian')) {
+                      this.platform = 'Linux';
+                    }
+                    else {
+                      this.platform = p.os.name;
+                    }
+                  }
+                }
+                toJSON() {
+                  return {
+                    brands: this.brands,
+                    mobile: this.mobile,
+                    platform: this.platform
+                  };
+                }
+                getHighEntropyValues(hints) {
+                  if (!hints || Array.isArray(hints) === false) {
+                    return Promise.reject(Error("Failed to execute 'getHighEntropyValues' on 'NavigatorUAData'"));
+                  }
+
+                  const r = this.toJSON();
+
+                  if (hints.includes('architecture')) {
+                    r.architecture = this.#p?.cpu?.architecture || 'x86';
+                  }
+                  if (hints.includes('bitness')) {
+                    r.bitness = '64';
+                  }
+                  if (hints.includes('model')) {
+                    r.model = '';
+                  }
+                  if (hints.includes('platformVersion')) {
+                    r.platformVersion = this.#p?.os?.version || '10.0.0';
+                  }
+                  if (hints.includes('uaFullVersion')) {
+                    r.uaFullVersion = this.brands[0].version;
+                  }
+                  if (hints.includes('fullVersionList')) {
+                    r.fullVersionList = this.brands;
+                  }
+                  return Promise.resolve(r);
+                }
+              }(o.userAgentDataBuilder);
+
+              navigator.__defineGetter__('userAgentData', () =&gt; {
+                return v;
+              });
+            }
+            delete o.userAgentDataBuilder;
+
+            for (const key of Object.keys(o)) {
+              if (o[key] === '[delete]') {
+                delete Object.getPrototypeOf(window.navigator)[key];
+              }
+              else {
+                navigator.__defineGetter__(key, () =&gt; {
+                  if (o[key] === 'empty') {
+                    return '';
+                  }
+                  return o[key];
+                });
+              }
+            }
+          }</script></svg>
