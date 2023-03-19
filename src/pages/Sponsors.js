@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import SponsorBlock from "../components/SponsorBlock";
-import MicrosoftImage from "../images/microsoft.svg";
-import TMobileImage from "../images/TMobile.webp";
-import FirstTechImage from "../images/FirstTechBW.svg";
+import Microsoft from "../images/microsoft.svg";
+import TMobile from "../images/TMobile.webp";
+import FirstTech from "../images/FirstTechBW.svg";
 import Obesza from "../images/Obesza.png";
 import GeneHaas from "../images/GeneHaasFoundation.png";
 import HCL from "../images/HCL.png"
@@ -26,46 +26,46 @@ const Sponsors = () => {
         </h1>
         {/* <div className="font-productsans text-center text-emerald-800 text-5xl">Microsoft Corporation</div> */}
         <img
-          src={MicrosoftImage}
+          src={Microsoft}
           className="w-full max-w-[300px] h-full"
           alt="Microsoft Logo"
         />
         <span className="h-[10px]" />
         <img
-          src={TMobileImage}
+          src={TMobile}
           className="w-full max-w-[300px] h-full"
           alt="T-Mobile Logo"
         />
         <span className="h-[10px]" />
         <img
-          src={FirstTechImage}
+          src={FirstTech}
           className="w-full max-w-[300px] h-full"
           alt="First Tech Credit Union Logo"
         />
         <img
           src={Obesza}
           className="w-full max-w-[200px] h-full"
-          alt="First Tech Credit Union Logo"
+          alt="Obesza Logo"
         />
         <img
           src={GeneHaas}
           className="w-full max-w-[200px] h-full"
-          alt="First Tech Credit Union Logo"
+          alt="Gene Haas Foundation Logo"
         />
         <img
           src={HCL}
           className="w-full max-w-[300px] h-full"
-          alt="First Tech Credit Union Logo"
+          alt="HCL Logo"
         />
         <img
           src={Lowes}
           className="w-full max-w-[300px] h-full"
-          alt="First Tech Credit Union Logo"
+          alt="Lowes Logo"
         />
         <img
           src={WashingtonBusinessWeek}
           className="w-full max-w-[200px] h-full"
-          alt="First Tech Credit Union Logo"
+          alt="Washington Business Week Logo"
         />
       </div>
       
