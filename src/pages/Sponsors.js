@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import MicrosoftImage from "../images/microsoft.svg";
-import TMobileImage from "../images/TMobile.webp"
-import TMobileSquare from "../images/TMobileSquare.svg"
-import FirstTechImage from "../images/FirstTechBW.svg"
+import TMobileImage from "../images/TMobile.webp";
+import TMobileSquare from "../images/TMobileSquare.svg";
+import FirstTechImage from "../images/FirstTechBW.svg";
 
 const Sponsors = () => {
   useEffect(() => {
@@ -15,21 +15,23 @@ const Sponsors = () => {
           Sponsors
         </h1>
       </div>
-      <div className="box flex flex-col items-center">
-        <h1 className="font-scountcond font-black text-5xl w-fit pb-4">2023</h1>
+      <div className="box flex flex-row flex-wrap items-center gap-4 justify-center space-y-4">
+        <h1 className="font-scountcond font-black text-5xl pb-4 w-full text-center">
+          2023
+        </h1>
         {/* <div className="font-productsans text-center text-emerald-800 text-5xl">Microsoft Corporation</div> */}
         <img
           src={MicrosoftImage}
           className="w-full max-w-[300px] h-full"
           alt="Microsoft Logo"
         />
-        <span className="h-[10px]"/>
+        <span className="h-[10px]" />
         <img
           src={TMobileImage}
           className="w-full max-w-[300px] h-full"
           alt="T-Mobile Logo"
         />
-        <span className="h-[10px]"/>
+        <span className="h-[10px]" />
         <img
           src={FirstTechImage}
           className="w-full max-w-[300px] h-full"
