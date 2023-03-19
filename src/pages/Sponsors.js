@@ -1,8 +1,13 @@
 import { useEffect } from "react";
+import SponsorBlock from "../components/SponsorBlock";
 import MicrosoftImage from "../images/microsoft.svg";
 import TMobileImage from "../images/TMobile.webp";
-import TMobileSquare from "../images/TMobileSquare.svg";
 import FirstTechImage from "../images/FirstTechBW.svg";
+import Obesza from "../images/Obesza.png";
+import GeneHaas from "../images/GeneHaasFoundation.png";
+import HCL from "../images/HCL.png"
+import Lowes from "../images/Lowes.png"
+import WashingtonBusinessWeek from "../images/WashingtonBusinessWeek.png";
 
 const Sponsors = () => {
   useEffect(() => {
@@ -37,8 +42,34 @@ const Sponsors = () => {
           className="w-full max-w-[300px] h-full"
           alt="First Tech Credit Union Logo"
         />
+        <img
+          src={Obesza}
+          className="w-full max-w-[200px] h-full"
+          alt="First Tech Credit Union Logo"
+        />
+        <img
+          src={GeneHaas}
+          className="w-full max-w-[200px] h-full"
+          alt="First Tech Credit Union Logo"
+        />
+        <img
+          src={HCL}
+          className="w-full max-w-[300px] h-full"
+          alt="First Tech Credit Union Logo"
+        />
+        <img
+          src={Lowes}
+          className="w-full max-w-[300px] h-full"
+          alt="First Tech Credit Union Logo"
+        />
+        <img
+          src={WashingtonBusinessWeek}
+          className="w-full max-w-[200px] h-full"
+          alt="First Tech Credit Union Logo"
+        />
       </div>
-    </div>
+      
+     </div>
   );
 };
 
