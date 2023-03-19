@@ -16,7 +16,7 @@ const Sponsors = () => {
         </h1>
       </div>
       <div className="box flex flex-row flex-wrap items-center gap-4 justify-center space-y-4">
-        <h1 className="font-scountcond font-black text-5xl pb-4 w-full text-center">
+        <h1 className="font-scountcond font-black text-5xl w-full text-center">
           2023
         </h1>
         {/* <div className="font-productsans text-center text-emerald-800 text-5xl">Microsoft Corporation</div> */}
