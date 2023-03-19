@@ -30,38 +30,43 @@ const Sponsors = () => {
           className="w-full max-w-[300px] h-full"
           alt="Microsoft Logo"
         />
-        <span className="h-[10px]" />
+        <span className="w-[10px]" />
         <img
           src={TMobile}
           className="w-full max-w-[300px] h-full"
           alt="T-Mobile Logo"
         />
-        <span className="h-[10px]" />
+        <span className="w-[10px]" />
         <img
           src={FirstTech}
           className="w-full max-w-[300px] h-full"
           alt="First Tech Credit Union Logo"
         />
+        <span className="w-[10px]" />
         <img
           src={Obesza}
           className="w-full max-w-[200px] h-full"
           alt="Obesza Logo"
         />
+        <span className="w-[10px]" />
         <img
           src={GeneHaas}
           className="w-full max-w-[200px] h-full"
           alt="Gene Haas Foundation Logo"
         />
+        {/* <span className="w-[10px]" /> */}
         <img
           src={HCL}
           className="w-full max-w-[300px] h-full"
           alt="HCL Logo"
         />
+        <span className="w-[10px]" />
         <img
           src={Lowes}
           className="w-full max-w-[300px] h-full"
           alt="Lowes Logo"
         />
+        <span className="w-[10px]" />
         <img
           src={WashingtonBusinessWeek}
           className="w-full max-w-[200px] h-full"
