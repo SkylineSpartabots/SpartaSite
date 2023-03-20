@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import SponsorBlock from "../components/SponsorBlock";
 import Microsoft from "../images/microsoft.svg";
 import TMobile from "../images/TMobile.webp";
 import FirstTech from "../images/FirstTechBW.svg";
@@ -8,6 +7,10 @@ import GeneHaas from "../images/GeneHaasFoundation.png";
 import HCL from "../images/HCL.png"
 import Lowes from "../images/Lowes.png"
 import WashingtonBusinessWeek from "../images/WashingtonBusinessWeek.png";
+import TraderJoe from "../images/TraderJoes.png";
+import LegendaryDonuts from "../images/LegendaryDonuts.png"
+import Crumbl from "../images/Crumbl.png"
+import QFC from "../images/QFC.png"
 
 const Sponsors = () => {
   useEffect(() => {
@@ -72,6 +75,31 @@ const Sponsors = () => {
           className="w-full max-w-[200px] h-full"
           alt="Washington Business Week Logo"
         />
+        <span className="w-[10px]" />
+        <img
+          src={TraderJoe}
+          className="w-full max-w-[400px] h-full"
+          alt="Trader Joe's Logo"
+        />
+        <span className="w-[10px]" />
+        <img
+          src={LegendaryDonuts}
+          className="w-full max-w-[500px] h-full"
+          alt="Legendary Donuts Logo"
+        />
+        <span className="w-[10px]" />
+        <img
+          src={Crumbl}
+          className="w-full max-w-[300px] h-full"
+          alt="Crumbl Logo"
+        />
+        <span className="w-[10px]" />
+        <img
+          src={QFC}
+          className="w-full max-w-[200px] h-full"
+          alt="QFC Logo"
+        />
+        <span className="w-[10px]" />
       </div>
       
      </div>
