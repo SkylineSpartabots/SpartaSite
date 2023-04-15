@@ -1,8 +1,7 @@
 import { useEffect } from "react";
-import InfoBlock from "../components/InfoBlock.js";
-import MicrosoftImage from "../images/microsoft.png";
+// import { Link } from "react-router-dom"
 
-const Sponsors = () => {
+const Login = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -13,10 +12,16 @@ const Sponsors = () => {
           Login
         </h1>
       </div>
+      {/* <form action="POST">
+        <input type="email" onChange{(e)=>{setEmail(e.target.value)}} placeholder="Email" name="" id="" />
+        <input type="password" onChange{(e)=>{setEmail(e.target.value)}} placeholder="Password" name="" id="" />
+      
+        <input type="submit" />
+      </form> */}
       {/* Add authentication stuff */}
     </div>
   );
 };
 
-export default Sponsors;
+export default Login;
 
