@@ -20,6 +20,7 @@ const Navbar = () => {
           <NavbarTab text="Home" path="/" />
           <NavbarTab text="About" path="/about" />
           <NavbarTab text="Join" path="/join" />
+          <NavbarTab text="Login" path="/Login" />
           {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}
         </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -54,6 +55,11 @@ const Navbar = () => {
         <NavbarTab
           text="Join"
           path="/join"
+          onClick={() => setMenuOpen((prev) => false)}
+        />
+        <NavbarTab
+          text="Login"
+          path="/login"
           onClick={() => setMenuOpen((prev) => false)}
         />
         {/* <NavbarTab
