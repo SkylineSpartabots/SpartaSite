@@ -3,6 +3,7 @@ import InfoBlock from "../components/InfoBlock.js";
 import MicrosoftImage from "../images/microsoft.png";
 
 const Sponsors = () => {
+  // this function scrolls to the top of the page when first navigated to
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

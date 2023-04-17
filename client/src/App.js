@@ -9,9 +9,12 @@ import Join from "./pages/Join";
 
 function App() {
   return (
+    // routing for the entire site
     <Router>
+      {/* navbar and footer appear on every page, so they're outside the router */}
       <Navbar />
       <Routes>
+        {/* Each route has its own tag */}
         <Route path="/" element={<Home />} />
         <Route path="/fontDemo" element={<FontDemo />} />
         <Route path="/about" element={<About />} />

@@ -8,10 +8,12 @@ import competitionImage from "../images/Competition-min.avif";
 import botImage from "../images/Bot.avif";
 
 const Home = () => {
+  // this function scrolls to the top of the page when first navigated to
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
+    // the entire site uses inline tailwind styles, go to tailwind documentation for more info
     <div className="">
       <Heading
         title="THE SPARTABOTS"

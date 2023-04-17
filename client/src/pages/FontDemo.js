@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 const FontDemo = () => {
+  // used to demo the different fonts that were used, not part of the actual site.
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

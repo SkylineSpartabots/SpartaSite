@@ -3,6 +3,7 @@ import teamNumberImage from "../images/TeamNumber-min.avif";
 import { useEffect } from "react";
 
 const Join = () => {
+  // this function scrolls to the top of the page when first navigated to
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

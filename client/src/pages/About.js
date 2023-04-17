@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import botImage from "../images/Bot2-min.avif";
 
 const About = () => {
+  // this function scrolls to the top of the page when first navigated to
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
