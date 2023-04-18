@@ -35,15 +35,15 @@ const Sponsors = () => {
         </h1>
       </div>
       <div className="box flex flex-col items-center">
-        <h1 className="font-scountcond font-black text-5xl mx-auto w-fit pb-4 italic">
+        <h1 className="flex-initial font-scountcond font-black text-5xl mx-auto w-fit pb-4 italic">
           2023
         </h1>
-        <div className="flex flex-row flex-wrap gap-8 px-12 justify-center">
+        <div className=" flex-initial flex flex-row flex-wrap gap-8 px-12 justify-center">
           {/* loop through all the logos, creating an image tag for each */}
           {logos.map((logo, index) => (
             <img
               src={logo}
-              className="max-h-[125px] max-w-[700px] object-cover h-full"
+              className="flex-initial max-h-[60px] sm:max-h-[125px] "
               alt=""
               key={index}
             />
