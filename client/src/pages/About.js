@@ -1,7 +1,7 @@
 import Heading from "../components/Heading";
 import Button from "../components/Button";
 import { useEffect } from "react";
-import botImage from "../images/Bot2-min.avif";
+import botImage from "../graphics/images/Bot2-min.avif";
 
 const About = () => {
   // this function scrolls to the top of the page when first navigated to

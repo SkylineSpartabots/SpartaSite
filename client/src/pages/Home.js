@@ -2,10 +2,10 @@ import Card from "../components/Card.js";
 import Heading from "../components/Heading.js";
 import InfoBlock from "../components/InfoBlock.js";
 import { useEffect } from "react";
-import intakeImage from "../images/Intake-min.avif";
-import groupImage from "../images/GroupPhoto-min.avif";
-import competitionImage from "../images/Competition-min.avif";
-import botImage from "../images/Bot.avif";
+import intakeImage from "../graphics/images/Intake-min.avif";
+import groupImage from "../graphics/images/GroupPhoto-min.avif";
+import competitionImage from "../graphics/images/Competition-min.avif";
+import botImage from "../graphics/images/Bot.avif";
 
 const Home = () => {
   // this function scrolls to the top of the page when first navigated to
