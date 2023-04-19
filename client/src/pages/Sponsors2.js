@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Microsoft from "../images/microsoft.svg";
+import Microsoft from "../graphimages/microsoft.svg";
 import TMobile from "../images/TMobile.webp";
 import FirstTech from "../images/FirstTechBW.svg";
 import Obesza from "../images/Obesza.png";
