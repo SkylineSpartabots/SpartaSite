@@ -8,6 +8,13 @@ import ISFLogo from "../graphics/svgs/ISF_Logo.svg";
 import LowesLogo from "../graphics/svgs/Lowes_Logo.svg";
 import OdeszaLogo from "../graphics/svgs/ODESZA_Logo.svg";
 import FirstWALogo from "../graphics/images/firstwalogo.png";
+import HCLLogo from "../graphics/images/HCL.png"
+import WashingtonBusinessWeekLogo from "../graphics/images/WashingtonBusinessWeek.png";
+import TraderJoeLogo from "../graphics/images/TraderJoes.png";
+import LegendaryDonutsLogo from "../graphics/images/LegendaryDonuts.png"
+import CrumblLogo from "../graphics/images/Crumbl.png"
+import QFCLogo from "../graphics/images/QFC.png"
+import FirstTechBWLogo from "../graphics/svgs/FirstTechBW.svg"
 
 const Sponsors = () => {
   // this function scrolls to the top of the page when first navigated to
@@ -25,6 +32,13 @@ const Sponsors = () => {
     GeneHaasLogo,
     LowesLogo,
     ISFLogo,
+    HCLLogo,
+    WashingtonBusinessWeekLogo,
+    TraderJoeLogo,
+    LegendaryDonutsLogo,
+    CrumblLogo,
+    QFCLogo,
+    FirstTechBWLogo
   ];
 
   return (
