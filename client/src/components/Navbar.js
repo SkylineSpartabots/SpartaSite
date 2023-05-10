@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className={`flex flex-row items-center justify-between`}>
         <h1 className="font-scoutcond font-black text-4xl sm:text-5xl text-center">
           SPARTABOTS 2976
-        </h1>
+        </h1> 
         <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded">
           <NavbarTab text="Home" path="/" />
           <NavbarTab text="About" path="/about" />

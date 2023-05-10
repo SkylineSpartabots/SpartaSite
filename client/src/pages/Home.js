@@ -6,7 +6,7 @@ import intakeImage from "../graphics/images/Intake-min.avif";
 import groupImage from "../graphics/images/GroupPhoto-min.avif";
 import competitionImage from "../graphics/images/Competition-min.avif";
 import botImage from "../graphics/images/Bot.avif";
-
+ 
 const Home = () => {
   // this function scrolls to the top of the page when first navigated to
   useEffect(() => {
