@@ -19,6 +19,11 @@ module.exports = {
         redditorange: "#FF4604",
         transparent: "transparent",
         current: "currentColor",
+        spartabotsgreen: "#306A43",
+        limegreenaccent: "#99DB55",
+        primaryblue: "#0099FF",
+        primaryteal: "#30AA9A",
+        sageaccent: "#84EBB2"
       },
       backgroundSize: {
         "size-200": "200% 200%",
