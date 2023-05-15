@@ -43,13 +43,13 @@ const Sponsors = () => {
 
   return (
     <div className="pt-[135px] p-8 bg-gray-700 flex flex-col items-center gap-8">
-      <div className="max-w-[1000px] flex-1 w-full text-center bg-gray-600 rounded-lg p-4">
+      <div className="max-w-[1000px] flex-1 w-full text-center bg-gray-600 rounded-lg my-4 p-4">
         <h1 className="mx-auto w-fit font-scoutcond font-black uppercase text-6xl italic text-transparent bg-clip-text bg-gradient-to-r from-white via-frcyellow to-frcpurple">
           Sponsors
         </h1>
       </div>
       <div className="items-center bg-slate-300 rounded-lg">
-        <h1 className="flex-initial my-4 font-scountcond font-black text-5xl mx-auto w-fit  italic">
+        <h1 className="flex-initial my-4 font-scountcond font-black text-5xl mx-auto w-fit italic">
           2023
         </h1>
         <div className=" flex-initial flex flex-row flex-wrap gap-8 my-4 px-12 p-4 justify-center">

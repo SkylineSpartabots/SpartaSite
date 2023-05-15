@@ -7,13 +7,14 @@ import About from "./pages/About";
 import Footer from "./components/Footer";
 import Join from "./pages/Join";
 import EISponsors from "./pages/ElliotIggy_Sponsors"
+import EINavBar from "./components/ElliotIggy_NavBar"
 
 function App() {
   return (
     // routing for the entire site
     <Router>
       {/* navbar and footer appear on every page, so they're outside the router */}
-      <Navbar />
+      <EINavBar />
       <Routes>
         {/* Each route has its own tag */}
         <Route path="/" element={<Home />} />
