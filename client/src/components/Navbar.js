@@ -18,9 +18,9 @@ const Navbar = () => {
           SPARTABOTS 2976
         </h1> 
         <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded">
-          <NavbarTab text="Home" path="/" /> { /*CHANGE TO SEE NAVBAR */}
-          <NavbarTab text="About" path="/about" /> { /*CHANGE TO SEE NAVBAR */}
-          <NavbarTab text="Join" path="/join" /> { /*CHANGE TO SEE NAVBAR */}
+          <EINavbarTab text="Home" path="/" /> { /*CHANGE TO SEE NAVBAR */}
+          <EINavbarTab text="About" path="/about" /> { /*CHANGE TO SEE NAVBAR */}
+          <EINavbarTab text="Join" path="/join" /> { /*CHANGE TO SEE NAVBAR */}
           {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}
         </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -42,17 +42,17 @@ const Navbar = () => {
           menuOpen ? "flex flex-col" : "hidden"
         } sm:hidden pt-4 w-full bg-gradient-to-r items-center from-frcpurple to-frcyellow`}
       >
-        <NavbarTab
+        <EINavbarTab
           text="Home"
           path="/"
           onClick={() => setMenuOpen((prev) => false)}
         />
-        <NavbarTab 
+        <EINavbarTab 
           text="About"
           path="/about"
           onClick={() => setMenuOpen((prev) => false)}
         />
-        <NavbarTab
+        <EINavbarTab
           text="Join"
           path="/join"
           onClick={() => setMenuOpen((prev) => false)}

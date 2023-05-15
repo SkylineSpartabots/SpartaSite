@@ -6,6 +6,7 @@ import FontDemo from "./pages/FontDemo";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import Join from "./pages/Join";
+import EISponsors from "./pages/ElliotIggy_Sponsors"
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/fontDemo" element={<FontDemo />} />
         <Route path="/about" element={<About />} />
-        <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/sponsors" element={<EISponsors />} /> {/* Change to see sponsors page you imported above */}
         <Route path="/join" element={<Join />} />
       </Routes>
       <Footer />
