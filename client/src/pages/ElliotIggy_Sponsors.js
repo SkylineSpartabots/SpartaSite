@@ -48,7 +48,7 @@ const Sponsors = () => {
           Sponsors
         </h1>
       </div>
-      <div className="items-center bg-slate-300 rounded-lg">
+      <div className="items-center max-w-[1000px] bg-slate-300 rounded-lg">
         <h1 className="flex-initial my-4 font-scountcond font-black text-5xl mx-auto w-fit italic">
           2023
         </h1>
