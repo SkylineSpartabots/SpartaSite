@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import HeaderBlock from "../components/HeaderBlock";
 import MicrosoftLogo from "../graphics/svgs/Microsoft_Logo.svg";
 import BoeingLogo from "../graphics/svgs/Boeing_Logo.svg";
 import TMobileLogo from "../graphics/svgs/T-Mobile_Logo.svg";
@@ -8,13 +9,13 @@ import ISFLogo from "../graphics/svgs/ISF_Logo.svg";
 import LowesLogo from "../graphics/svgs/Lowes_Logo.svg";
 import OdeszaLogo from "../graphics/svgs/ODESZA_Logo.svg";
 import FirstWALogo from "../graphics/images/firstwalogo.png";
-import HCLLogo from "../graphics/images/HCL.png"
+import HCLLogo from "../graphics/images/HCL.png";
 import WashingtonBusinessWeekLogo from "../graphics/images/WashingtonBusinessWeek.png";
 import TraderJoeLogo from "../graphics/images/TraderJoes.png";
-import LegendaryDonutsLogo from "../graphics/images/LegendaryDonuts.png"
-import CrumblLogo from "../graphics/images/Crumbl.png"
-import QFCLogo from "../graphics/images/QFC.png"
-import FirstTechBWLogo from "../graphics/svgs/FirstTechBW.svg"
+import LegendaryDonutsLogo from "../graphics/images/LegendaryDonuts.png";
+import CrumblLogo from "../graphics/images/Crumbl.png";
+import QFCLogo from "../graphics/images/QFC.png";
+import FirstTechBWLogo from "../graphics/svgs/FirstTechBW.svg";
 
 const Sponsors = () => {
   // this function scrolls to the top of the page when first navigated to
@@ -38,16 +39,12 @@ const Sponsors = () => {
     LegendaryDonutsLogo,
     CrumblLogo,
     QFCLogo,
-    FirstTechBWLogo
+    FirstTechBWLogo,
   ];
 
   return (
-    <div className="pt-[135px] p-8 bg-gray-100 flex flex-col items-center gap-8">
-      <div className="max-w-[1000px] flex-1 w-full text-center bg-gray-700 rounded p-4">
-        <h1 className="mx-auto w-fit font-scoutcond font-black uppercase text-6xl italic text-transparent bg-clip-text bg-gradient-to-r from-white via-frcyellow to-frcpurple">
-          Sponsors
-        </h1>
-      </div>
+    <div className="pt-[135px] pb-8 bg-slate-100 flex flex-col items-center gap-8">
+      <HeaderBlock text="Sponsors" />
       <div className="box flex flex-col items-center">
         <h1 className="flex-initial font-scountcond font-black text-5xl mx-auto w-fit pb-4 italic">
           2023

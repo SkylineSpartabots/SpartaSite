@@ -1,16 +1,22 @@
-import Heading from "../components/Heading";
+import Splash from "../components/Splash";
 import Button from "../components/Button";
 import { useEffect } from "react";
 import botImage from "../graphics/images/Bot2-min.avif";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
   // this function scrolls to the top of the page when first navigated to
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate("/sponsors");
+  }
   return (
     <div className="">
-      <Heading title="ABOUT US" subtitle="THE SPARTABOTS" image={botImage} />
+      <Splash title="ABOUT US" subtitle="THE SPARTABOTS" image={botImage} />
       <div className="bg-slate-100 flex flex-col gap-8 p-8 items-center ">
         <div className="box">
           <h1 className="title">Club Overview</h1>
@@ -86,7 +92,7 @@ const About = () => {
             send us an email!
           </p>
           <div className="w-fit pt-8 pb-4 mx-auto sm:mx-0">
-            <Button text="Sponsors" path="/sponsors" />
+            <Button text="Sponsors" onClick={handleClick} color="bg-blue-400" />
           </div>
         </div>
       </div>

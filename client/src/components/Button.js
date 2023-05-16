@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom";
-
-const Button = ({ text, path }) => {
+const Button = ({ text, onClick, color }) => {
   return (
-    <Link
-      to={path}
-      className=" min-w-[100px] p-4 bg-frcblue rounded text-white font-productsans "
+    <button
+      className={`transition ease-in-out min-w-[100px] p-4 ${color} rounded text-white font-productsans`}
+      onClick={onClick}
     >
       {text}
-    </Link>
+    </button>
   );
 };
 

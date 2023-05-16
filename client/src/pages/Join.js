@@ -1,4 +1,4 @@
-import Heading from "../components/Heading";
+import Splash from "../components/Splash";
 import teamNumberImage from "../graphics/images/TeamNumber-min.avif";
 import { useEffect } from "react";
 
@@ -9,7 +9,7 @@ const Join = () => {
   }, []);
   return (
     <div>
-      <Heading
+      <Splash
         title="JOIN US"
         subtitle="BECOME A SPARTABOT"
         image={teamNumberImage}

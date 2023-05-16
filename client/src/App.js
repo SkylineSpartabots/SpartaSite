@@ -6,6 +6,7 @@ import FontDemo from "./pages/FontDemo";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import Join from "./pages/Join";
+import Hours from "./pages/Hours";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/join" element={<Join />} />
+        <Route path="/hours" element={<Hours />} />
       </Routes>
       <Footer />
     </Router>

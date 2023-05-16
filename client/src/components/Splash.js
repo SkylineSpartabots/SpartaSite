@@ -1,4 +1,4 @@
-const Heading = ({ title, subtitle, image }) => {
+const Splash = ({ title, subtitle, image }) => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-600 px-16">
       <img
@@ -17,4 +17,4 @@ const Heading = ({ title, subtitle, image }) => {
   );
 };
 
-export default Heading;
+export default Splash;

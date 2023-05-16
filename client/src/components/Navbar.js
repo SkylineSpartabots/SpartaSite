@@ -2,9 +2,11 @@ import NavbarTab from "./NavbarTab";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  let location = useLocation();
 
   return (
     <div
@@ -13,13 +15,20 @@ const Navbar = () => {
       }flex flex-col absolute z-20 px-4 sm:px-[75px] py-4 sm:py-6 w-full text-white`}
     >
       <nav className="flex flex-row items-center justify-between">
-        <h1 className="font-scoutcond font-black text-4xl sm:text-5xl text-center">
+        <h1
+          className={`font-scoutcond font-black text-4xl sm:text-5xl text-center ${
+            location.pathname === "/hours" || location.pathname === "/sponsors"
+              ? "text-black"
+              : "text-white"
+          }`}
+        >
           SPARTABOTS 2976
-        </h1> 
+        </h1>
         <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded">
           <NavbarTab text="Home" path="/" />
           <NavbarTab text="About" path="/about" />
           <NavbarTab text="Join" path="/join" />
+          <NavbarTab text="Hours" path="/hours" />
           {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}
         </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">
