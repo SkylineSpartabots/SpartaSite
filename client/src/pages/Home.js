@@ -45,7 +45,7 @@ const Home = () => {
         />
         {/* <hr className="py-2 border-gray-300 w-[1000px]"></hr> */}
         <div
-          className={`hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bg-white rounded gap-4 `}
+          className={`hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bg-white rounded gap-4`}
         >
           <InfoBlock
             title="Our Sponsors"
