@@ -12,7 +12,7 @@ const Navbar = () => {
         menuOpen ? "h-[300px]" : ""
       }flex flex-col absolute z-20 px-4 sm:px-[75px] py-4 sm:py-6 w-full text-white`}
     >
-      <nav className={`flex flex-row items-center justify-between`}>
+      <nav className="flex flex-row items-center justify-between">
         <h1 className="font-scoutcond font-black text-4xl sm:text-5xl text-center">
           SPARTABOTS 2976
         </h1>
