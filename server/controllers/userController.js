@@ -6,6 +6,7 @@ const createToken = (_id) => {
 };
 
 const authenticateUser = async (req, res) => {
+  const userInfo = req.body;
   try {
     let user;
     if (type == "login") {
@@ -19,3 +20,5 @@ const authenticateUser = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
+
+module.exports = { authenticateUser };
