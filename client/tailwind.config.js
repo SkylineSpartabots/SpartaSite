@@ -23,7 +23,7 @@ module.exports = {
         limegreenaccent: "#99DB55",
         primaryblue: "#0099FF",
         primaryteal: "#30AA9A",
-        sageaccent: "#84EBB2"
+        sageaccent: "#84EBB2",
         frcgreen: "#2c6c42"
       },
       backgroundSize: {
