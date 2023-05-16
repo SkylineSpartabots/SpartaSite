@@ -17,3 +17,4 @@ const NavbarTab = ({ path, text, onClick }) => {
 };
 
 export default NavbarTab;
+ 
