@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 import CoolNavbarTab from './CoolNavbarTab.js';
+import { Link } from "react-router-dom";
+import Team2976Logo from "../graphics/svgs/Team2976_Logo.svg"
 
 const CoolNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,16 +13,16 @@ const CoolNavbar = () => {
     <div
       className={`${
         menuOpen ? "h-[300px] " : ""
-      }flex flex-col  z-20 px-2 sm:px-[75px] py-4 sm:py-6 w-full h-[90px] text-black bg-white`}
+      }flex flex-col  z-20 px-2 sm:px-[75px] py-4 sm:py-6 w-full text-black bg-white`}
     >
-      <nav className={`flex flex-row items-center justify-between`}>
-        <h1 className="font-scoutcond font-black text-4xl hover:underline ">
-          SPARTABOTS 2976
-        </h1>
+      <nav className='flex flex-row items-center justify-between'>
+        <Link to={"/"} className="bg-spartabotsgreen rounded-xl">
+        <img src={Team2976Logo} className="w-36"></img>
+        </Link>
         <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded">
-          <CoolNavbarTab text="Home" path="/" />
-          <CoolNavbarTab text="About" path="/about" />
-          <CoolNavbarTab text="Join" path="/join" />
+          <CoolNavbarTab text="HOME" path="/" />
+          <CoolNavbarTab text="ABOUT" path="/about" />
+          <CoolNavbarTab text="JOIN" path="/join" />
           {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}
         </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">
