@@ -11,7 +11,7 @@ const Navbar = () => {
     <div
       className={`${
         menuOpen ? "h-[300px]" : ""
-      }flex flex-col absolute z-20 px-4 sm:px-[75px] py-4 my-4 sm:py-6 w-full text-white bg-gradient-to-r from-frcpink/40 via-frcyellow/20 to-frcpurple/40 rounded-lg mx-4`}
+      }flex flex-col absolute z-20 px-4 sm:px-[75px] py-4 my-4 sm:py-6 w-full text-white  rounded-lg mx-4`}
     >
       <nav className={"flex flex-row items-center justify-between"}>
         <h1 className="font-scoutcond font-black text-4xl sm:text-5xl text-center">
