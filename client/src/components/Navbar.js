@@ -2,8 +2,6 @@ import NavbarTab from "./NavbarTab";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
-import { Link } from "react-router-dom/dist";
-import SpartabotsLogo from "../graphics/svgs/Team2976_Logo.svg"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,20 +10,19 @@ const Navbar = () => {
     <div
       className={`${
         menuOpen ? "h-[300px]" : ""
-      }flex flex-col absolute z-50 px-2 sm:px-[75px] py-4 sm:py-6 w-full text-white bg-white`}
+      }flex flex-col absolute z-20 px-4 sm:px-[75px] py-4 sm:py-6 w-full text-white`}
     >
       <nav className={`flex flex-row items-center justify-between`}>
-        <Link to={"/"} className="flex items-center justify-center rounded-xl">
-          <img src={SpartabotsLogo} className="h-[70px] rounded-xl hover:bg-frcgreen"></img>
-        </Link>
-
-        <div className="flex-row flex-wrap items-center justify-around flex-initial hidden gap-2 rounded sm:flex">
+        <h1 className="font-scoutcond font-black text-4xl sm:text-5xl text-center">
+          SPARTABOTS 2976
+        </h1>
+        <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded">
           <NavbarTab text="Home" path="/" />
           <NavbarTab text="About" path="/about" />
           <NavbarTab text="Join" path="/join" />
           {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}
         </div>
-        <div className="flex items-center justify-end flex-1 sm:hidden">
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           {menuOpen ? (
             <GrClose
               className="w-10 h-10 cursor-pointer"

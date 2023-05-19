@@ -6,12 +6,14 @@ import FontDemo from "./pages/FontDemo";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import Join from "./pages/Join";
+import CoolNavbar from "./components/CoolNavbar";
+
 function App() {
   return (
     // routing for the entire site
     <Router>
       {/* navbar and footer appear on every page, so they're outside the router */}
-      <Navbar />
+      <CoolNavbar />
       <Routes>
         {/* Each route has its own tag */}
         <Route path="/" element={<Home />} />
