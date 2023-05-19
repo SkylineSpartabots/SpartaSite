@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom/dist";
+import SpartabotsLogo from "../graphics/svgs/Team2976_Logo.svg"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,8 +15,8 @@ const Navbar = () => {
       }flex flex-col absolute z-50 px-2 sm:px-[75px] py-4 sm:py-6 w-full text-white bg-white`}
     >
       <nav className={`flex flex-row items-center justify-between`}>
-        <Link to={"/"} className="flex items-center justify-center rounded-xl bg-frcgreen">
-          <img src="https://cdn.discordapp.com/attachments/1107813824934981723/1107813889468534844/Z.png" className="h-[70px] rounded-xl"></img>
+        <Link to={"/"} className="flex items-center justify-center rounded-xl">
+          <img src={SpartabotsLogo} className="h-[70px] rounded-xl hover:bg-frcgreen"></img>
         </Link>
 
         <div className="flex-row flex-wrap items-center justify-around flex-initial hidden gap-2 rounded sm:flex">

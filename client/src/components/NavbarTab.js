@@ -3,16 +3,19 @@ import { Link, useLocation } from "react-router-dom";
 const NavbarTab = ({ path, text, onClick }) => {
   let location = useLocation();
   return (
-    <Link
-      to={path}
-      className={`transition-all delay-150 bg-size-200 bg-pos-0 hover:bg-pos-100 duration-300 bg-gradient-to-r from-frcpink via-frcyellow to-frcpurple font-productsans font-bold text-sm px-5 mr-2 mb-2 flex-initial  block text-center text-md rounded text-white w-[100px] py-4 
+    <div className="relative group">
+      <Link
+        to={path}
+        className={`font-productsans font-bold text-xl flex-initial mx-4 block text-center text-md rounded text-black w-[100px] py-2
 
-        hover:scale-110`}
-      onClick={onClick}
-    >
-      {text}
-      {/* {location.pathname === path ? <hr className="mx-auto w-16"></hr> : <></>} */}
-    </Link>
+          transition-all group-hover:scale-110 `}
+        onClick={onClick}
+      >
+        {text}
+        {/* {location.pathname === path ? <hr className="w-16 mx-auto"></hr> : <></>} */}
+      </Link>
+      <div className="group-hover:transition-all group-hover:w-[20%] h-[5px] bg-limegreenaccent w-0 left-[50%] mr-2 ml-10"></div>
+    </div>
   );
 };
 
