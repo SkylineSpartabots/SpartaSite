@@ -3,7 +3,8 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 import EINavbarTab from "./ElliotIggy_NavBarTab"
-
+import { Link } from "react-router-dom"
+import SpartanLogo from "../graphics/svgs/SpartanLogo.svg"
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -14,9 +15,14 @@ const Navbar = () => {
       }flex flex-col absolute z-20 px-4 sm:px-[75px] py-4 my-4 sm:py-6 w-full text-white  rounded-lg mx-4`}
     >
       <nav className={"flex flex-row items-center justify-between"}>
-        <h1 className="font-scoutcond font-black text-4xl sm:text-5xl text-center">
-          SPARTABOTS 2976
-        </h1> 
+      <div className="flex flex-row">
+          <Link to={"/"} className="">
+            <img src={SpartanLogo} className="w-24 h-20"></img>
+          </Link>
+          <h1 className="font-scoutcond font-black text-4xl py-7">
+            SPARTABOTS 2976
+          </h1>
+        </div>
         <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded">
           <EINavbarTab text="Home" path="/" /> { /*CHANGE TO SEE NAVBAR */}
           <EINavbarTab text="About" path="/about" /> { /*CHANGE TO SEE NAVBAR */}

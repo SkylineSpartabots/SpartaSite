@@ -2,7 +2,6 @@ import NavbarTab from "./NavbarTab";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
-import EINavbarTab from "./ElliotIggy_NavBarTab"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,13 +13,14 @@ const Navbar = () => {
       }flex flex-col absolute z-20 px-4 sm:px-[75px] py-4 sm:py-6 w-full text-white`}
     >
       <nav className={`flex flex-row items-center justify-between`}>
+        
         <h1 className="font-scoutcond font-black text-4xl sm:text-5xl text-center">
           SPARTABOTS 2976
-        </h1> 
+        </h1>
         <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded">
-          <EINavbarTab text="Home" path="/" /> { /*CHANGE TO SEE NAVBAR */}
-          <EINavbarTab text="About" path="/about" /> { /*CHANGE TO SEE NAVBAR */}
-          <EINavbarTab text="Join" path="/join" /> { /*CHANGE TO SEE NAVBAR */}
+          <NavbarTab text="Home" path="/" />
+          <NavbarTab text="About" path="/about" />
+          <NavbarTab text="Join" path="/join" />
           {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}
         </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -42,17 +42,17 @@ const Navbar = () => {
           menuOpen ? "flex flex-col" : "hidden"
         } sm:hidden pt-4 w-full bg-gradient-to-r items-center from-frcpurple to-frcyellow`}
       >
-        <EINavbarTab
+        <NavbarTab
           text="Home"
           path="/"
           onClick={() => setMenuOpen((prev) => false)}
         />
-        <EINavbarTab 
+        <NavbarTab
           text="About"
           path="/about"
           onClick={() => setMenuOpen((prev) => false)}
         />
-        <EINavbarTab
+        <NavbarTab
           text="Join"
           path="/join"
           onClick={() => setMenuOpen((prev) => false)}
