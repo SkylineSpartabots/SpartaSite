@@ -13,12 +13,17 @@ const CoolNavbar = () => {
     <div
       className={`${
         menuOpen ? "h-[300px] " : ""
-      }flex flex-col  z-20 px-2 sm:px-[75px] py-4 sm:py-6 w-full text-black bg-white`}
+      }flex flex-col  z-20 px-2 sm:px-[75px] py-2 w-full text-black bg-white`}
     >
-      <nav className='flex flex-row items-center justify-between'>
-        <Link to={"/"} className="bg-spartabotsgreen rounded-xl">
-        <img src={Team2976Logo} className="w-36"></img>
-        </Link>
+      <nav className='flex flex-row justify-between'>
+        <div className="flex flex-row">
+          <Link to={"/"} className="">
+            <img src={Team2976Logo} className="w-24"></img>
+          </Link>
+          <h1 className="font-scoutcond font-black text-4xl py-7">
+            SPARTABOTS 2976
+          </h1>
+        </div>
         <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded">
           <CoolNavbarTab text="HOME" path="/" />
           <CoolNavbarTab text="ABOUT" path="/about" />
