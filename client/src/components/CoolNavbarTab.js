@@ -9,16 +9,15 @@ const CoolNavbarTab = ({ path, text, onClick }) => {
   return (
     <Link
       to={path}
-      className={` font-productsans font-bold text-sm px-5 mr-2 mb-2 text-center rounded text-black py-4 bg-white
+      className={`font-productsans font-bold text-base px-3 mx-5 block text-center rounded text-black
+      group transition-all duration-150 ease-in-out
 
-        after:h-[2px] after:transition after:ease-in-out after:duration-75 after:bg-limegreenaccent
-        hover:scale-110 
-        hover:after:h-[2px] hover:after:w-100% hover:after:bg-limegreenaccent
+
         `}
       onClick={onClick}
       
     >
-      <p>{text}</p>
+      <span className="bg-left-bottom bg-gradient-to-r from-limegreenaccent to-limegreenaccent bg-[length:0%_3px] bg-no-repeat group-hover:bg-[length:100%_3px] transition-all duration-200 ease-in-out">{text}</span>
       {/* {location.pathname === path ? <hr className="mx-auto w-16"></hr> : <></>} */}
     </Link>
   );
