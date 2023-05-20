@@ -5,6 +5,8 @@ import { GrClose } from "react-icons/gr";
 import EINavbarTab from "./ElliotIggy_NavBarTab"
 import { Link } from "react-router-dom"
 import SpartanLogo from "../graphics/svgs/SpartanLogo.svg"
+import goatHead from "../graphics/svgs/Spartagoat-Head-01.svg"
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -17,7 +19,7 @@ const Navbar = () => {
       <nav className={"flex flex-row items-center justify-between"}>
       <div className="flex flex-row">
           <Link to={"/"} className="">
-            <img src={SpartanLogo} className="w-24 h-20"></img>
+            <img src={goatHead} className="w-24 h-20"></img>
           </Link>
           <h1 className="font-scoutcond font-black text-4xl py-7">
             SPARTABOTS 2976
