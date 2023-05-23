@@ -19,7 +19,7 @@ const CoolNavbar = () => {
         <div className="">
           <Link to={"/"} className="flex flex-row group text-black transition duration-300 hover:scale-110">
             <img src={Team2976Logo} className="w-20"></img>
-            <h1 className= "font-scoutcond font-black text-4xl pt-5 bg-left-bottom bg-gradient-to-r from-limegreenaccent to-limegreenaccent bg-[length:0%_8px] bg-no-repeat group-hover:bg-[length:100%_8px] transition-all duration-500 ease-in-out ">
+            <h1 className= "font-scoutcond font-black text-4xl pt-5 ">
             SPARTABOTS 2976
           </h1>
           </Link>
