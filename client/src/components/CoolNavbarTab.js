@@ -2,10 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const CoolNavbarTab = ({ path, text, onClick, isActive }) => {
-  let location = useLocation();
-  const activelink = ''
-  const normallink = ''
-  console.log(isActive + " " + location);
   return (
     <Link
       to={path}
