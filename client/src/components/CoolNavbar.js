@@ -3,12 +3,13 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 import CoolNavbarTab from './CoolNavbarTab.js';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Team2976Logo from "../graphics/svgs/Team2976_Logo.svg"
-
 const CoolNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  let location = useLocation();
+  console.log(location)
+  
   return (
     <div
       className={`${
@@ -17,21 +18,21 @@ const CoolNavbar = () => {
     >
        <nav className='flex flex-row justify-between'>
         <div className="">
-          <Link to={"/"} className="flex flex-row group text-black transition duration-300 hover:scale-110">
+          <Link to={"/"} className="flex flex-row text-black transition duration-300 group hover:scale-110">
             <img src={Team2976Logo} className="w-20"></img>
-            <h1 className= "font-scoutcond font-black text-4xl pt-5 ">
+            <h1 className= "pt-5 text-4xl font-black font-scoutcond ">
             SPARTABOTS 2976
           </h1>
           </Link>
         </div>
         
-        <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded">
-          <CoolNavbarTab text="HOME" path="/" />
-          <CoolNavbarTab text="ABOUT" path="/about" />
-          <CoolNavbarTab text="JOIN" path="/join" />
+        <div className="flex-row flex-wrap items-center justify-around flex-initial hidden gap-2 rounded sm:flex">
+          <CoolNavbarTab text="HOME" path="/" isActive={location.pathname=="/"}/>
+          <CoolNavbarTab text="ABOUT" path="/about" isActive={location.pathname=="/about"}/>
+          <CoolNavbarTab text="JOIN" path="/join" isActive={location.pathname=="/join"}/>
           {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}
         </div>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="flex items-center justify-end flex-1 sm:hidden">
           {menuOpen ? (
             <GrClose
               className="w-10 h-10 cursor-pointer"
