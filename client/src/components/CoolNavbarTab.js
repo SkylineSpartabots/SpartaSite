@@ -5,7 +5,7 @@ const CoolNavbarTab = ({ path, text, onClick, isActive }) => {
   return (
     <Link
       to={path}
-      className={`block px-3 mx-5 text-base font-bold text-center text-black transition-all duration-150 ease-in-out rounded font-productsans group ` + (isActive ? "text-green-900" : "text-blue-300")}
+      className={`block px-3 mx-5 text-base font-bold text-center text-black transition-all duration-150 ease-in-out rounded font-productsans group ` + (isActive ? "shadow-xl shadow-frcgreen" : "text-black")}
       onClick={onClick}
       
     >
