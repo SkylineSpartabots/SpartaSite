@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import { useEffect } from "react";
 import botImage from "../graphics/images/Bot2-min.avif";
 import { useNavigate } from "react-router-dom";
+import chronosVideo from "../graphics/videos/chronosReveal.mp4";
 
 const About = () => {
   // this function scrolls to the top of the page when first navigated to
@@ -16,8 +17,8 @@ const About = () => {
   }
   return (
     <div className="">
-      <Splash title="ABOUT US" subtitle="THE SPARTABOTS" image={botImage} />
-      <div className="bg-slate-100 flex flex-col gap-8 p-8 items-center ">
+      <Splash title="ABOUT US" subtitle="THE SPARTABOTS" video={chronosVideo} />
+      <div className="bg-slate-100 flex flex-col gap-8 items-center">
         <div className="box">
           <h1 className="title">Club Overview</h1>
           <p className="font-productsans text-base ">

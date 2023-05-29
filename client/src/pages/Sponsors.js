@@ -25,7 +25,7 @@ const Sponsors = () => {
 
   const logos = [
     FirstWALogo,
-    FirstTechLogo,
+    
     TMobileLogo,
     BoeingLogo,
     OdeszaLogo,
@@ -43,7 +43,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className="pt-[135px] pb-8 bg-slate-100 flex flex-col items-center gap-8">
+    <div className="pt-[135px] pb-8 bg-slate-800 flex flex-col items-center gap-8">
       <HeaderBlock text="Sponsors" />
       <div className="box flex flex-col items-center">
         <h1 className="flex-initial font-scountcond font-black text-5xl mx-auto w-fit pb-4 italic">
