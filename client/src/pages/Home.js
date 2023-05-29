@@ -1,12 +1,13 @@
 import Card from "../components/Card.js";
-import Splash from "../components/Splash.js";
+import Heading from "../components/Heading.js";
 import InfoBlock from "../components/InfoBlock.js";
 import { useEffect } from "react";
-import intakeImage from "../graphics/images/Intake-min.avif";
+//import intakeImage from "../graphics/images/Intake-min.avif";
 import groupImage from "../graphics/images/GroupPhoto-min.avif";
 import competitionImage from "../graphics/images/Competition-min.avif";
 import botImage from "../graphics/images/Bot.avif";
-
+import botVideo from "../graphics/videos/8mb.video-NU6-6cL3GtPs.mp4"
+ 
 const Home = () => {
   // this function scrolls to the top of the page when first navigated to
   useEffect(() => {
@@ -15,37 +16,42 @@ const Home = () => {
   return (
     // the entire site uses inline tailwind styles, go to tailwind documentation for more info
     <div className="">
-      <Splash
+      <Heading
         title="THE SPARTABOTS"
         subtitle="FRC TEAM 2976"
-        image={intakeImage}
+        video={botVideo}
       />
-      <div className="bg-slate-100 flex flex-col gap-8 items-center p-8">
-        <Card
-          title="ABOUT US"
-          text="Created in 2008, our team participates in the FIRST Robotics
+  
+
+      <div className=" ">
+        <div className="bg-slate-100 sm:flex-row flex flex-row gap-8 items-center p-8 overflow-x-scroll snap-mandatory">
+          <Card
+            title="ABOUT US"
+            text="Created in 2008, our team participates in the FIRST Robotics
               Competition as team 2976. We are a high school club operating at
               Skyline High School, Sammamish, WA."
-          image={groupImage}
-        />
-        <Card
-          title="WHAT IS FIRST ROBOTICS?"
-          text="The FIRST Robotics Competition is an international high school
-           robotics competition operated by FIRST. The game of the competition
+            image={groupImage}
+          />
+          <Card
+            title="WHAT IS FIRST ROBOTICS?"
+            text="The FIRST Robotics Competition is an international high school
+            robotics competition operated by FIRST. The game of the competition
             changes each year to keep the excitement fresh."
-          image={competitionImage}
-        />
-        <Card
-          title="WHY SHOULD I JOIN?"
-          text="Being part of a FIRST
-         robotics team is fun! It doesn't matter whether you have experience 
-         with robots or not, you'll gain amazing experiences and valuable skills
-          you can carry to college, and even in life."
-          image={botImage}
-        />
+            image={competitionImage}
+          />
+          <Card
+            title="WHY SHOULD I JOIN?"
+            text="Being part of a FIRST
+            robotics team is fun! It doesn't matter whether you have experience 
+            with robots or not, you'll gain amazing experiences and valuable skills
+            you can carry to college, and even in life."
+            image={botImage}
+          />
+        </div>
+        
         {/* <hr className="py-2 border-gray-300 w-[1000px]"></hr> */}
         <div
-          className={`hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bg-white rounded gap-4 `}
+          className={`hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bg-white rounded gap-4 mx-auto`}
         >
           <InfoBlock
             title="Our Sponsors"

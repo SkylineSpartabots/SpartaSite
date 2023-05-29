@@ -1,4 +1,4 @@
-const Splash = ({ title, subtitle, image }) => {
+const Splash = ({ title, subtitle, image, video }) => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-600 px-16">
       <img
@@ -13,6 +13,14 @@ const Splash = ({ title, subtitle, image }) => {
       <h1 className="z-10 text-4xl sm:text-5xl font-scoutcond font-semibold text-transparent bg-clip-text bg-gradient-to-r from-white via-frcyellow to-frcpurple text-center">
         {subtitle}
       </h1>
+      <video
+      src={video}
+      className="object-cover h-full w-full absolute mix-blend-overlay "
+      alt=""
+      autoPlay
+      loop
+      muted
+      />
     </div>
   );
 };
