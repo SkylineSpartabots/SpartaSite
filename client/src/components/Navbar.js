@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
+import GoatLogo from "../graphics/svgs/Spartagoat-Head-01.svg"
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -13,7 +14,10 @@ const Navbar = () => {
       }flex flex-col absolute z-20 px-4 sm:px-[75px] py-4 sm:py-6 w-full text-white`}
     >
       <nav className={`flex flex-row items-center justify-between`}>
-        <Link to={"/"} className="font-scoutcond font-black text-4xl sm:text-5xl text-center hover:scale-110 hover:bg-opacity-50 transition ease-out duration-300 hover:text-transparent bg-clip-text bg-gradient-to-r from-white via-frcyellow to-frcpurple ">
+        <Link to={"/"} className="font-scoutcond font-black text-4xl sm:text-5xl hover:scale-110 hover:bg-opacity-50 transition ease-out duration-300 hover:text-transparent bg-clip-text bg-gradient-to-r from-white via-frcyellow to-frcpurple">
+        <img
+          src={GoatLogo} className="w-24 h-15 items-start"
+        />
           SPARTABOTS 2976
         </Link> 
         <div className="hidden sm:flex flex-row flex-wrap flex-initial items-center gap-2 justify-around rounded hover: ">
