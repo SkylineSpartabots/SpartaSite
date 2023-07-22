@@ -39,8 +39,8 @@ const Home = () => {
           title="WHY SHOULD I JOIN?"
           text="Being part of a FIRST
          robotics team is fun! It doesn't matter whether you have experience 
-         with robots or not, you'll gain amazing experiences and valuable skills
-          you can carry to college, and even in life."
+         with robotics or not, you'll gain amazing experiences and learn valuable skills that
+          you can carry to college and beyond."
           image={botImage}
         />
         {/* <hr className="py-2 border-gray-300 w-[1000px]"></hr> */}
@@ -49,7 +49,7 @@ const Home = () => {
         >
           <InfoBlock
             title="Our Sponsors"
-            text="Skyline Robotics couldn't exist without the support of our sponsors, who help us in a variety of ways from granting money to donating parts "
+            text="Skyline Robotics wouldn't exist without the support of our sponsors, who help us in a variety of ways from granting money to donating parts."
             buttonPath="/sponsors"
           />
           <div className="border-l-[1px] border-gray-300 h-[450px] mx-4"></div>
