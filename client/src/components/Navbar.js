@@ -17,7 +17,9 @@ const Navbar = () => {
       <nav className="flex flex-row items-center justify-between">
         <h1
           className={`font-scoutcond font-black text-4xl sm:text-5xl text-center ${
-            location.pathname === "/hours" || location.pathname === "/sponsors"
+            location.pathname === "/hours" ||
+            location.pathname === "/sponsors" ||
+            location.pathname === "/login"
               ? "text-black"
               : "text-white"
           }`}
@@ -28,7 +30,7 @@ const Navbar = () => {
           <NavbarTab text="Home" path="/" />
           <NavbarTab text="About" path="/about" />
           <NavbarTab text="Join" path="/join" />
-          <NavbarTab text="Hours" path="/hours" />
+          <NavbarTab text="Login" path="/login" />
           {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}
         </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">

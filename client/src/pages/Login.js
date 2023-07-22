@@ -1,0 +1,42 @@
+import { useState } from "react";
+import Button from "../components/Button";
+
+const Login = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  async function handleSubmit(e) {}
+  return (
+    <div className="bg-slate-100 min-h-screen flex flex-col justify-center">
+      <form
+        className="flex flex-col items-center justify-center mx-auto w-fit"
+        onSubmit={handleSubmit}
+      >
+        <h1 className="font-scoutcond uppercase text-7xl font-black">Login</h1>
+        <div className="py-4 w-full">
+          <label className="text-lg font-productsans text-xl">
+            Username/Email
+          </label>
+          <input
+            className="px-2 w-full bg-slate-300 rounded h-8 text-black font-productsans"
+            type="text"
+            onChange={(e) => setUsername(e.target.value)}
+            value={username}
+          />
+        </div>
+        <div className="py-4 w-full">
+          <label className="text-lg font-productsans text-xl">Password</label>
+          <input
+            className="px-2 w-full bg-slate-300 rounded h-8 text-black font-productsans"
+            type="password"
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
+          />
+        </div>
+        <Button text="Submit" color="bg-blue-400" />
+      </form>
+    </div>
+  );
+};
+
+export default Login;
