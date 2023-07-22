@@ -5,6 +5,11 @@ const Stopwatch = () => {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
+    async function getTime() {
+      const res = await fetch('/api/getTime')
+      const data = await res.json
+      return data
+    }
     let intervalId;
     if (isActive) {
       intervalId = setInterval(() => setTime(time + 1), 1000);
