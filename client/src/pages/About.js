@@ -26,15 +26,18 @@ const About = () => {
             <br />
             Within our completely student built team, we use our problem
             solving, critical thinking and analytical skills to create a
-            competitive robot in 6 weeks.
+            competitive robot within 6 weeks.
             <br />
             <br /> The club was created in 2008 and initially worked in the
             garage of one of our mentors. In the first few years of the club we
-            didn't do so well, but we still always managed to bring a robot to
-            the competitions. In our past years, our team never managed to
-            advance to the elimination rounds of any competitions. But by 2014,
-            the Spartabots made it through two district competitions, getting
+            struggled, but always managed to bring a robot to
+            competitions. During that time, our team never managed to
+            advance to the elimination rounds of any competitions, but by 2014,
+            the Spartabots had made it through two district competitions, getting
             second place in one of them, and qualified for regionals.
+            <br />
+            <br />
+            Since then, we've won the World Championship (2018) and qualified for World's 4 times, making us one of the most successful teams in the Pacific Northwest.
           </p>
         </div>
         <div className="box">
@@ -42,7 +45,7 @@ const About = () => {
           <p className="font-productsans text-base">
             Our mission is to inspire students in the fields of science,
             technology, engineering and math. We help students cultivate these
-            skills through being a part of a supportive team that learns and
+            skills through being a part of a collaborative team that learns and
             grows together.
           </p>
         </div>
