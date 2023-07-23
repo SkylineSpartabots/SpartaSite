@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Footer from "./components/Footer";
 import Join from "./pages/Join";
 import Hours from "./pages/Hours";
+import CalendarPage from "./pages/CalenderPage";
 import Login from "./pages/Login";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/join" element={<Join />} />
         <Route path="/hours" element={<Hours />} />
+        <Route path="/calendar" element={<CalendarPage />} />
         <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />

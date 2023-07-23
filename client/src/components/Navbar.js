@@ -19,7 +19,8 @@ const Navbar = () => {
           className={`font-scoutcond font-black text-4xl sm:text-5xl text-center ${
             location.pathname === "/hours" ||
             location.pathname === "/sponsors" ||
-            location.pathname === "/login"
+            location.pathname === "/calendar" ||
+            location.pathname === "/login" 
               ? "text-black"
               : "text-white"
           }`}
@@ -31,6 +32,7 @@ const Navbar = () => {
           <NavbarTab text="About" path="/about" />
           <NavbarTab text="Join" path="/join" />
           <NavbarTab text="Login" path="/login" />
+          <NavbarTab text="Calendar" path="/calendar" />
           {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}
         </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -38,7 +40,7 @@ const Navbar = () => {
             <GrClose
               className="w-10 h-10 cursor-pointer"
               onClick={() => setMenuOpen((prev) => !prev)}
-            />
+            />  
           ) : (
             <FiMenu
               className="w-10 h-10 cursor-pointer"
