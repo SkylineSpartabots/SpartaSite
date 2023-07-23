@@ -1,11 +1,16 @@
 import { useState } from "react";
 import Button from "../components/Button";
+import useAuth from "../hooks/useAuth";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const { auth, error, isLoading } = useAuth("login");
 
-  async function handleSubmit(e) {}
+  async function handleSubmit(e) {
+    e.preventDefault();
+    await auth(username, password);
+  }
   return (
     <div className="bg-slate-100 min-h-screen flex flex-col justify-center">
       <form
@@ -33,7 +38,8 @@ const Login = () => {
             value={password}
           />
         </div>
-        <Button text="Submit" color="bg-blue-400" />
+        <Button text="Submit" color="bg-blue-400" disabled={isLoading} />
+        {error && <div className="">{error}</div>}
       </form>
     </div>
   );
