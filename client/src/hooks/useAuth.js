@@ -30,7 +30,7 @@ export function useAuth(type) {
       dispatch({ type: "LOGIN", payload: data });
 
       setIsLoading(false);
-      navigate("/dashboard");
+      navigate("/");
     }
   }
   return { auth, isLoading, error };

@@ -4,34 +4,9 @@ const bcrypt = require("bcrypt");
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  firstName: {
+  username: {
     type: String,
     required: true,
-  },
-  lastName: {
-    type: String,
-    required: true,
-  },
-  phoneNumber: {
-    type: Number,
-    required: true,
-  },
-  primaryDepartment: {
-    type: String,
-    required: true,
-  },
-  isBoard: {
-    type: Boolean,
-    required: true,
-  },
-  isAdvisor: {
-    type: Boolean,
-    required: true,
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
   },
   password: {
     type: String,
@@ -39,37 +14,36 @@ const userSchema = new Schema({
   },
 });
 
-userSchema.statics.signup = async function (userInfo) {
-  const hasEmpty = Object.values(userInfo).every((x) => x === null || x === "");
-  if (hasEmpty) {
+userSchema.statics.signup = async function (username, password) {
+  console.log(username);
+  if (!username || !password) {
     throw Error("All fields must be filled");
   }
-  const exists = await this.findOne({ email: userInfo.email });
+  const exists = await this.findOne({ username: username });
 
   if (exists) {
-    throw error("Email already in use");
+    throw error("Username already in use");
   }
 
   const salt = await bcrypt.genSalt(10);
-  const hash = await bcrypt.hash(userInfo.password, salt);
+  const hash = await bcrypt.hash(password, salt);
 
-  const user = await this.create({ ...userInfo, password: hash });
+  const user = await this.create({ username, password: hash });
 
   return user;
 };
 
-userSchema.statics.login = async function (userInfo) {
-  const hasEmpty = Object.values(userInfo).every((x) => x === null || x == "");
-  if (hasEmpty) {
+userSchema.statics.login = async function (username, password) {
+  if (!username || !password) {
     throw Error("All fields must be filled");
   }
-  const user = await this.findOne({ email: userInfo.email });
+  const user = await this.findOne({ username: username });
 
   if (!user) {
-    throw Error("Incorrect email");
+    throw Error("Incorrect username");
   }
 
-  const match = await bcrypt.compare(userInfo.password, user.password);
+  const match = await bcrypt.compare(password, user.password);
   if (!match) {
     throw Error("Incorrect password");
   }
