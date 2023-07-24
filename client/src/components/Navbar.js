@@ -37,14 +37,16 @@ const Navbar = () => {
           {!user ? (
             <NavbarTab text="Login" path="/login" />
           ) : (
-            <button
-              className={`transition-all delay-150 bg-size-200 bg-pos-0 hover:bg-pos-100 duration-300 bg-gradient-to-r from-frcpink via-frcyellow to-frcpurple font-productsans font-bold text-sm px-5 mr-2 mb-2 flex-initial block text-center text-md rounded text-white w-[100px] py-4 
+            <>
+              <button
+                className={`transition-all delay-150 bg-size-200 bg-pos-0 hover:bg-pos-100 duration-300 bg-gradient-to-r from-frcpink via-frcyellow to-frcpurple font-productsans font-bold text-sm px-5 mr-2 mb-2 flex-initial block text-center text-md rounded text-white w-[100px] py-4 
 
 hover:scale-110`}
-              onClick={logout}
-            >
-              Log Out
-            </button>
+                onClick={logout}
+              >
+                Log Out
+              </button>
+            </>
           )}
 
           {/* <NavbarTab text="Font Demo" path="/fontDemo" /> */}

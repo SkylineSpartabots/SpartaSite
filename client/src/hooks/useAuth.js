@@ -6,9 +6,11 @@ export function useAuth(type) {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(null);
   const { dispatch } = useAuthContext();
+
   const navigate = useNavigate();
 
   async function auth(username, password) {
+    console.log(dispatch);
     setIsLoading(true);
     setError(null);
 
