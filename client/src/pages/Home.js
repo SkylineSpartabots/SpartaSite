@@ -14,7 +14,7 @@ const Home = () => {
   }, []);
   return (
     // the entire site uses inline tailwind styles, go to tailwind documentation for more info
-    <div className="">
+    <div className="overflow-hidden">
       <Splash
         title="THE SPARTABOTS"
         subtitle="FRC TEAM 2976"

@@ -12,6 +12,10 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  isBoard: {
+    type: String,
+    required: true,
+  },
 });
 
 userSchema.statics.signup = async function (username, password) {
