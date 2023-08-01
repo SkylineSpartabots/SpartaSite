@@ -1,3 +1,4 @@
+import LazyImage from "./LazyImage";
 const Card = ({ title, text, image }) => {
   return (
     <div className="flex flex-col sm:flex-row flex-1 px-6 py-4 max-w-[1000px] bg-white rounded gap-4 min-h-[300px]">
@@ -8,10 +9,16 @@ const Card = ({ title, text, image }) => {
         <p className="font-productsans text-base">{text}</p>
       </div>
       <div className="flex-1 w-full ">
-        <img
+        {/* <img
           src={image}
           className="object-cover w-full h-full rounded"
           alt=""
+          loading="lazy"
+        /> */}
+        <LazyImage
+          img={image}
+          style="object-cover w-full h-full rounded"
+          className="object-cover w-full h-full rounded"
         />
       </div>
     </div>
