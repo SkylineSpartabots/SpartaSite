@@ -9,17 +9,7 @@ const Card = ({ title, text, image }) => {
         <p className="font-productsans text-base">{text}</p>
       </div>
       <div className="flex-1 w-full ">
-        {/* <img
-          src={image}
-          className="object-cover w-full h-full rounded"
-          alt=""
-          loading="lazy"
-        /> */}
-        <LazyImage
-          img={image}
-          style="object-cover w-full h-full rounded"
-          className="object-cover w-full h-full rounded"
-        />
+        <LazyImage img={image} style="object-cover w-[500px] h-full rounded" />
       </div>
     </div>
   );

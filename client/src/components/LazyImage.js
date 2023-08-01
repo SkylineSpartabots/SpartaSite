@@ -25,11 +25,7 @@ const LazyImage = ({ img, style }) => {
   return visible ? (
     <img src={img} alt="" className={style} />
   ) : (
-    <img
-      ref={ref}
-      style={{ backgroundColor: "gray" }}
-      className="object-cover w-full h-full"
-    />
+    <img ref={ref} style={{ backgroundColor: "gray" }} className={style} />
   );
 };
 
