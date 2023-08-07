@@ -5,12 +5,11 @@ const TopBar = () => {
     <div className="w-full absolute top-8 px-[75px]">
       <h1
         className={`font-scoutcond font-black text-4xl sm:text-5xl  ${
-          location.pathname === "/hours" ||
-          location.pathname === "/sponsors" ||
-          location.pathname === "/login" ||
-          location.pathname === "/dashboard"
-            ? "text-black"
-            : "text-white"
+          location.pathname === "/about" ||
+          location.pathname === "/home" ||
+          location.pathname === "/join"
+            ? "text-white"
+            : "text-black"
         }`}
       >
         SPARTABOTS 2976

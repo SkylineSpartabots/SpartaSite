@@ -36,4 +36,9 @@ const deleteUser = async (req, res) => {
   }
 };
 
-module.exports = { authenticateUser, deleteUser };
+const getUsers = async (req, res) => {
+  const users = await User.find({}).sort({ lastName: "asc" });
+  res.status(200).json(users);
+};
+
+module.exports = { authenticateUser, deleteUser, getUsers };
