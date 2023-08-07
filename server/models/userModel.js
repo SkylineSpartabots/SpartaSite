@@ -6,6 +6,7 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
   username: {
     type: String,
+    unique: true,
     required: true,
   },
   password: {
@@ -13,14 +14,43 @@ const userSchema = new Schema({
     required: true,
   },
   isBoard: {
+    type: Boolean,
+    required: false,
+  },
+  title: {
+    type: String,
+    required: false,
+  },
+
+  grade: {
+    type: Number,
+    required: true,
+  },
+  isAdvisor: {
+    type: Boolean,
+    required: true,
+  },
+  firstName: {
+    type: String,
+    required: true,
+  },
+  lastName: {
     type: String,
     required: true,
   },
 });
 
-userSchema.statics.signup = async function (username, password) {
-  console.log(username);
-  if (!username || !password) {
+userSchema.statics.signup = async function (user) {
+  console.log(user);
+  let username = user.username;
+  let password = user.password;
+  if (
+    !username ||
+    !password ||
+    user.grade === null ||
+    user.isAdvisor === null ||
+    user.isBoard === null
+  ) {
     throw Error("All fields must be filled");
   }
   const exists = await this.findOne({ username: username });
@@ -32,9 +62,9 @@ userSchema.statics.signup = async function (username, password) {
   const salt = await bcrypt.genSalt(10);
   const hash = await bcrypt.hash(password, salt);
 
-  const user = await this.create({ username, password: hash });
+  const u = await this.create({ ...user, password: hash });
 
-  return user;
+  return u;
 };
 
 userSchema.statics.login = async function (username, password) {

@@ -12,16 +12,14 @@ const Login = () => {
     await auth(username, password);
   }
   return (
-    <div className="bg-slate-100 min-h-screen flex flex-col justify-center">
+    <div className="bg-gray-100 min-h-screen flex flex-col justify-center">
       <form
         className="flex flex-col items-center justify-center mx-auto w-fit"
         onSubmit={handleSubmit}
       >
         <h1 className="font-scoutcond uppercase text-7xl font-black">Login</h1>
         <div className="py-4 w-full">
-          <label className="text-lg font-productsans text-xl">
-            Username/Email
-          </label>
+          <label className="text-lg font-productsans ">Username/Email</label>
           <input
             className="px-2 w-full bg-slate-300 rounded h-8 text-black font-productsans"
             type="text"
@@ -30,7 +28,7 @@ const Login = () => {
           />
         </div>
         <div className="py-4 w-full">
-          <label className="text-lg font-productsans text-xl">Password</label>
+          <label className="text-lg font-productsans ">Password</label>
           <input
             className="px-2 w-full bg-slate-300 rounded h-8 text-black font-productsans"
             type="password"

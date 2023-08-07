@@ -10,7 +10,6 @@ export function useAuth(type) {
   const navigate = useNavigate();
 
   async function auth(username, password) {
-    console.log(dispatch);
     setIsLoading(true);
     setError(null);
 
@@ -20,7 +19,6 @@ export function useAuth(type) {
       body: JSON.stringify({ username, password, type }),
     });
     const data = await response.json();
-
     if (!response.ok) {
       setIsLoading(false);
       setError(data.error);

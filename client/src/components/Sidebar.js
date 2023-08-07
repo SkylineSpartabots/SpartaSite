@@ -49,7 +49,7 @@ const Sidebar = () => {
       >
         <div
           className={`duration-300 flex h-screen fixed right-0 ${
-            open ? "w-[25%]" : "w-0"
+            open ? "w-[25%] min-w-[300px]" : "w-0"
           } bg-white py-[80px]`}
         >
           <div
@@ -69,9 +69,17 @@ const Sidebar = () => {
                 </h1>
 
                 <div className="flex flex-col ml-[20px] gap-4 py-4">
+                  {(user.isBoard || user.isAdvisor) && (
+                    <SidebarTab
+                      text="Dashboard"
+                      path="/dashboard"
+                      onClick={toggleSidebar}
+                    />
+                  )}
+
                   <SidebarTab
-                    text="Dashboard"
-                    path="/dashboard"
+                    text="Account"
+                    path="/account"
                     onClick={toggleSidebar}
                   />
                 </div>

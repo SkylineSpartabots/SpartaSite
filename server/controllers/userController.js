@@ -6,20 +6,34 @@ const createToken = (_id) => {
 };
 
 const authenticateUser = async (req, res) => {
-  const { username, password, type } = req.body;
-  console.log(req.body);
+  const user = req.body;
   try {
-    let user;
-    if (type == "login") {
-      user = await User.login(username, password);
+    let u;
+    if (user.type == "login") {
+      u = await User.login(user.username, user.password);
     } else {
-      user = await User.signup(username, password);
+      u = await User.signup(user);
     }
-    const token = createToken(user._id);
-    res.status(200).json({ username, token });
+    const token = createToken(u._id);
+    res.status(200).json({
+      username: user.username,
+      token,
+      isBoard: u.isBoard,
+      isAdmin: u.isAdmin,
+    });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
 };
 
-module.exports = { authenticateUser };
+const deleteUser = async (req, res) => {
+  const { username } = req.body;
+  const u = await User.findOneAndDelete({ username });
+  if (!u) {
+    res.status(404).json("No such user");
+  } else {
+    res.status(200).json(u);
+  }
+};
+
+module.exports = { authenticateUser, deleteUser };
