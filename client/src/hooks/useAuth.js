@@ -9,14 +9,14 @@ export function useAuth(type) {
 
   const navigate = useNavigate();
 
-  async function auth(username, password) {
+  async function auth(user) {
     setIsLoading(true);
     setError(null);
 
     const response = await fetch("/api/user/authenticate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username, password, type }),
+      body: JSON.stringify({ ...user, type }),
     });
     const data = await response.json();
     if (!response.ok) {

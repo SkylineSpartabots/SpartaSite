@@ -11,16 +11,17 @@ const authenticateUser = async (req, res) => {
     let u;
     if (user.type == "login") {
       u = await User.login(user.username, user.password);
+      const token = createToken(u._id);
+      res.status(200).json({
+        username: user.username,
+        token,
+        isBoard: u.isBoard,
+        isAdvisor: u.isAdvisor,
+      });
     } else {
       u = await User.signup(user);
+      res.status(200);
     }
-    const token = createToken(u._id);
-    res.status(200).json({
-      username: user.username,
-      token,
-      isBoard: u.isBoard,
-      isAdvisor: u.isAdvisor,
-    });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }

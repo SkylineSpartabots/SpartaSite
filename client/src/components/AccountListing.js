@@ -1,6 +1,19 @@
 import { useState } from "react";
+import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
 const AccountListing = ({ user }) => {
   const [open, setOpen] = useState(false);
+
+  async function deleteUser() {
+    const res = await fetch("/api/user/deleteUser", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username: user.username }),
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      console.log("error");
+    }
+  }
 
   return (
     <div className="flex flex-col">
@@ -8,10 +21,24 @@ const AccountListing = ({ user }) => {
         <h1 className="font-productsans text-xl my-auto">
           {user.lastName + ", " + user.firstName}
         </h1>
-        <div
-          className="h-full aspect-square bg-gray-300 cursor-pointer"
-          onClick={() => setOpen((prev) => !prev)}
-        ></div>
+        <div className="flex  justify-between gap-4">
+          <button
+            className="h-full w-12 bg-red-500 cursor-pointer text-white font-productsans text-sm hover:scale-110 rounded"
+            onClick={deleteUser}
+          >
+            Delete
+          </button>
+          <div
+            className="h-full aspect-square bg-gray-300 cursor-pointer flex items-center justify-center"
+            onClick={() => setOpen((prev) => !prev)}
+          >
+            {open ? (
+              <GoTriangleUp className="w-8 h-8" />
+            ) : (
+              <GoTriangleDown className="w-8 h-8" />
+            )}
+          </div>
+        </div>
       </div>
       {open && (
         <div className="bg-gray-200 w-full h-fit p-4">
@@ -21,16 +48,18 @@ const AccountListing = ({ user }) => {
               {user.grade}
             </h1>
           )}
-          <h1 className="font-productsans">
-            <span className="font-semibold">Title: </span>
-            {user.isBoard && user.title
-              ? user.title
-              : user.isBoard
-              ? "Board title not specified"
-              : user.isAdvisor
-              ? "Advisor"
-              : user.department + " Member"}
-          </h1>
+          {(user.isBoard || user.isAdvisor) && (
+            <h1 className="font-productsans">
+              <span className="font-semibold">Title: </span>
+              {user.isBoard ? user.title : "Advisor"}
+            </h1>
+          )}
+          {!user.isAdvisor && (
+            <h1 className="font-productsans">
+              <span className="font-semibold">Department: </span>
+              {user.department}
+            </h1>
+          )}
         </div>
       )}
     </div>
