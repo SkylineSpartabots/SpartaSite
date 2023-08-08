@@ -49,7 +49,7 @@ const Sidebar = () => {
       >
         <div
           className={`duration-300 flex h-screen fixed right-0 ${
-            open ? "w-[25%] min-w-[300px]" : "w-0"
+            open ? "w-[25%] " : "w-0"
           } bg-white py-[80px]`}
         >
           <div

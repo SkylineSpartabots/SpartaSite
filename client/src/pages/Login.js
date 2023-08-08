@@ -19,7 +19,7 @@ const Login = () => {
       >
         <h1 className="font-scoutcond uppercase text-7xl font-black">Login</h1>
         <div className="py-4 w-full">
-          <label className="text-lg font-productsans ">Username/Email</label>
+          <label className="text-lg font-productsans ">Username</label>
           <input
             className="px-2 w-full bg-slate-300 rounded h-8 text-black font-productsans"
             type="text"

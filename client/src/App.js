@@ -16,6 +16,8 @@ import Sidebar from "./components/Sidebar";
 import TopBar from "./components/TopBar";
 import { useAuthContext } from "./hooks/useAuthContext";
 import NotFound from "./pages/NotFound";
+import AccountManage from "./pages/AccountManage";
+import AddAccount from "./pages/AddAccount";
 
 function App() {
   const { user } = useAuthContext();
@@ -40,6 +42,26 @@ function App() {
         <Route
           path="/dashboard"
           element={!user ? <Navigate to="/login" /> : <Dashboard />}
+        />
+        <Route
+          path="/accounts"
+          element={
+            !user || !(user.isBoard || user.isAdvisor) ? (
+              <Navigate to="/login" />
+            ) : (
+              <AccountManage />
+            )
+          }
+        />
+        <Route
+          path="/addAccount"
+          element={
+            !user || !(user.isBoard || user.isAdvisor) ? (
+              <Navigate to="/login" />
+            ) : (
+              <AddAccount />
+            )
+          }
         />
         <Route path="*" element={<NotFound />} />
       </Routes>

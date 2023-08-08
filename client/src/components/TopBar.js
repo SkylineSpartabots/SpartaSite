@@ -7,7 +7,8 @@ const TopBar = () => {
         className={`font-scoutcond font-black text-4xl sm:text-5xl  ${
           location.pathname === "/about" ||
           location.pathname === "/home" ||
-          location.pathname === "/join"
+          location.pathname === "/join" ||
+          location.pathname === "/"
             ? "text-white"
             : "text-black"
         }`}

@@ -19,7 +19,7 @@ const authenticateUser = async (req, res) => {
       username: user.username,
       token,
       isBoard: u.isBoard,
-      isAdmin: u.isAdmin,
+      isAdvisor: u.isAdvisor,
     });
   } catch (error) {
     res.status(400).json({ error: error.message });

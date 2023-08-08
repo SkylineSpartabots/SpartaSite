@@ -38,6 +38,9 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  department: {
+    type: String,
+  },
 });
 
 userSchema.statics.signup = async function (user) {
