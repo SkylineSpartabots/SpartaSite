@@ -131,22 +131,22 @@ export default function Footer() {
               Learn
             </h6>
             <p className="mb-4">
-              <a href="/learn/three" className="text-gray-600">
+              <a href="/comingsoon" className="text-gray-600">
                 Onshape
               </a>
             </p>
             <p className="mb-4">
-              <a href="/learn/two" className="text-gray-600">
+              <a href="/comingsoon" className="text-gray-600">
                 Design
               </a>
             </p>
             <p className="mb-4">
-              <a href="#!" className="text-gray-600">
+              <a href="/comingsoon" className="text-gray-600">
                 Fabrication
               </a>
             </p>
             <p>
-              <a href="#!" className="text-gray-600">
+              <a href="/comingsoon" className="text-gray-600">
                 Management
               </a>
             </p>
@@ -176,12 +176,12 @@ export default function Footer() {
               </a>
             </p>
             <p className="mb-4">
-              <a href="/check" className="text-gray-600">
+              <a href="/comingsoon" className="text-gray-600">
                 Check Your Understanding
               </a>
             </p>
             <p>
-              <a href="/design" className="text-gray-600">
+              <a href="/comingsoon" className="text-gray-600">
                 Design Calculator
               </a>
             </p>
