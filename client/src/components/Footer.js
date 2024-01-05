@@ -1,4 +1,5 @@
 export default function Footer() {
+  const currentUrl = window.location.protocol + "//" + window.location.host;
   return (
     <footer className="text-center lg:text-left bg-gray-200 text-gray-600">
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
@@ -233,7 +234,7 @@ export default function Footer() {
         <span>© 2024 Copyright:</span>
         <a
           className="text-gray-600 font-semibold"
-          href="https://www.spartabots.org/"
+          href={currentUrl}
         >
           {" "}
           Skyline Spartabots // Team 2976
