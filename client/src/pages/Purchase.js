@@ -12,7 +12,9 @@ const Purchase = () => {
   };
 
   return (
+    
     <div className="h-screen pt-[135px] px-[75px] bg-gray-100 flex flex-col items-center justify-center">
+      <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
       <div className="mt-8 flex flex-col items-center gap-4">
         {/* Sign In Button */}
         <button
@@ -48,9 +50,9 @@ const Purchase = () => {
               onClick={closeIframe}
             >
               X
-            </button>
-            {/* Replace the src URL with your actual payment portal URL */}
+            </button>            
             <iframe
+              is="x-frame-bypass" 
               src="https://wa-issaquah.intouchreceipting.com/"
               title="Payment Portal"
               className="w-full h-full"
