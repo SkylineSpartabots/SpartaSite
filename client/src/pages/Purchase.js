@@ -14,7 +14,7 @@ const Purchase = () => {
   return (
     
     <div className="h-screen pt-[135px] px-[75px] bg-gray-100 flex flex-col items-center justify-center">
-      <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+      <script type="module" src="https://niutech.github.io/x-frame-bypass/x-frame-bypass.js"></script>
       <div className="mt-8 flex flex-col items-center gap-4">
         {/* Sign In Button */}
         <button
