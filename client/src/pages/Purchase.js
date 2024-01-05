@@ -14,7 +14,6 @@ const Purchase = () => {
   return (
     
     <div className="h-screen pt-[135px] px-[75px] bg-gray-100 flex flex-col items-center justify-center">
-      <script type="module" src="https://niutech.github.io/x-frame-bypass/x-frame-bypass.js"></script>
       <div className="mt-8 flex flex-col items-center gap-4">
         {/* Sign In Button */}
         <button
@@ -50,8 +49,12 @@ const Purchase = () => {
               onClick={closeIframe}
             >
               X
-            </button>            
-            <iframe is="x-frame-bypass" src="https://youtube.com"></iframe>
+            </button>
+            <iframe
+              src="https://wa-issaquah.intouchreceipting.com/"
+              title="Payment Portal"
+              className="w-full h-full"
+            ></iframe>
           </div>
         </div>
       )}
