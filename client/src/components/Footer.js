@@ -1,5 +1,6 @@
 export default function Footer() {
   const currentUrl = window.location.protocol + "//" + window.location.host;
+  const year = new Date().getFullYear();
   return (
     <footer className="text-center lg:text-left bg-gray-200 text-gray-600">
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
@@ -231,7 +232,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center p-6 bg-gray-200">
-        <span>© 2024 Copyright:</span>
+        <span>© {year} Copyright:</span>
         <a
           className="text-gray-600 font-semibold"
           href={currentUrl}
