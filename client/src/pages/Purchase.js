@@ -51,12 +51,7 @@ const Purchase = () => {
             >
               X
             </button>            
-            <iframe
-              is="x-frame-bypass" 
-              src="https://wa-issaquah.intouchreceipting.com/"
-              title="Payment Portal"
-              className="w-full h-full"
-            ></iframe>
+            <iframe is="x-frame-bypass" src="https://youtube.com"></iframe>
           </div>
         </div>
       )}
