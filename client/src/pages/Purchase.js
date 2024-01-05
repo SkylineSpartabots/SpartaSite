@@ -1,31 +1,17 @@
-import React, { useState } from "react";
-import { Helmet } from "react-helmet"
+import React from "react";
+
 const Purchase = () => {
-  const [isIframeOpen, setIframeOpen] = useState(false);
-
-  const openIframe = () => {
-    setIframeOpen(true);
-  };
-
-  const closeIframe = () => {
-    setIframeOpen(false);
+  const openIframe = (url) => {
+    window.open(url, "_blank");
   };
 
   return (
-    <>
-    <Helmet>
-        <script
-          src="https://niutech.github.io/x-frame-bypass/x-frame-bypass.js"
-          crossorigin="anonymous"
-          async
-        ></script>
-      </Helmet>
     <div className="h-screen pt-[135px] px-[75px] bg-gray-100 flex flex-col items-center justify-center">
       <div className="mt-8 flex flex-col items-center gap-4">
         {/* Sign In Button */}
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
-          onClick={openIframe}
+          onClick={() => openIframe("https://wa-issaquah.intouchreceipting.com")}
         >
           Sign Into Payment Portal
         </button>
@@ -36,9 +22,7 @@ const Purchase = () => {
         {/* Sign Up Button */}
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300"
-          onClick={() => {
-            // Handle Sign Up logic
-          }}
+          onClick={() => openIframe("https://wa-issaquah.intouchreceipting.com/signup")}
         >
           Make Payment Account
         </button>
@@ -46,28 +30,7 @@ const Purchase = () => {
           Sign up if you are attempting to purchase merch/items outside of ISD.
         </p>
       </div>
-
-      {/* Iframe */}
-      {isIframeOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center">
-          <div className="relative bg-white p-4 rounded-md">
-            <button
-              className="absolute top-0 right-0 p-2 cursor-pointer"
-              onClick={closeIframe}
-            >
-              X
-            </button>
-            <iframe
-              is="x-frame-bypass" 
-              src="https://wa-issaquah.intouchreceipting.com/"
-              title="Payment Portal"
-              className="w-full h-full"
-            ></iframe>
-          </div>
-        </div>
-      )}
     </div>
-    </>
   );
 };
 
