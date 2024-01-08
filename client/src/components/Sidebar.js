@@ -60,6 +60,7 @@ const Sidebar = () => {
             <SidebarTab text="Home" path="/" onClick={toggleSidebar} />
             <SidebarTab text="About" path="/about" onClick={toggleSidebar} />
             <SidebarTab text="Join" path="/join" onClick={toggleSidebar} />
+            <SidebarTab text="Purchase" path="/purchase" onClick={toggleSidebar} />
             {!user ? (
               <SidebarTab text="Login" path="/login" onClick={toggleSidebar} />
             ) : (

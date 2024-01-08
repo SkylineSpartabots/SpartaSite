@@ -18,7 +18,8 @@ import { useAuthContext } from "./hooks/useAuthContext";
 import NotFound from "./pages/NotFound";
 import AccountManage from "./pages/AccountManage";
 import AddAccount from "./pages/AddAccount";
-
+import ComingSoon from "./pages/ComingSoon";
+import Purchase from "./pages/Purchase";
 function App() {
   const { user } = useAuthContext();
   return (
@@ -34,6 +35,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/join" element={<Join />} />
+        <Route path="/comingsoon" element={<ComingSoon />} />
+        <Route path="/purchase" element={<Purchase />} />
         <Route
           path="/login"
           element={!user ? <Login /> : <Navigate to="/dashboard" />}

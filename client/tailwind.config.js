@@ -12,10 +12,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        frcpink: "#fab4ff",
-        frcyellow: "#ffca5f",
-        frcpurple: "#fa5fff",
-        frcblue: "#0099ff",
+        frcpurple: "#5200cb",
+        frcpink: "#d06ba7",
+        frclilac: "#5257ff",
+        frcred: "#f8435c",
         redditorange: "#FF4604",
         transparent: "transparent",
         current: "currentColor",
