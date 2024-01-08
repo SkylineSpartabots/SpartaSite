@@ -13,7 +13,6 @@ const TopBar = () => {
             : "text-black"
         }`}
       >
-        SPARTABOTS 2976
       </h1>
     </div>
   );
