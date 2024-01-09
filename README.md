@@ -1,4 +1,9 @@
- # Contributors
+# Spartabots Website (SpartaSite)
+This repo holds all the code for our <a href="https://spartasite.gam3rr.me" target="_blank" title="Spartasite">
+  <p1>SpartaBots website</p1>
+</a>
+
+# Contributors
 
 <a href="https://github.com/VincentShao32" target="_blank" title="VincentShao32">
   <img src="https://github.com/VincentShao32.png?size=40" height="40" width="40" alt="VincentShao32" />
