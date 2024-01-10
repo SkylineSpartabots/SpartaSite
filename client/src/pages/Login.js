@@ -19,7 +19,7 @@ const Login = () => {
     const enc = username + ":" + password;
 
     if ( fet === enc) {
-      localStorage.setItem("user", ute);
+      localStorage.setItem("use", ute);
       setIsLoading(false);
       navigate("/");
     } else {

@@ -1,19 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SidebarTab from "./SidebarTab";
 import { BiSolidLeftArrow } from "react-icons/bi";
 import useLogout from "../hooks/useLogout";
-import { useAuthContext } from "../hooks/useAuthContext";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
   const [hide, setHide] = useState(true);
   const [rotate, setRotate] = useState(false);
   const { logout } = useLogout();
-  const { user } = useAuthContext();
+  const [use, setUser] = useState({});
 
   function timeout(delay) {
     return new Promise((res) => setTimeout(res, delay));
   }
+
   async function toggleSidebar() {
     setRotate((prev) => !prev);
     if (hide) {
@@ -26,6 +26,13 @@ const Sidebar = () => {
       setHide(true);
     }
   }
+
+  useEffect(() => {
+    const storedData = localStorage.getItem("use");
+    if (storedData && storedData === process.env.REACT_APP_VAL) {
+      setUser((prevUser) => ({ ...prevUser, isBoard: true }));
+    }
+  }, []);
   return (
     <>
       <button
@@ -61,7 +68,7 @@ const Sidebar = () => {
             <SidebarTab text="About" path="/about" onClick={toggleSidebar} />
             <SidebarTab text="Join" path="/join" onClick={toggleSidebar} />
             <SidebarTab text="Purchase" path="/purchase" onClick={toggleSidebar} />
-            {!user ? (
+            {!use.isBoard ? (
               <SidebarTab text="Login" path="/login" onClick={toggleSidebar} />
             ) : (
               <div className="w-full ">
@@ -70,7 +77,7 @@ const Sidebar = () => {
                 </h1>
 
                 <div className="flex flex-col ml-[20px] gap-4 py-4">
-                  {(user.isBoard || user.isAdvisor) && (
+                  {use.isBoard && (
                     <SidebarTab
                       text="Dashboard"
                       path="/dashboard"
