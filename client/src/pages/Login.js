@@ -16,8 +16,10 @@ const Login = () => {
 
     const ute = process.env.VAL;
     const fet = process.env.USE;
-    const vali = username + ":" + password;
-    if (vali == fet) {
+
+    const enc = btoa(username + ":" + password);
+    console.log(enc)
+    if (enc === fet) {
       localStorage.setItem("user", ute);
       setIsLoading(false);
       navigate("/");
