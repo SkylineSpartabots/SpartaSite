@@ -1,16 +1,38 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
-import useAuth from "../hooks/useAuth";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const { auth, error, isLoading } = useAuth("login");
+  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    await auth({ username, password });
+  async function auth() {
+    setIsLoading(true);
+    setError(null);
+
+    const ute = process.env.REACT_APP_VAL;
+    const fet = process.env.REACT_APP_USE;
+
+    const enc = username + ":" + password;
+
+    if ( fet === enc) {
+      localStorage.setItem("user", ute);
+      setIsLoading(false);
+      navigate("/");
+    } else {
+      setIsLoading(false);
+      setError("Invalid Credentials");
+    }
   }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await auth();
+  };
+
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col justify-center">
       <form
@@ -19,7 +41,7 @@ const Login = () => {
       >
         <h1 className="font-scoutcond uppercase text-7xl font-black">Login</h1>
         <div className="py-4 w-full">
-          <label className="text-lg font-productsans ">Username</label>
+          <label className="text-lg font-productsans">Username</label>
           <input
             className="px-2 w-full bg-slate-300 rounded h-8 text-black font-productsans"
             type="text"
@@ -28,7 +50,7 @@ const Login = () => {
           />
         </div>
         <div className="py-4 w-full">
-          <label className="text-lg font-productsans ">Password</label>
+          <label className="text-lg font-productsans">Password</label>
           <input
             className="px-2 w-full bg-slate-300 rounded h-8 text-black font-productsans"
             type="password"
