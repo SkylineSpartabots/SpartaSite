@@ -1,40 +1,16 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { useAuthContext } from "./useAuthContext";
 import Button from "../components/Button";
+import useAuth from "../hooks/useAuth";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const { dispatch } = useAuthContext();
-  const navigate = useNavigate();
+  const { auth, error, isLoading } = useAuth("login");
 
-  async function auth() {
-    setIsLoading(true);
-    setError(null);
-
-    const ute = process.env.VAL;
-    const fet = process.env.USE;
-
-    const enc = btoa(username + ":" + password);
-
-    if (enc === fet) {
-      localStorage.setItem("user", ute);
-      setIsLoading(false);
-      navigate("/");
-    } else {
-      setIsLoading(false);
-      setError("Invalid credentials");
-    }
-  }
-
-  const handleSubmit = async (e) => {
+  async function handleSubmit(e) {
     e.preventDefault();
-    await auth();
-  };
-
+    await auth(username, password);
+  }
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col justify-center">
       <form
@@ -43,7 +19,7 @@ const Login = () => {
       >
         <h1 className="font-scoutcond uppercase text-7xl font-black">Login</h1>
         <div className="py-4 w-full">
-          <label className="text-lg font-productsans">Username</label>
+          <label className="text-lg font-productsans ">Username</label>
           <input
             className="px-2 w-full bg-slate-300 rounded h-8 text-black font-productsans"
             type="text"
@@ -52,7 +28,7 @@ const Login = () => {
           />
         </div>
         <div className="py-4 w-full">
-          <label className="text-lg font-productsans">Password</label>
+          <label className="text-lg font-productsans ">Password</label>
           <input
             className="px-2 w-full bg-slate-300 rounded h-8 text-black font-productsans"
             type="password"
