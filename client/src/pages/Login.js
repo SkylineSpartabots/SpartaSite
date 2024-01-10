@@ -17,7 +17,7 @@ const Login = () => {
     const fet = process.env.USE;
 
     const enc = btoa(username + ":" + password);
-
+    console.log(enc)
     if (enc === fet) {
       localStorage.setItem("user", ute);
       setIsLoading(false);
