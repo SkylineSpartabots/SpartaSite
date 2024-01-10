@@ -9,7 +9,7 @@ const Login = () => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    await auth({ username, password });
+    await auth(username, password);
   }
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col justify-center">
