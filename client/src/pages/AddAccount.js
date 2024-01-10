@@ -1,4 +1,5 @@
-/*import Button from "../components/Button";
+import Button from "../components/Button";
+import useAuth from "../hooks/useAuth";
 import { useState } from "react";
 const AddAccount = () => {
   const [username, setUsername] = useState("");
@@ -145,4 +146,3 @@ const AddAccount = () => {
 };
 
 export default AddAccount;
-*/ 
