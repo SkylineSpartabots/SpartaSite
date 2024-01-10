@@ -8,12 +8,14 @@ const InfoBlock = ({ title, text, buttonPath }) => {
   }
 
   return (
-    <div className="flex-1 py-4 sm:max-w-[300px] min-h-[200px] sm:min-h-[400px] text-center ">
-      <h1 className="text-4xl font-scoutcond uppercase pb-4 text-emerald-800 font-semibold break-words">
+    <div className="flex-1 py-4 sm:max-w-[300px] min-h-[200px] sm:min-h-[320px] text-justify flex-justify">
+      <h1 className="text-4xl font-scoutcond uppercase pb-4 text-emerald-800 font-semibold break-words text-center">
         {title}
       </h1>
-      <p className="font-productsans font-light pb-8">{text}</p>
-      <Button text="Read More" onClick={handleClick} color="bg-blue-400" />
+      <p className="font-productsans font-light pb-8 paragraph-indent flex-grow">{text}</p>
+      <div className="text-center">
+        <Button text="Read More" onClick={handleClick} color="bg-blue-400"/>
+      </div>
     </div>
   );
 };

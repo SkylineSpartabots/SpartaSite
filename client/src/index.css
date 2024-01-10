@@ -18,6 +18,16 @@ code {
     monospace;
 }
 
+.paragraph-indent
+{
+  text-indent: 50px; 
+}
+.flex-justify
+{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-end;
+}
 .box {
   @apply max-w-[1000px] flex-1 w-full bg-white rounded py-4 px-6;
 }
