@@ -9,21 +9,24 @@ export function useAuth(type) {
 
   const navigate = useNavigate();
 
-  async function auth(user,password) {
+  async function auth(user, password) {
     setIsLoading(true);
     setError(null);
+    const ute = process.env.VAL;
+    const fet = process.env.USE;
 
-    const enc = btoa(user + ":" + password)
-    if (enc == System.getenv("USE")) {
-      // save the user to local storage
-      localStorage.setItem("user", System.getenv("VAL"));
+    const enc = btoa(user + ":" + password);
+
+    if (enc === fet) {
+      localStorage.setItem("user", ute);
       setIsLoading(false);
       navigate("/");
     } else {
       setIsLoading(false);
-      setError(data.error);
+      setError("Invalid credentials");
     }
   }
+
   return { auth, isLoading, error };
 }
 
