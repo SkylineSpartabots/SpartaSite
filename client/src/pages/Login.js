@@ -21,7 +21,7 @@ const Login = () => {
     if ( fet === enc) {
       localStorage.setItem("use", ute);
       setIsLoading(false);
-      navigate("/");
+      window.location.href = "/";
     } else {
       setIsLoading(false);
       setError("Invalid Credentials");

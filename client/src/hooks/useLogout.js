@@ -9,7 +9,8 @@ export function useLogout() {
     dispatch({ type: "LOGOUT" });
     // remove user from storage
     localStorage.removeItem("use");
-    navigate("/");
+    window.location.href = "/";
+
   }
   return { logout };
 }
