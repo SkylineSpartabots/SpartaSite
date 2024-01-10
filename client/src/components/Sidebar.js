@@ -2,7 +2,6 @@ import { useState } from "react";
 import SidebarTab from "./SidebarTab";
 import { BiSolidLeftArrow } from "react-icons/bi";
 import useLogout from "../hooks/useLogout";
-import { useAuthContext } from "../hooks/useAuthContext";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
