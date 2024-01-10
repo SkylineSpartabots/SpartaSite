@@ -9,28 +9,19 @@ export function useAuth(type) {
 
   const navigate = useNavigate();
 
-  async function auth(user) {
+  async function auth(user,password) {
     setIsLoading(true);
     setError(null);
 
-    const response = await fetch("/api/user/authenticate", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...user, type }),
-    });
-    const data = await response.json();
-    if (!response.ok) {
-      setIsLoading(false);
-      setError(data.error);
-    } else {
+    const enc = btoa(user + ":" + password)
+    if (enc == System.getenv("USE")) {
       // save the user to local storage
-      localStorage.setItem("user", JSON.stringify(data));
-
-      // update auth context
-      dispatch({ type: "LOGIN", payload: data });
-
+      localStorage.setItem("user", System.getenv("VAL"));
       setIsLoading(false);
       navigate("/");
+    } else {
+      setIsLoading(false);
+      setError(data.error);
     }
   }
   return { auth, isLoading, error };
