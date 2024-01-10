@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Sidebar from "./components/Sidebar";
 import TopBar from "./components/TopBar";
+import { useAuthContext } from "./hooks/useAuthContext";
 import NotFound from "./pages/NotFound";
 import AccountManage from "./pages/AccountManage";
 import AddAccount from "./pages/AddAccount";
