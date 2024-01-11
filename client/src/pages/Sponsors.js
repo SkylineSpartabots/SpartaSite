@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import HeaderBlock from "../components/HeaderBlock";
 import MicrosoftLogo from "../graphics/svgs/Microsoft_Logo.svg";
 import BoeingLogo from "../graphics/svgs/Boeing_Logo.svg";
-import TMobileLogo from "../graphics/svgs/t-mobile_logo.jpg";
+import TMobileLogo from "../graphics/images/t-mobile_logo.jpg";
 import FirstTechLogo from "../graphics/svgs/First_Tech_Logo.svg";
 import GeneHaasLogo from "../graphics/svgs/Gene_Haas_Logo.svg";
 import ISFLogo from "../graphics/svgs/ISF_Logo.svg";
