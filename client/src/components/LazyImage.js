@@ -23,7 +23,7 @@ const LazyImage = ({ img, style }) => {
   }, []);
 
   return visible ? (
-    <img src={img} alt="" className={style} />
+    <img src={img} alt="Image" className={style} />
   ) : (
     <img ref={ref} style={{ backgroundColor: "gray" }} className={style} />
   );

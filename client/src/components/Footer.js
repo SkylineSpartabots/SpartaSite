@@ -21,6 +21,7 @@ export default function Footer() {
               data-icon="twitter"
               className="svg-inline--fa fa-twitter w-4"
               role="img"
+
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >

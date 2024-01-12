@@ -55,7 +55,7 @@ const Sponsors = () => {
             <img
               src={logo}
               className="flex-initial max-h-[60px] sm:max-h-[125px] "
-              alt=""
+              alt="Sponsor"
               key={index}
             />
           ))}

@@ -7,7 +7,7 @@ const SponsorBlock = ({ amount, image}) => {
       <img
         src={image}
         className="w-full max-w-[500px] h-full"
-        alt="" 
+        alt="Sponsor" 
       />
     </div>
   );
