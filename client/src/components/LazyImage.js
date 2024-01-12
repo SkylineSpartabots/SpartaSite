@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const LazyImage = ({ img, style }) => {
+const LazyImage = ({ img, alt, style }) => {
   const ref = useRef();
   const [visible, setVisible] = useState(false);
 
@@ -23,7 +23,7 @@ const LazyImage = ({ img, style }) => {
   }, []);
 
   return visible ? (
-    <img src={img} alt="Image" className={style} />
+    <img src={img} alt={alt} className={style} /> 
   ) : (
     <img ref={ref} style={{ backgroundColor: "gray" }} className={style} />
   );
