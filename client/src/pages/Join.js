@@ -1,5 +1,5 @@
 import Splash from "../components/Splash";
-import teamNumberImage from "../graphics/images/TeamNumber-min.avif";
+import teamNumberImage from "../graphics/images/TeamNumber-min.jpg";
 import { useEffect } from "react";
 
 const Join = () => {
