@@ -83,7 +83,7 @@ export default function Footer() {
       <div className="mx-6 py-10 text-center md:text-left">
         <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="">
-            <h6
+            <h1
               className="
                     uppercase
                     font-semibold
@@ -94,37 +94,8 @@ export default function Footer() {
                     md:justify-start
                 "
             >
-              {/* <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="fas"
-                data-icon="cubes"
-                className="svg-inline--fa fa-cubes w-8 mr-3"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 2049.08 1338.67"
-              >
-                <defs>
-                  <linearGradient
-                    id="b"
-                    x1="997.34"
-                    y1="1080"
-                    x2="3046.42"
-                    y2="1080"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#ffca5f" />
-                    <stop offset="1" stop-color="#fa5fff" />
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M1151.24,695.26H997.34l37.95-274H1505.4L1319.89,1740.9H1003.67Zm375.23,630.34,71.67-512.28c27.41-198.17,113.84-402.65,440.61-402.65,409,0,432.16,223.46,406.87,417.41l-73.79,516.49c-27.4,198.17-128.6,404.76-444.82,404.76C1539.11,1749.33,1499.06,1523.76,1526.47,1325.6Zm527,25.3,73.79-531.26c14.75-92.75-4.22-134.92-88.54-134.92S1927,729,1914.37,821.75l-73.79,527c-12.65,94.87,6.32,134.92,86.43,134.92C2002.91,1483.71,2040.85,1443.66,2053.5,1350.9Zm638.75-655.64H2538.36l37.94-274h470.12L2860.9,1740.9H2544.68Z"
-                  transform="translate(-997.34 -410.67)"
-                  fill="url(#b)"
-                />
-              </svg> */}
               Spartasite by the Spartabots
-            </h6>
+            </h1>
             <p>
               The Spartasite is the online home of the Spartabots. Here, we
               share our accomplishments, goals, and values. Team 2976 is always

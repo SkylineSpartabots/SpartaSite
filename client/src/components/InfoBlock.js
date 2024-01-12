@@ -14,7 +14,7 @@ const InfoBlock = ({ title, text, buttonPath }) => {
       </h1>
       <p className="font-productsans font-light pb-8 flex-grow">{text}</p>
       <div className="text-center">
-        <Button text="Read More" onClick={handleClick} color="bg-blue-400"/>
+        <Button text="Read More" onClick={handleClick} color="bg-blue-900"/>
       </div>
     </div>
   );
