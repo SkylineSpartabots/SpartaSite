@@ -38,7 +38,7 @@ const Sidebar = () => {
       <button
         className="right-10 top-8 w-10 bg-blue-400 h-10 z-30 fixed rounded-full "
         onClick={toggleSidebar}
-        name="SidebarOPEN"
+        aria-label="Toggle Sidebar"
       >
         <BiSolidLeftArrow
           className={`absolute duration-300 ${
@@ -94,11 +94,13 @@ const Sidebar = () => {
                 </div>
                 <button
                   className="bg-blue-400 px-4 py-2 font-productsans text-white text-md rounded w-fit"
+                  id="but"
                   onClick={() => {
                     logout();
                     toggleSidebar();
                   }}
                 >
+                  
                   Log Out
                 </button>
               </div>
