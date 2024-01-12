@@ -13,6 +13,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             className="mr-6 text-gray-600"
+            aria-label="Twitter Link"
           >
             <svg
               aria-hidden="true"
@@ -36,6 +37,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             className="mr-6 text-gray-600"
+            aria-label="Youtube Link"
           >
             <svg
               aria-hidden="true"
@@ -57,6 +59,7 @@ export default function Footer() {
             href="https://www.instagram.com/spartabots2976"
             target="_blank"
             rel="noreferrer"
+            aria-label="Instagram Link"
             className="mr-6 text-gray-600"
           >
             <svg

@@ -38,6 +38,7 @@ const Sidebar = () => {
       <button
         className="right-10 top-8 w-10 bg-blue-400 h-10 z-30 fixed rounded-full "
         onClick={toggleSidebar}
+        name="SidebarOPEN"
       >
         <BiSolidLeftArrow
           className={`absolute duration-300 ${
