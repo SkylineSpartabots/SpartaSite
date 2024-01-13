@@ -18,7 +18,7 @@ This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target=
     - Once you have the env file name it ```.env``` and move it to the "server" folder ```mv .env SpartaSite/server/.env```
 - Run the build
   - For a development build, use the following commands:
-    - ```npm start``` | This will start the server but hold up terminal so you cannot run other commands // serve -s build --config ../serve.json
+    - ```npm start``` | This will start the server but hold up terminal so you cannot run other commands
     - ```nohup npm start``` | This will run the server in the background
   - For a production build, run these commands instead:
     - To prep and compile the html, use ```npm run build```
