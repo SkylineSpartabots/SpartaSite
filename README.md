@@ -21,7 +21,7 @@ This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target=
     - ```npm start``` | This will start the server but hold up terminal so you cannot run other commands
     - ```nohup npm start``` | This will run the server in the background
   - For a production build, run these commands instead:
-    - To prep and compile the html, use ```npm run build```
+    - To prep and compile everything, use ```npm run build```
     - If you do not have serve installed globally, use ```npm install -g serve```
     - ```serve -s build --config ../serve.json``` | This will start the server and hold up terminal so you cannot run other commands
     - ```nohup serve -s build --config ../serve.json``` | This will run the server in the background
