@@ -17,8 +17,14 @@ This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target=
     - The env file was removed for privacy reasons, the current holder(s) of the new file are <a href="https://github.com/Gam3rrXD" target="_blank" title="Gam3rr"> <img src="https://github.com/Gam3rrXD.png?size=20" height="20" width="20" alt="Gam3rrXD" /></a> or <a href="https://github.com/VincentShao32" target="_blank" title="VincentShao32"> <img src="https://github.com/VincentShao32.png?size=20" height="20" width="20" alt="Gam3rrXD" /> </a>
     - Once you have the env file name it ```.env``` and move it to the "server" folder ```mv .env SpartaSite/server/.env```
 - Run the build
-  - ```npm start``` | This will start the server but hold up terminal so you cannot run other commands
-  - ```nohup npm start``` | This will run it in the background with no terminal hold up
+  - For a development build, use the following commands:
+    - ```npm start``` | This will start the server but hold up terminal so you cannot run other commands // serve -s build --config ../serve.json
+    - ```nohup npm start``` | This will run the server in the background
+  - For a production build, run these commands instead:
+    - To prep and compile the html, use ```npm run build```
+    - If you do not have serve installed globally, use ```npm install -g serve```
+    - ```serve -s build --config ../serve.json``` | This will start the server and hold up terminal so you cannot run other commands
+    - ```nohup serve -s build --config ../serve.json``` | This will run the server in the background
 - Setup the URL
     - If you are rehosting the cloudflare configuration must be changed, or else your site will only work on the servers IP, to change cloudflare configuration ask the current holder
     - Current Holder: <a href="https://github.com/Gam3rrXD" target="_blank" title="Gam3rr"> <img src="https://github.com/Gam3rrXD.png?size=20" height="20" width="20" alt="Gam3rrXD" />
