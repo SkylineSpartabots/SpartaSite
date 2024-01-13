@@ -10,7 +10,7 @@ This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target=
 - Clone the repository
     - ```git clone https://github.com/SkylineSpartabots/SpartaSite```
 - Change directory into the "client" folder
-  - ```cd SpartSite/client```
+  - ```cd SpartaSite/client```
 - Install all the NPM packages
   - ```npm i```
 - Obtain the env file
