@@ -25,7 +25,8 @@ const LazyImage = ({ img, alt, style }) => {
   return visible ? (
     <img src={img} alt={alt} className={style} /> 
   ) : (
-    <img ref={ref} style={{ backgroundColor: "gray" }} className={style} />
+    // An empty alt tag is required for accessibility
+    <img ref={ref} alt="" style={{ backgroundColor: "gray" }} className={style} />
   );
 };
 

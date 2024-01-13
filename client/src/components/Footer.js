@@ -104,9 +104,9 @@ export default function Footer() {
             </p>
           </div>
           <div className="">
-            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+            <h2 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Learn
-            </h6>
+            </h2>
             <p className="mb-4">
               <a href="/comingsoon" className="text-gray-600">
                 Onshape
@@ -129,9 +129,9 @@ export default function Footer() {
             </p>
           </div>
           <div className="">
-            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+            <h2 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Useful links
-            </h6>
+            </h2>
             <p className="mb-4">
               <a
                 href="https://learn.onshape.com/"
@@ -161,12 +161,12 @@ export default function Footer() {
               <a href="/comingsoon" className="text-gray-600">
                 Design Calculator
               </a>
-            </p>
+            </p>  
           </div>
           <div className="">
-            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+            <h2 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Contact
-            </h6>
+            </h2>
             <p className="flex items-center justify-center md:justify-start mb-4">
               <svg
                 aria-hidden="true"

@@ -1,25 +1,25 @@
 import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
   Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
 } from "react-router-dom";
-import Home from "./pages/Home";
-import Sponsors from "./pages/Sponsors";
-import FontDemo from "./pages/FontDemo";
-import About from "./pages/About";
 import Footer from "./components/Footer";
-import Join from "./pages/Join";
-import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
 import Sidebar from "./components/Sidebar";
 import TopBar from "./components/TopBar";
 import { useAuthContext } from "./hooks/useAuthContext";
-import NotFound from "./pages/NotFound";
+import About from "./pages/About";
 import AccountManage from "./pages/AccountManage";
 import AddAccount from "./pages/AddAccount";
 import ComingSoon from "./pages/ComingSoon";
+import Dashboard from "./pages/Dashboard";
+import FontDemo from "./pages/FontDemo";
+import Home from "./pages/Home";
+import Join from "./pages/Join";
+import Login from "./pages/Login";
+import NotFound from "./pages/NotFound";
 import Purchase from "./pages/Purchase";
+import Sponsors from "./pages/Sponsors";
 function App() {
   const { user } = useAuthContext();
   return (

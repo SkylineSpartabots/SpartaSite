@@ -1,11 +1,11 @@
-import Card from "../components/Card.js";
-import Splash from "../components/Splash.js";
-import InfoBlock from "../components/InfoBlock.js";
 import { useEffect } from "react";
-import intakeImage from "../graphics/images/Intake-min.jpg";
-import groupImage from "../graphics/images/GroupPhoto-min.jpg";
-import competitionImage from "../graphics/images/Competition-min.jpg";
+import Card from "../components/Card.js";
+import InfoBlock from "../components/InfoBlock.js";
+import Splash from "../components/Splash.js";
 import botImage from "../graphics/images/Bot.jpg";
+import competitionImage from "../graphics/images/Competition-min.jpg";
+import groupImage from "../graphics/images/GroupPhoto-min.jpg";
+import intakeImage from "../graphics/images/Intake-min.jpg";
 
 const Home = () => {
   useEffect(() => {
@@ -20,16 +20,19 @@ const Home = () => {
           title="ABOUT US"
           text="Created in 2008, our team participates in the FIRST Robotics Competition as team 2976. We are a high school club operating at Skyline High School, Sammamish, WA."
           image={groupImage}
+          alt="Group photo of the Spartabots team"
         />
         <Card
           title="WHAT IS FIRST ROBOTICS?"
           text="The FIRST Robotics Competition is an international high school robotics competition operated by FIRST. The game of the competition changes each year to keep the excitement fresh."
           image={competitionImage}
+          alt="Wide shot of the FIRST Robotics Competition"
         />
         <Card
           title="WHY SHOULD I JOIN?"
           text="Being part of a FIRST robotics team is fun! It doesn't matter whether you have experience with robotics or not, you'll gain amazing experiences and learn valuable skills that you can carry to college and beyond."
           image={botImage}
+          alt="Picture of the CHRONOS bot"
         />
         <div className="hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bg-white rounded gap-4">
           <InfoBlock

@@ -10,7 +10,7 @@ This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target=
 - Clone the repository
     - ```git clone https://github.com/SkylineSpartabots/SpartaSite```
 - Change directory into the "client" folder
-  - ```cd SpartSite/client```
+  - ```cd SpartaSite/client```
 - Install all the NPM packages
   - ```npm i```
 - Obtain the env file
@@ -33,3 +33,4 @@ This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target=
 <a href="https://github.com/TheCubeHamster" target="_blank" title="TheCubeHamster"><img src="https://github.com/TheCubeHamster.png?size=40" height="40" width="40" alt="TheCubeHamster"/></a>
 <a href="https://github.com/LS-x21" target="_blank" title="LS-x21"><img src="https://github.com/LS-x21.png?size=40" height="40" width="40" alt="LS-x21"/></a>
 <a href="https://github.com/solar138" target="_blank" title="solar138"><img src="https://github.com/solar138.png?size=40" height="40" width="40" alt="solar138"/></a>
+<a href="https://github.com/Sawbez" target="_blank" title="Sawbez"><img src="https://github.com/Sawbez.png?size=40" height="40" width="40" alt="Sawbez"/></a>
