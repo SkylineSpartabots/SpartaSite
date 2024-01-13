@@ -12,7 +12,7 @@ app.use(express.json());
 
 //next function tells the program to continue
 //prints out the path and the type of request to the console
-app.use((req, res, next) => {
+app.use((req, _res, next) => {
   console.log(req.path, req.method);
   next();
 });
