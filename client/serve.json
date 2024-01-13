@@ -1,0 +1,23 @@
+{
+  "directoryListing": false,
+  "headers": [
+    {
+      "source": "*.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "**/*.@(js|json|css|map|png|jpg|webp|avif|jpeg|gif|svg|ico|txt|woff|woff2)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=86400"
+        }
+      ]
+    }
+  ]
+}
