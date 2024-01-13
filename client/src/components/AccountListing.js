@@ -9,9 +9,8 @@ const AccountListing = ({ user }) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username: user.username }),
     });
-    const data = await res.json();
     if (!res.ok) {
-      console.log("error");
+      console.log("Error in requesting deleteUser");
     }
   }
 
@@ -42,7 +41,7 @@ const AccountListing = ({ user }) => {
       </div>
       {open && (
         <div className="bg-gray-200 w-full h-fit p-4">
-          {user.grade != 0 && (
+          {user.grade !== 0 && (
             <h1 className="font-productsans">
               <span className="font-semibold">Grade: </span>
               {user.grade}
