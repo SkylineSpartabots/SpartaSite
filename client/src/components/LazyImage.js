@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const LazyImage = ({ img, alt, style }) => {
+const LazyImage = ({ img, alt, className }) => {
   const ref = useRef();
   const [visible, setVisible] = useState(false);
 
@@ -23,10 +23,10 @@ const LazyImage = ({ img, alt, style }) => {
   }, []);
 
   return visible ? (
-    <img src={img} alt={alt} className={style} /> 
+    <img src={img} alt={alt} className={className} /> 
   ) : (
     // An empty alt tag is required for accessibility
-    <img ref={ref} alt="" style={{ backgroundColor: "gray" }} className={style} />
+    <img ref={ref} alt="" style={{ backgroundColor: "gray" }} className={className} />
   );
 };
 

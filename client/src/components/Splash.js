@@ -10,7 +10,7 @@ const Splash = ({ title, subtitle, image }) => {
       <LazyImage
         img={image}
         alt="Splash"
-        style="object-cover h-full w-full absolute mix-blend-overlay"
+        className="object-cover h-full w-full absolute mix-blend-overlay"
       />
       <h1 className="text-7xl sm:text-9xl text-center font-scoutcond italic font-extrabold text-transparent bg-clip-text text-white px-4 z-10">
         {title}
