@@ -92,7 +92,7 @@ const About = () => {
             Skyline Robotics couldn't exist without the support of our sponsors,
             who help us in a variety of ways from granting money to donating
             parts. If you're interested in helping to sponsor our club, please
-            send us an email!
+            <a href="mailto:skyline.spartabots@gmail.com"> send us an email</a>!
           </p>
           <div className="pt-8 pb-4 text-center">
             <Button text="Sponsors" onClick={handleClick} color="bg-blue-900"/>
