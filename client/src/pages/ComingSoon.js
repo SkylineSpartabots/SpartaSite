@@ -1,5 +1,5 @@
 import React from "react";
-import thumbsUpSmiley from "../graphics/images/thumbs-up-smiley-36.png";
+import thumbsUpSmiley from "../graphics/images/thumbs-up-smiley-36.webp";
 
 const ComingSoon = () => {
   return (

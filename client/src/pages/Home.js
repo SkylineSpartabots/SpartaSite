@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import Card from "../components/Card.js";
 import InfoBlock from "../components/InfoBlock.js";
 import Splash from "../components/Splash.js";
-import botImage from "../graphics/images/Bot.jpg";
-import competitionImage from "../graphics/images/Competition-min.jpg";
-import groupImage from "../graphics/images/GroupPhoto-min.jpg";
-import intakeImage from "../graphics/images/Intake-min.jpg";
+import botImage from "../graphics/images/Bot.webp";
+import competitionImage from "../graphics/images/Competition-min.webp";
+import groupImage from "../graphics/images/GroupPhoto-min.webp";
+import intakeImage from "../graphics/images/Intake-min.webp";
 
 const Home = () => {
   useEffect(() => {

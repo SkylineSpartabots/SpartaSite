@@ -1,21 +1,21 @@
 import { useEffect } from "react";
 import HeaderBlock from "../components/HeaderBlock";
-import MicrosoftLogo from "../graphics/svgs/Microsoft_Logo.svg";
-import BoeingLogo from "../graphics/svgs/Boeing_Logo.svg";
-import TMobileLogo from "../graphics/images/t-mobile_logo.jpg";
-import FirstTechLogo from "../graphics/svgs/First_Tech_Logo.svg";
-import GeneHaasLogo from "../graphics/svgs/Gene_Haas_Logo.svg";
-import ISFLogo from "../graphics/svgs/ISF_Logo.svg";
-import LowesLogo from "../graphics/svgs/Lowes_Logo.svg";
-import OdeszaLogo from "../graphics/svgs/ODESZA_Logo.svg";
-import FirstWALogo from "../graphics/images/firstwalogo.png";
-import HCLLogo from "../graphics/images/HCL.png";
-import WashingtonBusinessWeekLogo from "../graphics/images/WashingtonBusinessWeek.png";
-import TraderJoeLogo from "../graphics/images/TraderJoes.png";
-import LegendaryDonutsLogo from "../graphics/images/LegendaryDonuts.png";
-import CrumblLogo from "../graphics/images/Crumbl.png";
-import QFCLogo from "../graphics/images/QFC.png";
-import FirstTechBWLogo from "../graphics/svgs/FirstTechBW.svg";
+import MicrosoftLogo from "../graphics/images/Microsoft_Logo.webp";
+import BoeingLogo from "../graphics/images/Boeing_Logo.webp";
+import TMobileLogo from "../graphics/images/t-mobile_logo.webp";
+import FirstTechLogo from "../graphics/images/First_Tech_Logo.webp";
+import GeneHaasLogo from "../graphics/images/Gene_Haas_Logo.webp";
+import ISFLogo from "../graphics/images/ISF_Logo.webp";
+import LowesLogo from "../graphics/images/Lowes_Logo.webp";
+import OdeszaLogo from "../graphics/images/ODESZA_Logo.webp";
+import FirstWALogo from "../graphics/images/firstwalogo.webp";
+import HCLLogo from "../graphics/images/HCL.webp";
+import WashingtonBusinessWeekLogo from "../graphics/images/WashingtonBusinessWeek.webp";
+import TraderJoeLogo from "../graphics/images/TraderJoes.webp";
+import LegendaryDonutsLogo from "../graphics/images/LegendaryDonuts.webp";
+import CrumblLogo from "../graphics/images/Crumbl.webp";
+import QFCLogo from "../graphics/images/QFC.webp";
+import FirstTechBWLogo from "../graphics/images/FirstTechBW.webp";
 
 const Sponsors = () => {
   // this function scrolls to the top of the page when first navigated to
