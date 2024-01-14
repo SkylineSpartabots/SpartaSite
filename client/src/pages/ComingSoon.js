@@ -13,7 +13,7 @@ const ComingSoon = () => {
         Coming Soon!
       </h1>
       <p className="font-productsans text-xl text-center">
-        This page in still under construction 🚧!
+        This page is still under construction 🚧!
       </p>
     </div>
   );
