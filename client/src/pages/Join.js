@@ -17,7 +17,7 @@ const Join = () => {
       <div className="flex flex-col bg-gray-100 p-8 gap-8 items-center">
         <div className="box">
           <h1 className="title">Students</h1>
-          <p className="font-productsans">
+          <p className="font-productsans text-justify">
             Students are provided with a unique opportunity to develop
             self-confidence, creative thinking, leadership, collaboration and
             teamwork. Robotics provides you with real-world experiences and
@@ -26,7 +26,7 @@ const Join = () => {
         </div>
         <div className="box">
           <h1 className="title">Why Join?</h1>
-          <p className="font-productsans">
+          <p className="font-productsans text-justify">
             Being part of a FIRST robotics team is fun! You'll gain experiences
             with many other students with similar interests.
             <br />
@@ -35,13 +35,13 @@ const Join = () => {
             you'll gain amazing experiences because your critical thinking, time
             management and reasoning are tested in a time-critical, team-based
             environment. You'll be able to carry these skills to college, and
-            robotics club also looks great on college apps.
+            robotics club also looks great on college applications.
           </p>
         </div>
         <div className="flex flex-row max-w-[1000px] w-full gap-4">
           <div className="box">
             <h1 className="title">How to Join</h1>
-            <p className="font-productsans">
+            <p className="font-productsans text-justify">
               The best way to join Skyline Robotics is to come see us at the
               club fair! <br />
               <br />
@@ -53,12 +53,12 @@ const Join = () => {
           </div>
           <div className="box">
             <h1 className="title">Come In any time!</h1>
-            <p className="font-productsans">
+            <p className="font-productsans text-justify">
               Feel free to come to any meetings. We like to see regular
               commitment, but we understand you have busy lives as students. You
               don't have to attend every meeting, but both the club and your
               learning benefits from regular attendance. We also hope that
-              meetings are something you would want to go to!
+              the meetings are something you would want to go to!
             </p>
           </div>
         </div>
