@@ -41,7 +41,6 @@ const GridImage = ({ image, alt }) => {
 };
 
 const OurTeam = () => {
-  // this function scrolls to the top of the page when first navigated to
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
