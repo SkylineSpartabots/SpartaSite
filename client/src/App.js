@@ -18,6 +18,7 @@ import Home from "./pages/Home";
 import Join from "./pages/Join";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import OurTeam from "./pages/OurTeam";
 import Purchase from "./pages/Purchase";
 import Sponsors from "./pages/Sponsors";
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/fontDemo" element={<FontDemo />} />
         <Route path="/about" element={<About />} />
+        <Route path="/ourteam" element={<OurTeam />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/join" element={<Join />} />
         <Route path="/comingsoon" element={<ComingSoon />} />

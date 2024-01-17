@@ -17,6 +17,7 @@ module.exports = {
         frclilac: "#5257ff",
         frcred: "#f8435c",
         redditorange: "#FF4604",
+        spartagreen: "#84ebb2",
         transparent: "transparent",
         current: "currentColor",
       },
