@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const NavbarItem = ({ path, name, loc }) => {
   return (
     <Link
-      className="font-semibold text-base sm:text-xl whitespace-nowrap text-white m-3 mt-4"
+      className="font-semibold text-base md:text-xl whitespace-nowrap text-white m-3 mt-4"
       to={path}
     >
       {name}
@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="flex fixed top-0 w-full bg-transparent z-10">
       <a
         href="/"
-        className="text-2xl sm:text-3xl font-scoutcond italic font-extrabold whitespace-nowrap text-white ml-6 mt-3"
+        className="text-2xl md:text-3xl font-scoutcond italic font-extrabold whitespace-nowrap text-white ml-6 mt-3"
       >
         THE SPARTABOTS
       </a>
@@ -31,9 +31,12 @@ const Navbar = () => {
         <NavbarItem path="/history" name="History" loc={location} />
         <NavbarItem path="/sponsors" name="Sponsors" loc={location} />
         <NavbarItem path="/join" name="Join" loc={location} />
+        {/* The break fixes the spacing. */}
+        <br />
       </div>
     </nav>
   );
 };
+
 
 export default Navbar;
