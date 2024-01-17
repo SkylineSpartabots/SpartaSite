@@ -8,7 +8,7 @@ This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target=
 ## Instructions for Rehosting
 - Use a LINUX/UNIX based server to host, it is currently being hosted on ```Ubuntu 20.04.6 LTS```, server must be on 24/7
 - Clone the repository
-    - ```git clone https://github.com/SkylineSpartabots/SpartaSite```
+    - ```git clone --branch revamp https://github.com/SkylineSpartabots/SpartaSite```
 - Change directory into the "client" folder
   - ```cd SpartaSite/client```
 - Install all the NPM packages
