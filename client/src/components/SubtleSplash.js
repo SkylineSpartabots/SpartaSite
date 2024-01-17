@@ -19,5 +19,5 @@ const SubtleSplash = ({ title, subtitle, image }) => {
     </div>
   );
 };
-//84ebb2
+
 export default SubtleSplash;
