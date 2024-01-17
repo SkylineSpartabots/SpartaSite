@@ -5,7 +5,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Footer from "./components/Footer";
-import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
 import TopBar from "./components/TopBar";
 import { useAuthContext } from "./hooks/useAuthContext";
 import About from "./pages/About";
@@ -27,7 +27,7 @@ function App() {
     <Router>
       {/* navbar and footer appear on every page, so they're outside the router */}
       <TopBar />
-      <Sidebar />
+      <Navbar />
       <Routes>
         {/* Each route has its own tag */}
         <Route path="/" element={<Home />} />
