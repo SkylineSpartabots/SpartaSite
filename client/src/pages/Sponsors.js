@@ -16,7 +16,7 @@ import LegendaryDonutsLogo from "../graphics/images/LegendaryDonuts.webp";
 import CrumblLogo from "../graphics/images/Crumbl.webp";
 import QFCLogo from "../graphics/images/QFC.webp";
 import FirstTechBWLogo from "../graphics/images/FirstTechBW.webp";
-
+const year = new Date().getFullYear();
 const Sponsors = () => {
   // this function scrolls to the top of the page when first navigated to
   useEffect(() => {
@@ -47,7 +47,7 @@ const Sponsors = () => {
       <HeaderBlock text={"Sponsors"}/>
       <div className="box flex flex-col items-center">
         <h1 className="flex-initial font-scountcond font-black text-5xl mx-auto w-fit pb-4 italic">
-          2024
+        {year}
         </h1>
         <div className=" flex-initial flex flex-row flex-wrap gap-8 px-12 justify-center">
           {/* loop through all the logos, creating an image tag for each */}
