@@ -20,6 +20,7 @@ import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Purchase from "./pages/Purchase";
 import Sponsors from "./pages/Sponsors";
+import Onshape from "./pages/LearnOnshape";
 function App() {
   const { user } = useAuthContext();
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/join" element={<Join />} />
         <Route path="/comingsoon" element={<ComingSoon />} />
         <Route path="/purchase" element={<Purchase />} />
+        <Route path="/onshape" element={<Onshape />} />
         <Route
           path="/login"
           element={!user ? <Login /> : <Navigate to="/dashboard" />}
