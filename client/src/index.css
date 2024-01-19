@@ -34,3 +34,6 @@ code {
 .title {
   @apply font-scoutcond uppercase pb-4 font-black text-4xl sm:text-5xl text-center w-full sm:w-fit text-emerald-800;
 }
+a {
+  text-decoration: underline;
+}
