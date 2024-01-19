@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const NavbarItem = ({ path, name, loc }) => {
   return (
     <Link
-      className="font-semibold text-base md:text-xl whitespace-nowrap text-white m-3 mt-4"
+      className="font-semibold text-base md:text-xl whitespace-nowrap no-underline text-white m-3 mt-4"
       to={path}
     >
       {name}
@@ -25,7 +25,7 @@ const Navbar = () => {
       >
         THE SPARTABOTS
       </a>
-      <div className="flex top-0 w-full gap-4 justify-end">
+      <div className="flex top-0 w-full gap-4 justify-end ">
         <NavbarItem path="/" name="Home" loc={location} />
         <NavbarItem path="/ourteam" name="Our Team" loc={location} />
         <NavbarItem path="/history" name="History" loc={location} />
