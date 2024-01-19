@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import HeaderBlock from "../components/HeaderBlock";
 import MicrosoftLogo from "../graphics/images/Microsoft_Logo.webp";
 import BoeingLogo from "../graphics/images/Boeing_Logo.webp";
 import TMobileLogo from "../graphics/images/t-mobile_logo.webp";
@@ -16,6 +15,8 @@ import LegendaryDonutsLogo from "../graphics/images/LegendaryDonuts.webp";
 import CrumblLogo from "../graphics/images/Crumbl.webp";
 import QFCLogo from "../graphics/images/QFC.webp";
 import FirstTechBWLogo from "../graphics/images/FirstTechBW.webp";
+import heroImage from "../graphics/images/StudentLed.webp"; 
+import Splash from "../components/Splash";
 
 const Sponsors = () => {
   // this function scrolls to the top of the page when first navigated to
@@ -43,12 +44,14 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className="pt-[135px] pb-8 bg-slate-100 flex flex-col items-center gap-8">
-      <HeaderBlock text={"Sponsors"}/>
+    <div className="flex flex-col">
+      <Splash
+        title="SPONSORS"
+        subtitle="2024"
+        image={heroImage}
+      />
+      <div className="flex flex-col items-center">
       <div className="box flex flex-col items-center">
-        <h1 className="flex-initial font-scountcond font-black text-5xl mx-auto w-fit pb-4 italic">
-          2024
-        </h1>
         <div className=" flex-initial flex flex-row flex-wrap gap-8 px-12 justify-center">
           {/* loop through all the logos, creating an image tag for each */}
           {logos.map((logo, index) => (
@@ -60,7 +63,7 @@ const Sponsors = () => {
             />
           ))}
         </div>
-      </div>
+      </div></div>
     </div>
   );
 };
