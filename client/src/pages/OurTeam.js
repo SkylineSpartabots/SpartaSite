@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import LazyImage from "../components/LazyImage";
-import SubtleSplash from "../components/SubtleSplash";
+import Splash from "../components/Splash";
 import cheeringCrowd from "../graphics/images/CheeringCrowd.webp";
 import teamPhoto from "../graphics/images/GroupPhoto-min.webp";
 import heroImage from "../graphics/images/StudentLed.webp";
@@ -13,9 +13,9 @@ const OurTeam = () => {
 
   return (
     <div>
-      <SubtleSplash
-        title="STUDENT LED SINCE 2009"
-        subtitle="Our Team"
+      <Splash
+        title="OUR TEAM"
+        subtitle="Student Led Since 2009"
         image={heroImage}
       />
       <div className="pt-4 pb-4 bg-black grid grid-cols-2 grid-rows-2 gap-0 items-center w-full aspect-[7/5]">
