@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import LazyImage from "../components/LazyImage";
 import Splash from "../components/Splash";
 import cheeringCrowd from "../graphics/images/CheeringCrowd.webp";
 import teamPhoto from "../graphics/images/GroupPhoto-min.webp";

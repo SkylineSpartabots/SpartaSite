@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Splash from "../components/Splash";
-import heroImage from "../graphics/images/StudentLed.webp"; 
-import ChronosPhoto from "../graphics/images/Bot.webp";
+import heroImage from "../graphics/images/Bot3.webp"; 
+import ChronosPhoto from "../graphics/images/Chronos.webp";
 import Card from "../components/Card";
 
 const OurTeam = () => {

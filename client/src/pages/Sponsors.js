@@ -15,7 +15,7 @@ import LegendaryDonutsLogo from "../graphics/images/LegendaryDonuts.webp";
 import CrumblLogo from "../graphics/images/Crumbl.webp";
 import QFCLogo from "../graphics/images/QFC.webp";
 import FirstTechBWLogo from "../graphics/images/FirstTechBW.webp";
-import heroImage from "../graphics/images/StudentLed.webp"; 
+import heroImage from "../graphics/images/FIRSTSign.webp"; 
 import Splash from "../components/Splash";
 
 const Sponsors = () => {
