@@ -108,8 +108,8 @@ export default function Footer() {
               Learn
             </h2>
             <p className="mb-4">
-              <a href="/comingsoon" className="text-gray-600">
-                Onshape
+              <a href="/software" className="text-gray-600">
+                Software
               </a>
             </p>
             <p className="mb-4">

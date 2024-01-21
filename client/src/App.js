@@ -22,6 +22,7 @@ import OurTeam from "./pages/OurTeam";
 import History from "./pages/History";
 import Purchase from "./pages/Purchase";
 import Sponsors from "./pages/Sponsors";
+import Software from "./pages/Software";
 function App() {
   const { user } = useAuthContext();
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/join" element={<Join />} />
         <Route path="/comingsoon" element={<ComingSoon />} />
         <Route path="/purchase" element={<Purchase />} />
+        <Route path="/software" element={<Software />} />
         <Route
           path="/login"
           element={!user ? <Login /> : <Navigate to="/dashboard" />}
