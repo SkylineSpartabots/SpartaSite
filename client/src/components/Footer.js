@@ -98,7 +98,7 @@ export default function Footer() {
             </h1>
             <p class="text-justify">
               The Spartasite is the online home of the Spartabots. Here, we
-              share our accomplishments, goals, and values. Team 2976 is always
+              share our goals, values, and accomplishments. Team 2976 is always
               reaching for the stars, and we're so excited to share our journey
               with everyone!
             </p>
