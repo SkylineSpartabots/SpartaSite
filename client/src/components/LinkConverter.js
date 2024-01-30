@@ -1,6 +1,6 @@
 // Converts markdown link tags [url](display) into html link tags <a href="url">display</a>
 const LinkConverter = (element) => {
-    var links = element.props.children.split(/(\[[\w\d-_~?=#:/\.]+\]\(?[ -'*-Z^-~]*\)?)/g);
+    var links = element.props.children.split(/(\[[\w\d-&_~?=#:/\.]+\]\(?[ -'*-Z^-~]*\)?)/g);
     var isLink = false;
     var linkElements = [];
     var i = 0;
@@ -8,7 +8,7 @@ const LinkConverter = (element) => {
         if (link && link.length > 0) {
             if (isLink) {
                 console.log(link);
-                var url = link.match(/\[([\w\d-_~?=#:/\.]+)\]/);
+                var url = link.match(/\[([\w\d-&_~?=#:/\.]+)\]/);
                 url = url == null ? "no url provided" : url[1];
                 var display = link.match(/\(([ -'*-Z^-~]+)\)/);
                 display = display == null ? url : display[1];

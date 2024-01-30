@@ -24,9 +24,10 @@ const Home = () => {
         />
         <Card
           title="WHAT IS FIRST ROBOTICS?"
-          text="The FIRST Robotics Competition is an international high school robotics competition operated by FIRST. The game of the competition changes each year to keep the excitement fresh."
+          text="FRC stands for the FIRST Robotics Competition, which is an international high school robotics competition operated by FIRST (For Inspiration and Recognition of Science and Technology). The game of the competition changes each year to keep the excitement fresh. The game for 2024 is called [https://www.youtube.com/watch?v=9keeDyFxzY4](Crescendo)."
           image={competitionImage}
           alt="Wide shot of the FIRST Robotics Competition"
+          allowLinks="true"
         />
         <Card
           title="WHY SHOULD I JOIN?"
