@@ -7,7 +7,7 @@ const NotFound = () => {
         Looks like you're lost!
       </h1>
       <p className="font-productsans text-xl">
-        Use the sidebar menu to get back on track.
+        Use the navbar at the top to <a href="/">get back on track.</a>
       </p>
     </div>
   );

@@ -8,7 +8,7 @@ This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target=
 ## Instructions for Rehosting
 - Use a LINUX/UNIX based server to host, it is currently being hosted on ```Ubuntu 20.04.6 LTS```, server must be on 24/7
 - Clone the repository
-    - ```git clone https://github.com/SkylineSpartabots/SpartaSite```
+    - ```git clone --branch revamp https://github.com/SkylineSpartabots/SpartaSite```
 - Change directory into the "client" folder
   - ```cd SpartaSite/client```
 - Install all the NPM packages
@@ -24,7 +24,7 @@ This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target=
     - To prep and compile everything, use ```npm run build```
     - If you do not have serve installed globally, use ```npm install -g serve```
     - ```serve -s build --config ../serve.json``` | This will start the server and hold up terminal so you cannot run other commands
-    - ```nohup serve -s build --config ../serve.json``` | This will run the server in the background
+    - ```nohup serve -s build --config ../serve.json &``` | This will run the server in the background
 - Setup the URL
     - If you are rehosting the cloudflare configuration must be changed, or else your site will only work on the servers IP, to change cloudflare configuration ask the current holder
     - Current Holder: <a href="https://github.com/Gam3rrXD" target="_blank" title="Gam3rr"> <img src="https://github.com/Gam3rrXD.png?size=20" height="20" width="20" alt="Gam3rrXD" />
