@@ -1,5 +1,5 @@
 import Splash from "../components/Splash";
-import Award24 from "../graphics/images/2024Award.webp";
+import Award24 from "../graphics/images/Awards2.webp";
 import { useEffect } from "react";
 
 const Join = () => {

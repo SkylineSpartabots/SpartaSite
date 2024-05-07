@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import Splash from "../components/Splash";
-import cheeringCrowd from "../graphics/images/CheeringCrowd.webp";
-import teamPhoto from "../graphics/images/GroupPhoto-min.webp";
-import heroImage from "../graphics/images/StudentLed.webp";
+import cheeringCrowd from "../graphics/images/CrowdNew.webp";
+import teamPhoto from "../graphics/images/2024Award.webp";
+import heroImage from "../graphics/images/StuLed.webp";
 import { GridContent, GridImage } from "../components/GridBlock";
 
 const OurTeam = () => {

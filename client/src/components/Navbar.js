@@ -14,7 +14,7 @@ const NavbarItem = ({ path, name, loc }) => {
     </Link>
   );
 };
-
+//         <NavbarItem path="/ourteam" name="Our Team" loc={location} />  (use once page setup)
 const Navbar = () => {
   let location = useLocation();
   return (
@@ -27,7 +27,6 @@ const Navbar = () => {
       </a>
       <div className="flex top-0 w-full sm:gap-4 justify-end">
         <NavbarItem path="/" name="Home" loc={location} />
-        <NavbarItem path="/ourteam" name="Our Team" loc={location} />
         <NavbarItem path="/history" name="History" loc={location} />
         <NavbarItem path="/sponsors" name="Sponsors" loc={location} />
         <NavbarItem path="/join" name="Join" loc={location} />
