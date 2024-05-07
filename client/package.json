@@ -1,7 +1,6 @@
 {
   "name": "spartasite",
   "version": "0.1.0",
-  "homepage": "https://SkylineSpartabots.github.io/SpartaSite",
   "private": true,
   "proxy": "http://localhost:5100",
   "dependencies": {
@@ -17,8 +16,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "set PORT=3200 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.2.4"
   }
 }
