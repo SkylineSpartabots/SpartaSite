@@ -1,5 +1,5 @@
 import Splash from "../components/Splash";
-import teamNumberImage from "../graphics/images/TeamNumber-min.webp";
+import Award24 from "../graphics/images/2024Award.webp";
 import { useEffect } from "react";
 
 const Join = () => {
@@ -11,8 +11,8 @@ const Join = () => {
     <div>
       <Splash
         title="JOIN US"
-        subtitle="BECOME A SPARTABOT"
-        image={teamNumberImage}
+        subtitle="BECOME A MEMBER"
+        image={Award24}
       />
       <div className="flex flex-col bg-gray-100 p-8 gap-8 items-center">
         <div className="box">

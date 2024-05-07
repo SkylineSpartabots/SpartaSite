@@ -22,7 +22,6 @@ import OurTeam from "./pages/OurTeam";
 import History from "./pages/History";
 import Purchase from "./pages/Purchase";
 import Sponsors from "./pages/Sponsors";
-import Onshape from "./pages/LearnOnshape";
 import Software from "./pages/Software";
 function App() {
   const { user } = useAuthContext();
@@ -43,7 +42,6 @@ function App() {
         <Route path="/join" element={<Join />} />
         <Route path="/comingsoon" element={<ComingSoon />} />
         <Route path="/purchase" element={<Purchase />} />
-        <Route path="/onshape" element={<Onshape />} />
         <Route path="/software" element={<Software />} />
         <Route
           path="/login"

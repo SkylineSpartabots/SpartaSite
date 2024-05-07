@@ -13,9 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  text-decoration: underline;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -38,9 +35,7 @@ code {
 .title {
   @apply font-scoutcond uppercase pb-4 font-black text-4xl sm:text-5xl text-center w-full sm:w-fit text-emerald-800;
 }
-a:not(.no-underline) {
-  text-decoration: underline;
-}
+
 .black-fade-top {
   /* old
   background: linear-gradient(

@@ -5,7 +5,7 @@ import Splash from "../components/Splash.js";
 import botImage from "../graphics/images/Bot.webp";
 import competitionImage from "../graphics/images/Competition-min.webp";
 import groupImage from "../graphics/images/GroupPhoto-min.webp";
-import intakeImage from "../graphics/images/Intake-min.webp";
+import intakeImage from "../graphics/images/Intake-2024.webp";
 
 const Home = () => {
   useEffect(() => {
@@ -18,13 +18,13 @@ const Home = () => {
       <div className="bg-slate-100 flex flex-col gap-8 items-center p-8">
         <Card
           title="ABOUT US"
-          text="Created in 2008, our team participates in the FIRST Robotics Competition as team 2976. We are a high school club operating at Skyline High School, Sammamish, WA."
+          text="The Spartabots were founded in 2008 at Skyline High School located in Sammamish, WA. We participate in the FIRST Robotics Competition as Team 2976, we operate as a high school club."
           image={groupImage}
           alt="Group photo of the Spartabots team"
         />
         <Card
           title="WHAT IS FIRST ROBOTICS?"
-          text="FRC stands for the FIRST Robotics Competition, which is an international high school robotics competition operated by FIRST (For Inspiration and Recognition of Science and Technology). The game of the competition changes each year to keep the excitement fresh. The game for 2024 is called [https://www.youtube.com/watch?v=9keeDyFxzY4](Crescendo)."
+          text="FRC stands for the FIRST Robotics Competition, which is an international high school robotics competition operated by FIRST (For Inspiration and Recognition of Science and Technology). The game of the competition changes each year to keep the excitement fresh and keep teams innovating. The game for 2025 is called [https://info.firstinspires.org/first-dive?wvideo=crwl1zigkv](REEFSCAPE)."
           image={competitionImage}
           alt="Wide shot of the FIRST Robotics Competition"
           allowLinks="true"
@@ -38,7 +38,7 @@ const Home = () => {
         <div className="hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bg-white rounded gap-4">
           <InfoBlock
             title="Our Sponsors"
-            text="Skyline Robotics wouldn't exist without the support of our sponsors, who help us in a variety of ways from granting money to donating parts."
+            text="The Spartabots wouldn't exist without the support of our gracious sponsors, who help us in a variety of ways from granting money to donating parts."
             buttonPath="/sponsors"
           />
           <div className="border-l-[1px] border-gray-300 min-h-[350px] mx-4"></div>
@@ -57,7 +57,7 @@ const Home = () => {
         <div className="sm:hidden flex flex-col flex-initial px-8 py-8 w-full items-center bg-white rounded gap-4">
           <InfoBlock
             title="Our Sponsors"
-            text="Skyline Robotics couldn't exist without the support of our sponsors, who help us in a variety of ways from granting money to donating parts."
+            text="The Spartabots wouldn't exist without the support of our gracious sponsors, who help us in a variety of ways from granting money to donating parts."
             buttonPath="/sponsors"
           />
           <hr className="w-full flex-1" />
