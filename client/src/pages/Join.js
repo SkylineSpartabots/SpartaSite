@@ -35,7 +35,7 @@ const Join = () => {
             you'll gain amazing experiences because your critical thinking, time
             management and reasoning are tested in a time-critical, team-based
             environment. You'll be able to carry these skills to college, and
-            robotics club also looks great on college apps.
+            robotics club also looks great on college applications.
           </p>
         </div>
         <div className="flex flex-row max-w-[1000px] w-full gap-4">
@@ -58,7 +58,7 @@ const Join = () => {
               commitment, but we understand you have busy lives as students. You
               don't have to attend every meeting, but both the club and your
               learning benefits from regular attendance. We also hope that
-              meetings are something you would want to go to!
+              the meetings are something you would want to go to!
             </p>
           </div>
         </div>
