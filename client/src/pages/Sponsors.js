@@ -14,13 +14,13 @@ const Sponsors = () => {
       <Splash
         title="SPONSORS"
         subtitle={year}
-        image={"https://res.cloudinary.com/spartasite/image/upload/v1715152599/FIRST%20Logo%20Team.webp"}
+        image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/FIRST%20Logo%20Team"}
       />
       <div className="flex flex-col items-center">
         <div className="box flex flex-col items-center">
           <div className="flex-initial flex flex-row flex-wrap gap-8 px-12 justify-center">
             <img
-              src={"https://res.cloudinary.com/spartasite/image/upload/v1715152598/2024%20Sponsor%20Banner.webp"}
+              src={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/2024%20Sponsor%20Banner"}
               className="flex-initial max-h-[3000px] sm:max-h-[3000px]"
               alt="Final Image"
             />

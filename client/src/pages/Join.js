@@ -11,7 +11,7 @@ const Join = () => {
       <Splash
         title="JOIN US"
         subtitle="BECOME A MEMBER"
-        image={"https://res.cloudinary.com/spartasite/image/upload/v1715152614/2024%20Award%202.webp"}
+        image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/2024%20Award%202"}
       />
       <div className="flex flex-col bg-gray-100 p-8 gap-8 items-center">
         <div className="box">

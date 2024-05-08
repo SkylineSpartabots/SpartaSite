@@ -81,25 +81,25 @@ const Home = () => {
 
   return (
     <div className="overflow-hidden">
-      <Splash title="TEAM 2976" subtitle="THE SPARTABOTS" video={"https://res.cloudinary.com/spartasite/video/upload/v1715152061/BRoll.mp4"} />
+      <Splash title="TEAM 2976" subtitle="THE SPARTABOTS" video={"https://res.cloudinary.com/spartasite/video/upload/f_auto:video,q_auto/BRoll"} />
       <div className="bg-slate-100 flex flex-col gap-8 items-center p-8">
         <Card
           title="ABOUT US"
           text="The Spartabots were founded in 2008 at Skyline High School located in Sammamish, WA. We participate in the FIRST Robotics Competition as Team 2976, we operate as a high school club."
-          image={"https://res.cloudinary.com/spartasite/image/upload/v1715152621/yanda.jpg"}
+          image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/yanda"}
           alt="Group photo of the Spartabots team"
         />
         <Card
           title="WHAT IS FIRST ROBOTICS?"
           text="FRC stands for the FIRST Robotics Competition, which is an international high school robotics competition operated by FIRST (For Inspiration and Recognition of Science and Technology). The game of the competition changes each year to keep the excitement fresh and keep teams innovating. The game for 2025 is called [https://info.firstinspires.org/first-dive?wvideo=crwl1zigkv](REEFSCAPE)."
-          image={"https://res.cloudinary.com/spartasite/image/upload/v1715152613/CRESENDO%20Game.jpg"}
+          image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/CRESENDO%20Game"}
           alt="Wide shot of the FIRST Robotics Competition"
           allowLinks="true"
         />
         <Card
           title="WHY SHOULD I JOIN?"
           text="Being part of a FIRST robotics team is fun! It doesn't matter whether you have experience with robotics or not, you'll gain amazing experiences and learn valuable skills that you can carry to college and beyond."
-          image={"https://res.cloudinary.com/spartasite/image/upload/v1715152604/Artemis%20In%20Game.webp"}
+          image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis%20In%20Game"}
           alt="Picture of the CHRONOS bot"
         />
         <div className="hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bg-white rounded gap-4">

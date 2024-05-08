@@ -15,7 +15,7 @@ const About = () => {
   }
   return (
     <div className="">
-      <Splash title="ABOUT US" subtitle="THE SPARTABOTS" image={"https://res.cloudinary.com/spartasite/image/upload/v1715152604/Artemis%20In%20Game.webp"} />
+      <Splash title="ABOUT US" subtitle="THE SPARTABOTS" image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis%20In%20Game"} />
       <div className="bg-slate-100 flex flex-col gap-8 p-8 items-center ">
         <div className="box">
           <h1 className="title">Club Overview</h1>
