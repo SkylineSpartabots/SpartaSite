@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Splash from "../components/Splash";
 import heroImage from "../graphics/images/tuffbot.webp"; 
 import ChronosPhoto from "../graphics/images/Chronos.webp";
-import ArtemisPhoto from "../graphics/images/Artemis.webp"
+import ArtemisPhoto from "../graphics/images/Artemis.JPG"
 import ZeusPhoto from "../graphics/images/Zeus2023.webp"
 import Card from "../components/Card";
 

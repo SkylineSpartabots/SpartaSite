@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import Card from "../components/Card.js";
 import InfoBlock from "../components/InfoBlock.js";
 import Splash from "../components/Splash.js";
-import botImage from "../graphics/images/Bot.webp";
-import competitionImage from "../graphics/images/Competition-min.webp";
-import groupImage from "../graphics/images/GroupPhoto-min.webp";
+import botImage from "../graphics/images/Artemis_InGame.webp";
+import gamePic from "../graphics/images/Game.JPG";
+import yandaThumbs from "../graphics/images/Yanda.JPG";
 import intakeImage from "../graphics/images/Intake-2024.webp";
 
 const Home = () => {
@@ -14,18 +14,18 @@ const Home = () => {
 
   return (
     <div className="overflow-hidden">
-      <Splash title="THE SPARTABOTS" subtitle="FRC TEAM 2976" image={intakeImage} />
+      <Splash title="TEAM 2976" subtitle="THE SPARTABOTS" image={intakeImage} />
       <div className="bg-slate-100 flex flex-col gap-8 items-center p-8">
         <Card
           title="ABOUT US"
           text="The Spartabots were founded in 2008 at Skyline High School located in Sammamish, WA. We participate in the FIRST Robotics Competition as Team 2976, we operate as a high school club."
-          image={groupImage}
+          image={yandaThumbs}
           alt="Group photo of the Spartabots team"
         />
         <Card
           title="WHAT IS FIRST ROBOTICS?"
           text="FRC stands for the FIRST Robotics Competition, which is an international high school robotics competition operated by FIRST (For Inspiration and Recognition of Science and Technology). The game of the competition changes each year to keep the excitement fresh and keep teams innovating. The game for 2025 is called [https://info.firstinspires.org/first-dive?wvideo=crwl1zigkv](REEFSCAPE)."
-          image={competitionImage}
+          image={gamePic}
           alt="Wide shot of the FIRST Robotics Competition"
           allowLinks="true"
         />

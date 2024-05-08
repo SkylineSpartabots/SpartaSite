@@ -1,26 +1,29 @@
-import LazyImage from "./LazyImage";
-const Splash = ({ title, subtitle, image }) => {
+import LazyImage from "../components/LazyImage";
+const Splash = ({ title, subtitle, image, tfont, tcolor, sfont, scolor }) => {
+  // Set Defaults
+  const titleFont = tfont ? tfont : "productsans";
+  const subtitleFont = sfont ? sfont : "avenir";
+  const titleColor = tcolor ? tcolor : "white";
+  const subtitleColor = scolor ? scolor : "white";
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-16">
-      {/* <img
-        src={image}
-        className="object-cover h-full w-full absolute mix-blend-overlay"
-        alt=""
-      /> */}
-      <h1 className="text-8xl sm:text-9xl text-center font-scoutcond italic font-extrabold text-transparent bg-clip-text text-white px-5">
-        {title}
-      </h1>
-      <hr className="w-full max-w-[700px] flex-initial my-8 z-10 border-[5px]" style={{borderImage: 'linear-gradient(to right, #FCE6AC, #F04F4F, #670281, #2357E8)', borderImageSlice: 1}} />
-      <h1 className="text-7xl sm:text-9xl text-center font-scoutcond italic font-extrabold text-transparent bg-clip-text text-white px-4">
-        {subtitle}
-      </h1>
+    <div className="min-h-screen relative">
       <LazyImage
         img={image}
         alt="Splash"
         className="object-cover h-full w-full absolute mix-blend-overlay z-0"
       />
+      <div className="absolute bottom-0 left-0 p-16">
+        <h1 className={`text-6xl sm:text-6xl text-left font-${titleFont} bold font-extrabold text-transparent bg-clip-text text-${titleColor} px-5`}>
+          {title}
+        </h1>
+        <h1 className={`text-8xl sm:text-8xl text-left font-${subtitleFont} bold font-extrabold text-transparent bg-clip-text text-${subtitleColor} px-4`}>
+          {subtitle}
+        </h1>
+      </div>
     </div>
   );
 };
 
 export default Splash;
+
+

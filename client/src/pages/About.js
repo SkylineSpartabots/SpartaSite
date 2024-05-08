@@ -1,7 +1,7 @@
 import Splash from "../components/Splash";
 import Button from "../components/Button";
 import { useEffect } from "react";
-import botImage from "../graphics/images/Bot2-min.webp";
+import botImage from "../graphics/images/Artemis_InGame.webp";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import Card from "../components/Card.js";
-import botImage from "../graphics/images/Bot.webp";
-import competitionImage from "../graphics/images/Competition-min.webp";
-import groupImage from "../graphics/images/GroupPhoto-min.webp";
+import botImage from "../graphics/images/Artemis_InGame.webp";
+import leadWatch from "../graphics/images/LeadWatch.JPG";
+import groupImage from "../graphics/images/2024Award.webp";
 import HeaderBlock from "../components/HeaderBlock.js";
 
 const Software = () => {
@@ -25,7 +25,7 @@ const Software = () => {
         <Card
           title="Website"
           text="The website is the current website you are on right now. The production site is at [https://spartabots.org/](spartabots.org) while the development site is at [https://spartasite.gam3rr.me/](spartasite.gam3rr.me). The source code of the website can be found on [https://github.com/SkylineSpartabots/SpartaSite/tree/revamp](GitHub)."
-          image={competitionImage}
+          image={leadWatch}
           alt="Wide shot of the FIRST Robotics Competition"
           allowLinks="true"
         />
