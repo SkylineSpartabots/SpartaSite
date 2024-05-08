@@ -1,11 +1,9 @@
 import { useState } from "react";
-import { useAuthContext } from "./useAuthContext";
 import { useNavigate } from "react-router-dom";
 
 export function useAuth(type) {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(null);
-  const { dispatch } = useAuthContext();
 
   const navigate = useNavigate();
 

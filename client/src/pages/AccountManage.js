@@ -13,7 +13,7 @@ const AccountManage = () => {
     }
     getAccounts();
     console.log(accounts);
-  }, []);
+}, [accounts]);
 
   return (
     <div className="pt-[135px] bg-gray-100 flex flex-col items-center gap-4 min-h-screen ">

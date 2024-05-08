@@ -6,6 +6,7 @@ const LazyVideo = ({ src, type, className, autoPlay, loop, muted, playsInline })
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    const videoRefCurrent = videoRef.current;
     const options = {
       root: null,
       rootMargin: '0px',
@@ -23,13 +24,13 @@ const LazyVideo = ({ src, type, className, autoPlay, loop, muted, playsInline })
 
     const observer = new IntersectionObserver(callback, options);
     
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
+    if (videoRefCurrent) { // Use the copied variable
+      observer.observe(videoRefCurrent);
     }
 
     return () => {
-      if (videoRef.current) {
-        observer.unobserve(videoRef.current);
+      if (videoRefCurrent) { // Use the copied variable
+        observer.unobserve(videoRefCurrent);
       }
       observer.disconnect();
     };

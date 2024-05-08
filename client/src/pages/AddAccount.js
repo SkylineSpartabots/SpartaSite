@@ -11,7 +11,7 @@ const AddAccount = () => {
   const [isBoard, setIsBoard] = useState(false);
   const [isAdvisor, setIsAdvisor] = useState(false);
   const [boardTitle, setBoardTitle] = useState("");
-  const { auth, error, isLoading } = useAuth("signup");
+  const { auth, isLoading } = useAuth("signup");
 
   async function handleSubmit(e) {
     e.preventDefault();

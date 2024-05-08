@@ -1,4 +1,3 @@
-import Logo from "../graphics/images/2976Logo.png"
 export default function Footer() {
   const currentUrl = window.location.protocol + "//" + window.location.host;
   const year = new Date().getFullYear();

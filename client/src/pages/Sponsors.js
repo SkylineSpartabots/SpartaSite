@@ -22,7 +22,7 @@ const Sponsors = () => {
             <img
               src={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/2024%20Sponsor%20Banner"}
               className="flex-initial max-h-[3000px] sm:max-h-[3000px]"
-              alt="Final Image"
+              alt="Final Banner"
             />
           </div>
         </div>
