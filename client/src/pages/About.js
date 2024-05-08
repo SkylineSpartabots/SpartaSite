@@ -23,9 +23,7 @@ const About = () => {
             We are the Spartabots, a robotics club participating in the FIRST
             Robotics Competition as team 2976. <br />
             <br />
-            Within our completely student built team, we use our problem
-            solving, critical thinking and analytical skills to create a
-            competitive robot within 6 weeks.
+            In six weeks, our completely student run team, utilizes our  problem solving, critical thinking, as well analytical abilities to create a robot.
             <br />
             <br /> The club was created in 2008 and initially worked in the
             garage of one of our mentors. In the first few years of the club we
