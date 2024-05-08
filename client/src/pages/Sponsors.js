@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 import Splash from "../components/Splash";
-import heroImage from "../graphics/images/FIRSTSign.webp";
-import finalImage from "../graphics/images/Final_Sponsors2024.webp";
 
 const year = new Date().getFullYear();
 
@@ -16,13 +14,13 @@ const Sponsors = () => {
       <Splash
         title="SPONSORS"
         subtitle={year}
-        image={heroImage}
+        image={"https://res.cloudinary.com/spartasite/image/upload/v1715152599/FIRST%20Logo%20Team.webp"}
       />
       <div className="flex flex-col items-center">
         <div className="box flex flex-col items-center">
           <div className="flex-initial flex flex-row flex-wrap gap-8 px-12 justify-center">
             <img
-              src={finalImage}
+              src={"https://res.cloudinary.com/spartasite/image/upload/v1715152598/2024%20Sponsor%20Banner.webp"}
               className="flex-initial max-h-[3000px] sm:max-h-[3000px]"
               alt="Final Image"
             />

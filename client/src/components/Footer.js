@@ -1,3 +1,4 @@
+import Logo from "../graphics/images/2976Logo.png"
 export default function Footer() {
   const currentUrl = window.location.protocol + "//" + window.location.host;
   const year = new Date().getFullYear();
@@ -103,7 +104,10 @@ export default function Footer() {
               with everyone!
             </p>
           </div>
-          
+          <div>
+          </div>
+          <div>
+          </div>
           <div className="">
             <h2 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Contact

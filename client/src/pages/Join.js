@@ -1,5 +1,4 @@
 import Splash from "../components/Splash";
-import Award24 from "../graphics/images/Awards2.webp";
 import { useEffect } from "react";
 
 const Join = () => {
@@ -12,7 +11,7 @@ const Join = () => {
       <Splash
         title="JOIN US"
         subtitle="BECOME A MEMBER"
-        image={Award24}
+        image={"https://res.cloudinary.com/spartasite/image/upload/v1715152614/2024%20Award%202.webp"}
       />
       <div className="flex flex-col bg-gray-100 p-8 gap-8 items-center">
         <div className="box">

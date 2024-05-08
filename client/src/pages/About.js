@@ -1,7 +1,6 @@
 import Splash from "../components/Splash";
 import Button from "../components/Button";
 import { useEffect } from "react";
-import botImage from "../graphics/images/Artemis_InGame.webp";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
@@ -16,7 +15,7 @@ const About = () => {
   }
   return (
     <div className="">
-      <Splash title="ABOUT US" subtitle="THE SPARTABOTS" image={botImage} />
+      <Splash title="ABOUT US" subtitle="THE SPARTABOTS" image={"https://res.cloudinary.com/spartasite/image/upload/v1715152604/Artemis%20In%20Game.webp"} />
       <div className="bg-slate-100 flex flex-col gap-8 p-8 items-center ">
         <div className="box">
           <h1 className="title">Club Overview</h1>
