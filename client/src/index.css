@@ -1,1 +1,73 @@
-@import url(fonts/stylesheet.css);@tailwind base;@tailwind components;@tailwind utilities;body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}code{font-family:source-code-pro,Menlo,Monaco,Consolas,"Courier New",monospace}.paragraph-indent{text-indent:50px}.flex-justify{display:flex;flex-direction:column;justify-content:flex-end}.box{@apply max-w-[1000px] flex-1 w-full bg-white rounded py-4 px-6;}.black-fade-top{background:linear-gradient(rgba(0,0,0,.5) 0,rgba(0,0,0,.375) 50%,rgba(0,0,0,.1875) 65%,rgba(0,0,0,.0625) 75.5%,rgba(0,0,0,.0313) 82.85%,rgba(0,0,0,.0156) 88%,rgba(0,0,0,0) 100%);height:100px}.z-0{z-index:-1}
+@import url("./fonts/stylesheet.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.paragraph-indent
+{
+  text-indent: 50px; 
+}
+.flex-justify
+{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-end;
+}
+.box {
+  @apply max-w-[1000px] flex-1 w-full bg-white rounded py-4 px-6;
+}
+.title {
+  @apply font-scoutcond uppercase pb-4 font-black text-4xl sm:text-5xl text-center w-full sm:w-fit text-emerald-800;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.black-fade-top {
+  /* old
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.15) 50%,
+    rgba(0, 0, 0, 0.075) 65%,
+    rgba(0, 0, 0, 0.037) 75.5%,
+    rgba(0, 0, 0, 0.019) 82.85%,
+    rgba(0, 0, 0, 0.009) 88%,
+    rgba(0, 0, 0, 0) 100%
+    );
+    
+  /* darker */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.375) 50%,
+    rgba(0, 0, 0, 0.1875) 65%,
+    rgba(0, 0, 0, 0.0625) 75.5%,
+    rgba(0, 0, 0, 0.0313) 82.85%,
+    rgba(0, 0, 0, 0.0156) 88%,
+    rgba(0, 0, 0, 0) 100%
+    );
+  /* solid
+  background: rgb(0, 0, 0, 0.5);
+  /* */
+  height:100px;
+}
+
+.z-0 {
+  z-index: -1;
+}
