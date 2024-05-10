@@ -112,7 +112,7 @@ const Home = () => {
           <div className="border-l-[1px] border-gray-300 min-h-[350px] mx-4"></div>
           <InfoBlock
             title="Community"
-            text="Our goal is to raise awareness and interest among the people of our community, about our club as well as the field of science and technology. Partnering with community members and local companies will allow us to raise sufficient funds to support our club mission and objectives."
+            text="Our goal is to raise awareness and interest among the people of our community about our club as well as the field of science and technology. Partnering with community members and local companies will allow us to raise sufficient funds to support our club mission and objectives."
             buttonPath="/about"
           />
           <div className="border-l-[1px] border-gray-300 min-h-[350px] mx-4"></div>
@@ -131,7 +131,7 @@ const Home = () => {
           <hr className="w-full flex-1" />
           <InfoBlock
             title="Community"
-            text="Our goal is to raise awareness and interest among the people of our community, about our club as well as the field of science and technology. Partnering with community members and local companies will allow us to raise sufficient funds to support our club mission and objectives."
+            text="Our goal is to raise awareness and interest among the people of our community about our club as well as the field of science and technology. Partnering with community members and local companies will allow us to raise sufficient funds to support our club mission and objectives."
             buttonPath="/about"
           />
           <hr className="w-full flex-1" />
