@@ -3,8 +3,10 @@ import LinkConverter from "./LinkConverter";
 
 const Card = ({ title, text, image, alt, allowLinks = false }) => {
   
-  var textElement = (<p className="font-productsans text-base text-justify">{text}</p>)
-
+  var textElement = Array.isArray(text)?
+    text.map(str => <p className="font-productsans text-base text-justify">{str}</p>) :
+    (<p className="font-productsans text-base text-justify">{text}</p>);
+  
   
   textElement = LinkConverter(textElement);
   var card = (

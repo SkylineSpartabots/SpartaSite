@@ -29,7 +29,7 @@ const OurTeam = () => {
         />
         <Card
           title="2024 — Artemis"
-          text="Artemis is the Spartabots' current robot for the FIRST Challenge CRESCENDO, this robot was an Event Finalist at Auburn and a Semi-Finalist at Sammamish! Status: In Use"
+          text={["Artemis is the Spartabots' current robot for the FIRST Challenge CRESCENDO, this robot was an Event Finalist at Auburn and a Semi-Finalist at Sammamish!", "Status: In Use"]}
           image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"}
           alt="2024 FRC robot named artemis"
         />
