@@ -86,7 +86,7 @@ const Home = () => {
       <div className="bg-slate-100 flex flex-col gap-8 items-center p-8">
         <Card
           title="ABOUT US"
-          text="The Spartabots were founded in 2008 at Skyline High School located in Sammamish, WA. We participate in the FIRST Robotics Competition as Team 2976, we operate as a high school club."
+          text="The Spartabots were founded in 2008 at Skyline High School located in Sammamish, WA. We participate in the FIRST Robotics Competition as Team 2976 and we operate as a high school club."
           image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/yanda"}
           alt="Group photo of the Spartabots team"
         />
