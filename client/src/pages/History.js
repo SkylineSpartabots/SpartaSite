@@ -60,7 +60,7 @@ const OurTeam = () => {
         <Card
             title="2018 — HERMES"
             text={["Hermes was the Spartabots' 2018 robot for the FIRST Challenge POWER UP, we were the WORLD CHAMPIONS with a qualifying record of 41-30-0. This was our first year with robot names!", "Robot Status: Decommissioned"]}
-            image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/v1/RobotImages/2017%20Bot%20~%20FIRST%20STEAMWORKS"}
+            image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/v1/RobotImages/2018%20Bot%20(HERMES)%20~%20FIRST%20POWER%20UP"}
             alt="2018 FRC Compition Robot HERMES"
         />
         <Card
