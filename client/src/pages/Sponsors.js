@@ -4,11 +4,11 @@ import Splash from "../components/Splash";
 const year = new Date().getFullYear();
 
 const Sponsors = () => {
-  // this function scrolls to the top of the page when first navigated to
+  //  this function scrolls to the top of the page when first navigated to
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  
   return (
     <div className="flex flex-col">
       <Splash
