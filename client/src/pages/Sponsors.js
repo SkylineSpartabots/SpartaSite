@@ -14,7 +14,7 @@ const Sponsors = () => {
       <Splash
         title="SPONSORS"
         subtitle={year}
-        image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/FIRST%20Logo%20Team"}
+        image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sponsors1"}
       />
       <div className="flex flex-col items-center">
         <div className="box flex flex-col items-center">
