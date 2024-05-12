@@ -1,4 +1,4 @@
-![Spartasite Banner](https://github.com/SkylineSpartabots/SpartaSite/assets/84348006/2779bd1d-a642-428c-bd66-97019da535e1)
+![Spartasite Banner](https://github.com/SkylineSpartabots/SpartaSite/assets/84348006/83ea60b6-9a7d-4dbe-a86d-80f1cfa28c19)
 ## Hosting
 This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target="_blank" title="Gam3rr"><img src="https://github.com/Gam3rrXD.png?size=20" height="20" width="20" alt="Gam3rrXD" /></a>
 ## Instructions for Rehosting
