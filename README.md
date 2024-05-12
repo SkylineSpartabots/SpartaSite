@@ -1,8 +1,4 @@
 ![Spartasite Banner](https://github.com/SkylineSpartabots/SpartaSite/assets/84348006/2779bd1d-a642-428c-bd66-97019da535e1)
-This repo holds all the code for our <a href="https://spartasite.gam3rr.me" target="_blank" title="Spartasite">
-  <p1>SpartaBots website</p1>
-</a>
-
 ## Hosting
 This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target="_blank" title="Gam3rr"><img src="https://github.com/Gam3rrXD.png?size=20" height="20" width="20" alt="Gam3rrXD" /></a>
 ## Instructions for Rehosting
