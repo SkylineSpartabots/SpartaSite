@@ -74,6 +74,7 @@ const LazyVideo = ({src, type, className, autoPlay, loop, muted, playsInline}) =
           right: 50,
           fontSize: '2em',
           color: 'white',
+          zIndex:"55"
         }} onClick={togglePlayback}>
           <FontAwesomeIcon icon={isPlaying ? faPlay : faPause}/>
         </button>
@@ -96,11 +97,11 @@ const Splash = ({ title, subtitle, video }) => {
         playsInline
       />
       {/* Text */}
-      <div className="absolute bottom-0 left-0 p-16">
-        <h1 className={`text-6xl sm:text-6xl text-left font-productsans bold font-extrabold text-transparent bg-clip-text text-white px-5`}>
+      <div className="absolute bottom-0 left-0 py-24 sm:px-16 sm:py-16 max-w-full">
+        <h1 className={`text-center text-6xl  sm:text-6xl sm:text-left font-productsans bold font-extrabold text-transparent bg-clip-text text-white px-5`}>
           {title}
         </h1>
-        <h1 className={`text-8xl sm:text-8xl text-left font-avenir bold font-extrabold text-transparent bg-clip-text text-white px-4`}>
+        <h1 className={`text-center text-5xl sm:text-7xl md:text-8xl sm:text-left font-avenir bold font-extrabold text-transparent bg-clip-text text-white px-4 max-w-full`}>
           {subtitle}
         </h1>
       </div>
