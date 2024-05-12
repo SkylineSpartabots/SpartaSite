@@ -12,7 +12,7 @@ const OurTeam = () => {
       <Splash
         title="HISTORY"
         subtitle="2009 — 2024"
-        image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/tuffbot"}
+        image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/RobotBlur"}
       />
       <div className="bg-slate-100 flex flex-col gap-8 items-center p-8">
       <Card
