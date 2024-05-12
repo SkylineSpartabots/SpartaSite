@@ -19,10 +19,10 @@ This is currently being hosted by: <a href="https://github.com/Gam3rrXD" target=
   - For a production build, run these commands instead:
     - To prep and compile everything, use ```npm run build```
     - If you do not have serve installed globally, use ```npm install -g serve```
-    - ```serve -s build --config ../serve.json``` | This will start the server and hold up terminal so you cannot run other commands
-    - ```nohup serve -s build --config ../serve.json &``` | This will run the server in the background
+    - ```serve -s build --config``` | This will start the server and hold up terminal so you cannot run other commands
+    - ```nohup serve -s build &``` | This will run the server in the background
 - Setup the URL
-    - If you are rehosting the cloudflare configuration must be changed, or else your site will only work on the servers IP, to change cloudflare configuration ask the current holder
+    - If you are rehosting this website the CloudFlare configuration must be changed, or else your site will only work on the current servers IP, to change CloudFlare configuration ask the current holder
     - Current Holder: <a href="https://github.com/Gam3rrXD" target="_blank" title="Gam3rr"> <img src="https://github.com/Gam3rrXD.png?size=20" height="20" width="20" alt="Gam3rrXD" />
 
 ## Contributors
