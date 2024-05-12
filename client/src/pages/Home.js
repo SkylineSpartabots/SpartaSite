@@ -1,9 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import Card from "../components/Card.js";
 import InfoBlock from "../components/InfoBlock.js";
-const LazyVideo = ({ src, type, className, autoPlay, loop, muted, playsInline }) => {
+
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faPlay, faPause} from '@fortawesome/free-solid-svg-icons';
+
+const LazyVideo = ({src, type, className, autoPlay, loop, muted, playsInline}) => {
   const videoRef = useRef();
   const [visible, setVisible] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false); // State for video playback
 
   useEffect(() => {
     const videoRefCurrent = videoRef.current;
@@ -23,30 +28,57 @@ const LazyVideo = ({ src, type, className, autoPlay, loop, muted, playsInline })
     };
 
     const observer = new IntersectionObserver(callback, options);
-    
-    if (videoRefCurrent) { // Use the copied variable
+
+    if (videoRefCurrent) {
       observer.observe(videoRefCurrent);
     }
 
     return () => {
-      if (videoRefCurrent) { // Use the copied variable
+      if (videoRefCurrent) {
         observer.unobserve(videoRefCurrent);
       }
       observer.disconnect();
     };
   }, []);
 
+  const togglePlayback = () => {
+    const video = videoRef.current;
+    if (video) {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
-    <video
-      ref={videoRef}
-      src={visible ? src : ""}
-      type={type}
-      className={className}
-      autoPlay={autoPlay}
-      loop={loop}
-      muted={muted}
-      playsInline={playsInline}
-    />
+      <div>
+        <video
+            ref={videoRef}
+            src={visible ? src : ""}
+            type={type}
+            className={className}
+            autoPlay={autoPlay}
+            loop={loop}
+            muted={muted}
+            playsInline={playsInline}
+        />
+        {visible && (
+            isPlaying
+        )}
+        <button style={{
+          position: "absolute",
+          bottom: 50,
+          right: 50,
+          fontSize: '2em',
+          color: 'white',
+        }} onClick={togglePlayback}>
+          <FontAwesomeIcon icon={isPlaying ? faPlay : faPause}/>
+        </button>
+      </div>
+
   );
 };
 
