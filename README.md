@@ -1,4 +1,4 @@
-# Spartabots Website (SpartaSite)
+![Spartasite Banner](https://github.com/SkylineSpartabots/SpartaSite/assets/84348006/2779bd1d-a642-428c-bd66-97019da535e1)
 This repo holds all the code for our <a href="https://spartasite.gam3rr.me" target="_blank" title="Spartasite">
   <p1>SpartaBots website</p1>
 </a>
