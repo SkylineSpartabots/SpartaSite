@@ -37,7 +37,7 @@ const Join = () => {
             robotics club also looks great on college applications.
           </p>
         </div>
-        <div className="flex flex-row max-w-[1000px] w-full gap-4">
+        <div className="flex flex-col sm:flex-row max-w-[1000px] w-full gap-4">
           <div className="box">
             <h1 className="title">How to Join</h1>
             <p className="font-productsans text-justify">
