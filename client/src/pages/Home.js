@@ -75,7 +75,9 @@ const LazyVideo = ({src, type, className, autoPlay, loop, muted, playsInline}) =
           fontSize: '2em',
           color: 'white',
           zIndex:"55"
-        }} onClick={togglePlayback}>
+        }} 
+        aria-label="play and pause button"
+        onClick={togglePlayback}>
           <FontAwesomeIcon icon={isPlaying ? faPlay : faPause}/>
         </button>
       </div>
