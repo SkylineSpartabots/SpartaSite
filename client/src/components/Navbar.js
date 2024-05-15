@@ -10,9 +10,9 @@ const NavbarItem = ({ path, name, loc }) => {
       to={path}
     >
       {name}
-      {/* {loc.pathname.toLowerCase() === path.toLowerCase() && (
+      {loc.pathname.toLowerCase() === path.toLowerCase() && (
         <hr className="w-full"></hr>
-      )} */}
+      )}
     </Link>
   );
 };
@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className="flex absolute top-0 w-full black-fade-top z-10 font-[Helvetica]">
       <a
         href="/"
-        className="text-2xl md:text-3xl font-scoutcond italic font-extrabold whitespace-nowrap text-white ml-6 mt-3 h-fit"
+        className="text-2xl md:text-3xl font-scoutcond italic z-[-20] font-extrabold whitespace-nowrap text-white ml-6 mt-3 h-fit"
       >
         THE SPARTABOTS
       </a>
