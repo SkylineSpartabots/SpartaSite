@@ -74,7 +74,7 @@ const LazyVideo = ({src, type, className, autoPlay, loop, muted, playsInline}) =
           right: 50,
           fontSize: '2em',
           color: 'white',
-          zIndex:"55"
+          zIndex:"-1"
         }} 
         aria-label="play and pause button"
         onClick={togglePlayback}>
