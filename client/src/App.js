@@ -50,8 +50,8 @@ function App() {
           gameName="CRESCENDO"
           gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
           performance={[
-            {title: "title", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
-            {title: "title 2", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
+            {title: "Auburn Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
+            {title: "Sammamish Semi-Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
           />} />
           <Route path="/history/2023" element={<HistoryPage
             year="2023"
@@ -64,8 +64,8 @@ function App() {
             gameName="CHARGED UP"
             gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
             performance={[
-              {title: "title", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
-              {title: "title 2", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
+              {title: "Sammamish Alliance 5", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
+              {title: "Glacier Peak Alliance 6", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
             />} />
             <Route path="/history/2022" element={<HistoryPage
               year="2022"
@@ -78,9 +78,8 @@ function App() {
               gameName="RAPID REACT"
               gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
               performance={[
-                {title: "title", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
-                {title: "title 2", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
-              />} />
+                {title: "Hopper Divison Semi-Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}
+              ]}/>} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/join" element={<Join />} />
         <Route path="/comingsoon" element={<ComingSoon />} />
