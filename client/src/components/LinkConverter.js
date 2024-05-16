@@ -10,7 +10,6 @@ const LinkConverter = (element) => {
   for (var link of links) {
       if (link && link.length > 0) {
           if (isLink) {
-              console.log(link);
               var url = link.match(/\[([\w\d-&_—~?=#:/.]+)\]/);
               url = url == null ? "no url provided" : url[1];
               var display = link.match(/\(([ -'*-Z^-~—]+)\)/);
