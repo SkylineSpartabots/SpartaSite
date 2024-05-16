@@ -20,6 +20,7 @@ import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import OurTeam from "./pages/OurTeam";
 import History from "./pages/History";
+import HistoryPage from "./pages/HistoryPage";
 import Purchase from "./pages/Purchase";
 import Sponsors from "./pages/Sponsors";
 import Software from "./pages/Software";
@@ -38,6 +39,48 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/ourteam" element={<OurTeam />} />
         <Route path="/history" element={<History />} />
+        <Route path="/history/2024" element={<HistoryPage
+          year="2024"
+          robotName="ARTEMIS"
+          robotNameBlurb="The Goddess of the Hunt"
+          splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"
+          robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"
+          robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+          gameImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"
+          gameName="CRESCENDO"
+          gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+          performance={[
+            {title: "title", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
+            {title: "title 2", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
+          />} />
+          <Route path="/history/2023" element={<HistoryPage
+            year="2023"
+            robotName="ZEUS"
+            robotNameBlurb="The God of the Sky"
+            splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"
+            robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"
+            robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+            gameImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"
+            gameName="CHARGED UP"
+            gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+            performance={[
+              {title: "title", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
+              {title: "title 2", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
+            />} />
+            <Route path="/history/2022" element={<HistoryPage
+              year="2022"
+              robotName="CHRONOS"
+              robotNameBlurb="The Personification of Time"
+              splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
+              robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
+              robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+              gameImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
+              gameName="RAPID REACT"
+              gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+              performance={[
+                {title: "title", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
+                {title: "title 2", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
+              />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/join" element={<Join />} />
         <Route path="/comingsoon" element={<ComingSoon />} />
