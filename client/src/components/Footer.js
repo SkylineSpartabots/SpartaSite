@@ -103,10 +103,6 @@ export default function Footer() {
               with everyone!
             </p>
           </div>
-          <div>
-          </div>
-          <div>
-          </div>
           <div className="">
             <h2 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Contact
