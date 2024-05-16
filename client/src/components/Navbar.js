@@ -6,7 +6,7 @@ import useIsMobile from "../hooks/useIsMobile";
 const NavbarItem = ({ path, name, loc }) => {
   return (
     <Link
-      className="font-semibold text-base md:text-xl whitespace-nowrap no-underline text-white m-3 mt-4"
+      className="font-semibold text-3xl md:text-xl whitespace-nowrap no-underline text-white m-3 mt-4"
       to={path}
     >
       {name}
@@ -30,7 +30,7 @@ const Navbar = () => {
       >
         THE SPARTABOTS
       </a>
-      <div className={`${showMenu ? "top-[0] opacity-100" : "top-[-440%] opacity-0"} transition-all flex absolute flex-col justify-center items-center sm:items-start  sm:flex-row sm:top-0 w-full sm:gap-4 backdrop-blur-2xl sm:backdrop-blur-none  h-[350px] sm:h-fit sm:bg-transparent sm:justify-end z-0`}>
+      <div className={`${showMenu ? "top-[0] opacity-100" : "top-[-440%] opacity-0"} transition-all flex absolute flex-col justify-center items-center sm:items-start  sm:flex-row sm:top-0 w-full sm:gap-4 backdrop-blur-2xl sm:backdrop-blur-none h-[100vh] sm:h-fit sm:bg-transparent sm:justify-end z-0`}>
         <NavbarItem path="/" name="Home" loc={location} />
         <NavbarItem path="/history" name="History" loc={location} />
         <NavbarItem path="/sponsors" name="Sponsors" loc={location} />
