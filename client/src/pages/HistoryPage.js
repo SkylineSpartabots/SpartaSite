@@ -11,8 +11,8 @@ const HistoryPage = ({year, robotName, robotNameBlurb, splashImage, robotImage, 
   return (
     <div>
       <Splash
-        title="HISTORY"
-        subtitle={year + " — " + robotName}
+        title={year}
+        subtitle={robotName}
         image={splashImage}
       />
       <div className="bg-slate-100 flex flex-col gap-8 items-center p-8">
