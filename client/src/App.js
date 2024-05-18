@@ -24,14 +24,28 @@ import HistoryPage from "./pages/HistoryPage";
 import Purchase from "./pages/Purchase";
 import Sponsors from "./pages/Sponsors";
 import Software from "./pages/Software";
+import { useEffect, useState } from "react";
+
 function App() {
   const { user } = useAuthContext();
+  const [bool, setbool] = useState(true)
+  const [themebool, setthemebool] = useState(true)
+
+  useEffect(() => {
+    setthemebool(JSON.parse(localStorage.getItem("theme")))
+  }, [])
+  
+
+  useEffect(() => {
+    setthemebool(JSON.parse(localStorage.getItem("theme")))
+  }, [bool])
+  
   return (
     // routing for the entire site
     <Router>
       {/* navbar and footer appear on every page, so they're outside the router */}
       <TopBar />
-      <Navbar />
+      <Navbar bool={bool} setbool={setbool} />
       <Routes>
         {/* Each route has its own tag */}
         <Route path="/" element={<Home />} />
