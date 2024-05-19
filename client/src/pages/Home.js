@@ -164,20 +164,21 @@ const Home = () => {
             buttonPath="/join"
           />
         </div>
-        <div className="sm:hidden flex flex-col flex-initial px-8 py-8 w-full items-center bg-white rounded-2xl gap-4">
-          <InfoBlock
+
+        <div style={{ backgroundColor: themebool?"white":"black" }} className="sm:hidden flex flex-col flex-initial px-8 py-8 w-full items-center bg-white rounded-2xl gap-4">
+          <InfoBlock col={themebool?"black":"white"} bg={themebool?"white":"black"}
             title="Our Sponsors"
             text="The Spartabots wouldn't exist without the support of our gracious sponsors, who help us in a variety of ways from granting money to donating parts."
             buttonPath="/sponsors"
           />
           <hr className="w-full flex-1" />
-          <InfoBlock
+          <InfoBlock col={themebool?"black":"white"} bg={themebool?"white":"black"}
             title="Community"
             text="Our goal is to raise awareness and interest among the people of our community about our club as well as the field of science and technology. Partnering with community members and local companies will allow us to raise sufficient funds to support our club mission and objectives."
             buttonPath="/about"
           />
           <hr className="w-full flex-1" />
-          <InfoBlock
+          <InfoBlock col={themebool?"black":"white"} bg={themebool?"white":"black"}
             title="Get Involved"
             text="We are always looking for any help within the club. Whether it be new students to join us, new mentors, or new sponsors to support our team."
             buttonPath="/join"
