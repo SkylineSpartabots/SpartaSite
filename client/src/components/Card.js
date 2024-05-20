@@ -17,7 +17,7 @@ const Card = ({ title, text, image, alt, subtitle = "" }) => {
         {subtitle !== "" ? (<h2 className="text-4xl font-scoutcond font-black pb-3 titleColor" >
           {subtitle}
         </h2>) : undefined}
-        <div class="textColor">{textElement}</div>
+        <div className="textColor">{textElement}</div>
       </div>
       <div className="flex-1 w-full">
         <LazyImage alt={alt} img={image} className="object-cover w-[500px] h-full rounded" />

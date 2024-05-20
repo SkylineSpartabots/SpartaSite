@@ -45,7 +45,11 @@ const LazyVideo = ({src, type, className, autoPlay, loop, muted, playsInline}) =
         const video = videoRef.current;
         if (video) {
             if (video.paused) {
+              try {
                 video.play();
+              } catch (err) {
+                console.log("Cannot play video: no user interaction has occured yet.")
+              }
             } else {
                 video.pause();
             }

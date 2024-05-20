@@ -103,7 +103,7 @@ export default function Footer() {
             >
               Spartasite by the Spartabots
             </h1>
-            <p class="text-justify">
+            <p className="text-justify">
               The Spartasite is the online home of the Spartabots. Here, we
               share our goals, values, and accomplishments. Team 2976 is always
               reaching for the stars, and we're so excited to share our journey
