@@ -26,7 +26,7 @@ const HistoryPage = ({
                 subtitle={robotName}
                 image={splashImage}
             />
-            <div className="bg-slate-100 flex flex-col gap-8 items-center p-8">
+            <div className="containerColor flex flex-col gap-8 items-center p-8">
                 <Card
                     title={robotName}
                     subtitle={robotNameBlurb}
@@ -41,10 +41,10 @@ const HistoryPage = ({
                     image={gameImage}
                     alt={year + " FRC Robot named " + robotName}
                 />
-                <div className="sm:flex sm:flex-col flex-1 px-6 py-8 max-w-[1000px] bg-white rounded gap-4">
-                    <h1 className="text-5xl font-scoutcond font-black pb-4 text-emerald-800">PERFORMANCE</h1>
+                <div className="sm:flex sm:flex-col flex-1 px-6 py-8 max-w-[1000px] bgColor rounded">
+                    <h1 className="text-5xl font-scoutcond font-black pb-4 titleColor">PERFORMANCE</h1>
                     <div
-                        className="hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bg-white rounded gap-4">
+                        className="hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bgColor rounded">
                         {(performance.map(info => {
                             return (<InfoBlock
                                 title={info.title}

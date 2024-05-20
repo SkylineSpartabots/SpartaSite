@@ -1,37 +1,31 @@
 import Splash from "../components/Splash";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 
 const Join = () => {
     // this function scrolls to the top of the page when first navigated to
-    const [themebool, setthemebool] = useState(true)
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-
-    useEffect(() => {
-        setthemebool(JSON.parse(localStorage.getItem("theme")))
-    })
-
-    return (
+    return (    
         <div>
             <Splash
                 title="JOIN US"
                 subtitle="BECOME A MEMBER"
                 image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/2024%20Award%202"}
             />
-            <div className={`${themebool ? "bg-slate-100" : "bg-[#141414]"} flex flex-col p-8 gap-8 items-center`}>
-                <div style={{backgroundColor: themebool ? "white" : "black"}} className="box">
+            <div className={`containerColor flex flex-col p-8 gap-8 items-center`}>
+                <div className="bgColor box">
                     <h1 className="title">Students</h1>
-                    <p className={`${themebool ? "text-black" : "text-white"} font-productsans text-justify`}>
+                    <p className={`textColor font-productsans text-justify`}>
                         Students are provided with a unique opportunity to develop
                         self-confidence, creative thinking, leadership, collaboration and
                         teamwork. Robotics provides you with real-world experiences and
                         robotics club looks great on resumes!
                     </p>
                 </div>
-                <div style={{backgroundColor: themebool ? "white" : "black"}} className="box">
+                <div className="bgColor box">
                     <h1 className="title">Why Join?</h1>
-                    <p className={`${themebool ? "text-black" : "text-white"} font-productsans text-justify`}>
+                    <p className={`textColor font-productsans text-justify`}>
                         Being part of a FIRST robotics team is fun! You'll gain experiences
                         with many other students with similar interests.
                         <br/>
@@ -44,9 +38,9 @@ const Join = () => {
                     </p>
                 </div>
                 <div className="flex flex-col sm:flex-row max-w-[1000px] w-full gap-4">
-                    <div style={{backgroundColor: themebool ? "white" : "black"}} className="box">
+                    <div className="bgColor box">
                         <h1 className="title">How to Join</h1>
-                        <p className={`${themebool ? "text-black" : "text-white"} font-productsans text-justify`}>
+                        <p className={`textColor font-productsans text-justify`}>
                             The best way to join Skyline Robotics is to come see us at the
                             club fair! <br/>
                             <br/>
@@ -56,9 +50,9 @@ const Join = () => {
                             join.
                         </p>
                     </div>
-                    <div style={{backgroundColor: themebool ? "white" : "black"}} className="box">
+                    <div className="bgColor box">
                         <h1 className="title">Come In any time!</h1>
-                        <p className={`${themebool ? "text-black" : "text-white"} font-productsans text-justify`}>
+                        <p className={`textColor font-productsans text-justify`}>
                             Feel free to come to any meetings. We like to see regular
                             commitment, but we understand you have busy lives as students. You
                             don't have to attend every meeting, but both the club and your

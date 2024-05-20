@@ -13,7 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -36,6 +35,24 @@ code {
   @apply font-scoutcond uppercase pb-4 font-black text-4xl sm:text-5xl text-center w-full sm:w-fit text-emerald-800;
 }
 
+:root {
+  --containerColor: rgb(241 245 249); /* rgb(20 20 20); */
+  --bgColor: white;
+  --textColor: black;
+  --titleColor: rgb(6 95 70);
+}
+.bgColor {
+  background-color: var(--bgColor);
+}
+.containerColor {
+  background-color: var(--containerColor);
+}
+.textColor {
+  color: var(--textColor);
+}
+.titleColor {
+  color: var(--titleColor);
+}
 .black-fade-top {
   /* old
   background: linear-gradient(
