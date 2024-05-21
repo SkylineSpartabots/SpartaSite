@@ -2,7 +2,7 @@ import {useEffect} from "react";
 import Card from "../components/Card.js";
 import InfoBlock from "../components/InfoBlock.js";
 
-import { Splash } from "./Splash.js";
+import { VideoSplash } from "../components/VideoSplash.js";
 
 const Home = () => {
 
@@ -12,7 +12,7 @@ const Home = () => {
 
     return (
         <div className="overflow-hidden">
-            <Splash title="TEAM 2976" subtitle="THE SPARTABOTS"
+            <VideoSplash title="TEAM 2976" subtitle="THE SPARTABOTS"
                     video={"https://res.cloudinary.com/spartasite/video/upload/f_auto:video,q_auto/BRoll"}/>
             <div className={`containerColor flex flex-col gap-8 items-center p-8`}>
                 <Card
