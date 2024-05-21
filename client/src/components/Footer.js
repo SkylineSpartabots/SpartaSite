@@ -5,7 +5,7 @@ export default function Footer() {
   const [themebool, setthemebool] = useState(true)
   useEffect(() => {
     setthemebool(JSON.parse(localStorage.getItem("theme")))
-  })
+  }, []);
   const currentUrl = window.location.protocol + "//" + window.location.host;
   const year = new Date().getFullYear();
   return (

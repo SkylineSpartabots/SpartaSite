@@ -1,6 +1,5 @@
 import LazyImage from "./LazyImage";
 import LinkConverter from "./LinkConverter";
-import {useEffect, useState} from "react";
 
 const Card = ({ title, text, image, alt, subtitle = "" }) => {
 

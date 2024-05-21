@@ -11,7 +11,7 @@ const Sponsors = () => {
     }, []);
     useEffect(() => {
         setthemebool(JSON.parse(localStorage.getItem("theme")))
-    })
+    }, []);
 
     return (
         <div className="flex flex-col">
