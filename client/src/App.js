@@ -65,6 +65,9 @@ function App() {
           gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
           performance={[
             {title: "Auburn Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
+            {title: "Auburn Finalist 2", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
+            {title: "Auburn Finalist 3", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
+            {title: "Auburn Finalist 4", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
             {title: "Sammamish Semi-Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
           />} />
         <Route path="/history/2023" element={<HistoryPage

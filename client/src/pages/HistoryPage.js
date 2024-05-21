@@ -49,6 +49,8 @@ const HistoryPage = ({
                             return (<InfoBlock
                                 title={info.title}
                                 text={info.text}
+                                image={info.image}
+                                imageAlt={info.imageAlt}
                             />)
                         }).reduce((a, b) => [a, (
                             <div className="border-l-[1px] border-gray-300 min-h-[350px] mx-4"></div>), b]))}
@@ -59,6 +61,8 @@ const HistoryPage = ({
                             return (<InfoBlock
                                 title={info.title}
                                 text={info.text}
+                                image={info.image}
+                                imageAlt={info.imageAlt}
                             />)
                         }).reduce((a, b) => [a, (<hr className="w-full flex-1"/>), b]))}
                     </div>

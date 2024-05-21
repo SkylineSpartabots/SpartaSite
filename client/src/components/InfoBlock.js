@@ -1,7 +1,8 @@
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+import LazyImage from "./LazyImage";
 
-const InfoBlock = ({ title, text, buttonPath }) => {
+const InfoBlock = ({ title, text, image, imageAlt, buttonPath }) => {
   const navigate = useNavigate();
   function handleClick() {
     navigate(buttonPath);
@@ -12,6 +13,8 @@ const InfoBlock = ({ title, text, buttonPath }) => {
       <h1 className="titleColor text-4xl font-scoutcond uppercase pb-4 font-semibold break-words text-center" >
         {title}
       </h1>
+      {image ? (<img src={image} alt={imageAlt} className="rounded" />) : ""}
+      {image ? (<br/>) : ""}
       <p className="textColor font-productsans font-light pb-8 flex-grow">{text}</p>
       {(buttonPath ? <div className="text-center">
         <Button text="Read More" onClick={handleClick} color="bg-blue-900" />
