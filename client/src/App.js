@@ -60,7 +60,7 @@ function App() {
           splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"
           robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"
           robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
-          gameImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"
+          gameVideo="https://www.youtube.com/embed/9keeDyFxzY4"
           gameName="CRESCENDO"
           gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
           performance={[

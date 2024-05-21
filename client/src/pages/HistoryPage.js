@@ -10,7 +10,7 @@ const HistoryPage = ({
                          splashImage,
                          robotImage,
                          robotInfo,
-                         gameImage,
+                         gameVideo,
                          gameName,
                          gameInfo,
                          performance
@@ -38,7 +38,7 @@ const HistoryPage = ({
                     title="CHALLENGE"
                     subtitle={gameName}
                     text={gameInfo}
-                    image={gameImage}
+                    vidurl={gameVideo}
                     alt={year + " FRC Robot named " + robotName}
                 />
                 <div className="sm:flex sm:flex-col flex-1 px-6 py-8 max-w-[1000px] bgColor rounded">
