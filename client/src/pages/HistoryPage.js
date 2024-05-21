@@ -41,7 +41,7 @@ const HistoryPage = ({
                     vidurl={gameVideo}
                     alt={year + " FRC Robot named " + robotName}
                 />
-                <div className="sm:flex sm:flex-col flex-1 px-6 py-8 max-w-[1000px] bgColor rounded">
+                <div className="sm:flex sm:flex-col flex-1 px-6 py-8 max-w-[1000px] bgColor rounded-2xl">
                     <h1 className="text-5xl font-scoutcond font-black pb-4 titleColor">PERFORMANCE</h1>
                     <div
                         className="hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bgColor rounded">
