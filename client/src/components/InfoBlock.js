@@ -1,14 +1,14 @@
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 
-const InfoBlock = ({ title, text, buttonPath, col, bg, titleColor}) => {
+const InfoBlock = ({ title, text, buttonPath }) => {
   const navigate = useNavigate();
   function handleClick() {
     navigate(buttonPath);
   }
 
   return (
-    <div className="flex-1 py-4 sm:max-w-[1000px] min-h-[200px] sm:min-h-[320px] text-justify flex-justify">
+    <div className="flex-1 py-4 sm:max-w-[1000px] min-h-[200px] sm:min-h-[320px] flex-justify">
       <h1 className="titleColor text-4xl font-scoutcond uppercase pb-4 font-semibold break-words text-center" >
         {title}
       </h1>
