@@ -41,7 +41,6 @@ const Navbar = ({bool, setbool}) => {
         setThemeColors(!themebool);
         setthemebool(!themebool)
         localStorage.setItem("theme", !themebool);
-        handleShowMenu();
         setbool(!bool)
     }
 
@@ -100,7 +99,7 @@ const Navbar = ({bool, setbool}) => {
                 className={`${showMenu ? "top-[0] opacity-100" : "top-[-440%] opacity-0"} transition-all flex absolute flex-col justify-center items-center sm:items-start  sm:flex-row sm:top-0 w-full sm:gap-4 backdrop-blur-2xl sm:backdrop-blur-none h-[100vh] sm:h-fit sm:bg-transparent sm:justify-end z-0`}>
                 <button // Background clickable button to close menu
                     className={`${showMenu ? "top-[0] opacity-100" : "top-[-440%] opacity-0"} transition-all flex absolute flex-col justify-center items-center sm:items-start  sm:flex-row sm:top-0 w-full sm:gap-4 backdrop-blur-2xl sm:backdrop-blur-none h-[100vh] sm:h-fit sm:bg-transparent sm:justify-end z-0`}
-                    onClick={handleShowMenu}
+                    //onClick={handleShowMenu}
                     // style={{ zIndex: 1 }}
                 >
                     <div
