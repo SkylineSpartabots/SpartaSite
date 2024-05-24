@@ -56,7 +56,7 @@ const HistoryPage = ({
                             <div className="border-l-[1px] border-gray-300 min-h-[350px] mx-4"></div>), b]))}
                     </div>
                     <div
-                        className="sm:hidden flex flex-col flex-initial px-6 py-8 max-w-[1000px] bg-white rounded gap-4">
+                        className="sm:hidden flex flex-col flex-initial px-6 py-8 max-w-[1000px] bgColor rounded gap-4">
                         {(performance.map(info => {
                             return (<InfoBlock
                                 title={info.title}
