@@ -16,7 +16,7 @@ const Card = ({ title, text, image, alt, vidurl, subtitle = "" }) => {
       />
     </div>
   ) : (
-    <LazyImage alt={alt} img={image} className="object-cover h-full rounded" />
+    <LazyImage alt={alt} img={image} className="object-cover rounded flex-1"/>
   );
 
   var card = (
@@ -26,7 +26,7 @@ const Card = ({ title, text, image, alt, vidurl, subtitle = "" }) => {
         {subtitle !== "" ? <h2 className="text-4xl font-scoutcond font-black pb-3 titleColor">{subtitle}</h2> : null}
         <div className="textColor">{textElement}</div>
       </div>
-      <div className="flex-1 w-full">
+      <div className="flex-1 flex w-full">
         {mediaElement}
       </div>
     </div>

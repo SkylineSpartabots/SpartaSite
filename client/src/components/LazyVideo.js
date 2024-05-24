@@ -60,7 +60,7 @@ export const LazyVideo = ({ src, type, className, autoPlay, loop, muted, playsIn
                 autoPlay={autoPlay}
                 loop={loop}
                 muted={muted}
-                playsinline={playsInline} />
+                playsInline={playsInline} />
             {visible && (
                 isPlaying
             )}
