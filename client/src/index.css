@@ -36,7 +36,7 @@ code {
 }
 
 :root {
-  --containerColor: rgb(241 245 249); /* rgb(20 20 20); */
+  --containerColor: lightgrey; /* rgb(20 20 20); */ /* rgb(241 245 249) */
   --bgColor: white;
   --textColor: black;
   --titleColor: rgb(6 95 70);
