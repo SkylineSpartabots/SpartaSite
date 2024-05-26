@@ -70,33 +70,33 @@ function App() {
               {title: "Creativity Award", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/2024%20Award%202", text: "Awarded for our custom 3D printed bumper spacers to both absorb impacts and expand the Artemis' perimeter without changing the drivetrain size."},
             {title: "Sammamish Semi-Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Ranking number 15 in the qualification matches and being picked by the 3rd Alliance to join 9036 Ramen Robotics and 9442 Miso Mechanics, Artemis made it to the semi-finals of the Sammamish District Event."}]}
             />} />
-        <Route path="/history/2023" element={<HistoryPage
-          year="2023"
-          robotName="ZEUS"
-          robotNameBlurb="The God of the Sky"
-          splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"
-          robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"
-          robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
-          gameImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"
-          gameName="CHARGED UP"
-          gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
-          performance={[
-            {title: "Sammamish Alliance 5", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
-            {title: "Glacier Peak Alliance 6", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
-          />} />
-        <Route path="/history/2022" element={<HistoryPage
-          year="2022"
-          robotName="CHRONOS"
-          robotNameBlurb="The Personification of Time"
-          splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
-          robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
-          robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
-          gameImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
-          gameName="RAPID REACT"
-          gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
-          performance={[
-            {title: "Hopper Divison Semi-Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}
-          ]}/>} />
+        {/*<Route path="/history/2023" element={<HistoryPage*/}
+        {/*  year="2023"*/}
+        {/*  robotName="ZEUS"*/}
+        {/*  robotNameBlurb="The God of the Sky"*/}
+        {/*  splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/}
+        {/*  robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/}
+        {/*  robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"*/}
+        {/*  gameImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/}
+        {/*  gameName="CHARGED UP"*/}
+        {/*  gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"*/}
+        {/*  performance={[*/}
+        {/*    {title: "Sammamish Alliance 5", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},*/}
+        {/*    {title: "Glacier Peak Alliance 6", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}*/}
+        {/*  />} />*/}
+        {/*<Route path="/history/2022" element={<HistoryPage*/}
+        {/*  year="2022"*/}
+        {/*  robotName="CHRONOS"*/}
+        {/*  robotNameBlurb="The Personification of Time"*/}
+        {/*  splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"*/}
+        {/*  robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"*/}
+        {/*  robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"*/}
+        {/*  gameImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"*/}
+        {/*  gameName="RAPID REACT"*/}
+        {/*  gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"*/}
+        {/*  performance={[*/}
+        {/*    {title: "Hopper Divison Semi-Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}*/}
+        {/*  ]}/>} />*/}
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/join" element={<Join />} />
         <Route path="/comingsoon" element={<ComingSoon />} />
