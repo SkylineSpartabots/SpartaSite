@@ -15,7 +15,7 @@ const InfoBlock = ({ title, text, image, imageAlt, buttonPath }) => {
       </h1>
       {image ? (<img src={image} alt={imageAlt} className="rounded" />) : ""}
       {image ? (<br/>) : ""}
-      <p className="textColor font-productsans font-light pb-8 flex-grow">{text}</p>
+      <p className="textColor font-productsans text-center font-light pb-8 flex-grow">{text}</p>
       {(buttonPath ? <div className="text-center">
         <Button text="Read More" onClick={handleClick} color="bg-blue-900" />
       </div> : "")}
