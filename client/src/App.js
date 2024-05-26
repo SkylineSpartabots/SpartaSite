@@ -34,12 +34,12 @@ function App() {
   useEffect(() => {
     setthemebool(JSON.parse(localStorage.getItem("theme")))
   }, [])
-  
+
 
   useEffect(() => {
     setthemebool(JSON.parse(localStorage.getItem("theme")))
   }, [bool])
-  
+
   return (
     // routing for the entire site
     <Router>
@@ -49,7 +49,7 @@ function App() {
       <Routes>
         {/* Each route has its own tag */}
         <Route path="/" element={<Home />} />
-        <Route path="/fontDemo" element={<FontDemo />} />
+        {/*<Route path="/fontDemo" element={<FontDemo />} />*/}
         <Route path="/about" element={<About />} />
         <Route path="/ourteam" element={<OurTeam />} />
         <Route path="/history" element={<History />} />
@@ -59,17 +59,17 @@ function App() {
           robotNameBlurb="The Goddess of the Hunt"
           splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"
           robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"
-          robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+          robotInfo="The Spartabots' 2024 robot for the FIRST Challenge CRESCENDO. A quick and light bot with a pivoting shooter and swerve drive, Artemis was an Event Finalist at Auburn and a Semi-Finalist at Sammamish."
           gameVideo="https://www.youtube.com/embed/9keeDyFxzY4"
           gameName="CRESCENDO"
-          gameInfo="Insert game info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+          gameInfo="Alliances compete to score points by either launching orange rings called 'Notes' into the Speaker or by placing them into the Amp. When placed into the Amp further Notes scored in the Speaker are 'Amplified' and worth more points. The Endgame robots attempt to elevate themselves one of three chains hanging on the Stage near center field."
           performance={[
-            {title: "Auburn Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
-            {title: "Auburn Finalist 2", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
-            {title: "Auburn Finalist 3", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
-            {title: "Auburn Finalist 4", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"},
-            {title: "Sammamish Semi-Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"}]}
-          />} />
+              // Note sammamish semi-finalist overflows the box and messes with the other picture alignment
+              // TODO Change these images. Different pic of bot for Artemis blurb. Smth diff for Finalist. Picture of actual award for Creativity Award. Picture of Artemis in the pit for Sammamish Semi-Finalist.
+            {title: "Auburn Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Defeating the 1st Alliance in her first match, Artemis and her Alliance 8 partners, 1983 Skunk Works and 9023 Future Martians, made it to the finals of the Auburn District Event."},
+              {title: "Creativity Award", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/2024%20Award%202", text: "Awarded for our custom 3D printed bumper spacers to both absorb impacts and expand the Artemis' perimeter without changing the drivetrain size."},
+            {title: "Sammamish Semi-Finalist", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis", text: "Ranking number 15 in the qualification matches and being picked by the 3rd Alliance to join 9036 Ramen Robotics and 9442 Miso Mechanics, Artemis made it to the semi-finals of the Sammamish District Event."}]}
+            />} />
         <Route path="/history/2023" element={<HistoryPage
           year="2023"
           robotName="ZEUS"
