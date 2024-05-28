@@ -22,7 +22,7 @@ const setThemeColors = theme => {
     document.documentElement.style.setProperty('--textColor', theme ? "black" : "white");
     document.documentElement.style.setProperty('--bgColor', theme ? "white" : "black");
     document.documentElement.style.setProperty('--titleColor', theme ? "rgb(6 95 70)" : "rgb(68 147 91)");
-    document.documentElement.style.setProperty('--containerColor', theme ? "rgb(241 245 249)" : "rgb(20 20 20)");
+    document.documentElement.style.setProperty('--containerColor', theme ? "lightgrey" : "rgb(20 20 20)");
 }
 //         <NavbarItem path="/ourteam" name="Our Team" loc={location} />  (use once page setup)
 const Navbar = ({bool, setbool}) => {
