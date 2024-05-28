@@ -68,7 +68,7 @@ function App() {
                         // TODO Change these images. Different pic of bot for Artemis blurb. Smth diff for Finalist. Picture of actual award for Creativity Award. Picture of Artemis in the pit for Sammamish Semi-Finalist.
                         {
                             title: "Auburn Finalist",
-                            image: "https://res.cloudinary.com/spartasite/image/upload/v1716867393/Auburn_2024_Finalist_kb2xk1.jpg",
+                            image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/drive-pit_medals_2_bwkb8i.jpg",
                             text: "Defeating the 1st Alliance in her first match, Artemis and her Alliance 8 partners, 1983 Skunk Works and 9023 Future Martians, made it to the finals of the Auburn District Event."
                         },
                         {
