@@ -58,7 +58,7 @@ function App() {
                     robotName="ARTEMIS"
                     robotNameBlurb="The Goddess of the Hunt"
                     splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis_cropped_aspect_uwgkdb.jpg"
-                    robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/artemis_closer-comp_tqnusn.jpg"
+                    robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis%20Intake.webp"
                     robotInfo="The Spartabots' 2024 robot for the FIRST Challenge CRESCENDO. A quick and light bot with a pivoting shooter and swerve drive, Artemis was an Event Finalist at Auburn and a Semi-Finalist at Sammamish."
                     gameVideo="https://www.youtube.com/embed/9keeDyFxzY4"
                     gameName="CRESCENDO"
@@ -86,7 +86,7 @@ function App() {
                 {/*  year="2023"*/}
                 {/*  robotName="ZEUS"*/}
                 {/*  robotNameBlurb="The God of the Sky"*/}
-                {/*  splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/}
+                {/*  splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/} // TODO get a higher quality picture please somebody
                 {/*  robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/}
                 {/*  robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"*/}
                 {/*  gameImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/}
