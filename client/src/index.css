@@ -34,6 +34,9 @@ code {
 .title {
   @apply font-scoutcond uppercase pb-4 font-black text-4xl sm:text-5xl text-center w-full sm:w-fit text-emerald-800;
 }
+.antiWrap {
+    white-space: nowrap;
+}
 
 :root {
   --containerColor: lightgrey; /* rgb(20 20 20); */ /* rgb(241 245 249) */
@@ -64,7 +67,7 @@ code {
     rgba(0, 0, 0, 0.009) 88%,
     rgba(0, 0, 0, 0) 100%
     );
-    
+
   /* darker */
   background: linear-gradient(
     rgba(0, 0, 0, 0.5) 0%,
