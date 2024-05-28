@@ -57,8 +57,8 @@ function App() {
                     year="2024"
                     robotName="ARTEMIS"
                     robotNameBlurb="The Goddess of the Hunt"
-                    splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"
-                    robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"
+                    splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis_cropped_aspect_uwgkdb.jpg"
+                    robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/artemis_closer-comp_tqnusn.jpg"
                     robotInfo="The Spartabots' 2024 robot for the FIRST Challenge CRESCENDO. A quick and light bot with a pivoting shooter and swerve drive, Artemis was an Event Finalist at Auburn and a Semi-Finalist at Sammamish."
                     gameVideo="https://www.youtube.com/embed/9keeDyFxzY4"
                     gameName="CRESCENDO"
@@ -68,7 +68,7 @@ function App() {
                         // TODO Change these images. Different pic of bot for Artemis blurb. Smth diff for Finalist. Picture of actual award for Creativity Award. Picture of Artemis in the pit for Sammamish Semi-Finalist.
                         {
                             title: "Auburn Finalist",
-                            image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis",
+                            image: "https://res.cloudinary.com/spartasite/image/upload/v1716867393/Auburn_2024_Finalist_kb2xk1.jpg",
                             text: "Defeating the 1st Alliance in her first match, Artemis and her Alliance 8 partners, 1983 Skunk Works and 9023 Future Martians, made it to the finals of the Auburn District Event."
                         },
                         {
@@ -78,7 +78,7 @@ function App() {
                         },
                         {
                             title: "Sammamish Semi-Finalist",
-                            image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis",
+                            image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
                             text: "Ranking number 15 in the qualification matches and being picked by the 3rd Alliance to join 9036 Ramen Robotics and 9442 Miso Mechanics, Artemis made it to the semi-finals of the Sammamish District Event."
                         }]}
                 />}/>

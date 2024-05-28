@@ -23,7 +23,7 @@ const History = () => {
                 <Card
                     title="[history/2024](2024 — ARTEMIS)"
                     text={["Artemis is the Spartabots' current robot for the FIRST Challenge CRESCENDO, this robot was an Event Finalist at Auburn and a Semi-Finalist at Sammamish!", "Robot Status: In Use"]}
-                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis"}
+                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis_cropped_aspect_uwgkdb.jpg"}
                     alt="2024 FRC robot named artemis"
                 />
                 <Card
