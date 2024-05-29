@@ -40,18 +40,21 @@ const Home = () => {
                         title="Our Sponsors"
                         text="The Spartabots wouldn't exist without the support of our gracious sponsors, who help us in a variety of ways from granting money to donating parts."
                         buttonPath="/sponsors"
+                        buttonText="Sponsors" // Make this be Sponsor Us? and then include info on that page about how to sponsor us
                     />
                     <div className="border-l-[1px] border-gray-300 min-h-[350px] mx-4"></div>
                     <InfoBlock
                         title="Community"
                         text="Our goal is to raise awareness and interest among the people of our community about our club as well as the field of science and technology. Partnering with community members and local companies will allow us to raise sufficient funds to support our club mission and objectives."
                         buttonPath="/about"
+                        buttonText="About Us"
                     />
                     <div className="border-l-[1px] border-gray-300 min-h-[350px] mx-4"></div>
                     <InfoBlock
                         title="Get Involved"
                         text="We are always looking for any help within the club. Whether it be new students to join us, new mentors, or new sponsors to support our team."
                         buttonPath="/join"
+                        buttonText="Join Us"
                     />
                 </div>
 

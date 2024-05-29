@@ -2,7 +2,7 @@ import Button from "./Button";
 import {useNavigate} from "react-router-dom";
 import LazyImage from "./LazyImage";
 
-const InfoBlock = ({title, text, image, imageAlt, buttonPath}) => {
+const InfoBlock = ({title, text, image, imageAlt, buttonPath, buttonText}) => {
     const navigate = useNavigate();
 
     function handleClick() {
@@ -18,7 +18,8 @@ const InfoBlock = ({title, text, image, imageAlt, buttonPath}) => {
             {image ? (<br/>) : ""}
             <p className="textColor font-productsans text-center font-light pb-8 flex-grow">{text}</p>
             {(buttonPath ? <div className="text-center">
-                <Button text="Read More" onClick={handleClick} color="bg-blue-900"/>
+                <Button text={buttonText ? buttonText : "Read More"} onClick={handleClick} color="bg-blue-900"/>
+            {/*    NEED to check if the button text is passed in if not make it Read More*/}
             </div> : "")}
         </div>
     );
