@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div className="overflow-hidden">
             <VideoSplash title="TEAM 2976" subtitle="THE SPARTABOTS"
-                         video={"https://res.cloudinary.com/spartasite/video/upload/f_auto:video,q_auto/BRoll"}/>
+                         video={"https://res.cloudinary.com/spartasite/video/upload/f_auto:video,q_auto/CoverV2"}/>
             <div className={`containerColor flex flex-col gap-8 items-center p-8`}>
                 <Card
                     title="ABOUT US"
