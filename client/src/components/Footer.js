@@ -9,7 +9,7 @@ export default function Footer() {
   const currentUrl = window.location.protocol + "//" + window.location.host;
   const year = new Date().getFullYear();
   return (
-    <footer className={`${themebool?"bg-gray-200 text-gray-600":"bg-black text-white"} text-center lg:text-left`}>
+    <footer className={`textColor bgColor`}>
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
         <div className="mr-12 hidden lg:block">
           <span>Check us out on Social Media:</span>
@@ -91,7 +91,7 @@ export default function Footer() {
         <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <div className="">
             <h1
-              className="
+              className="textColor 
                     uppercase
                     font-semibold
                     mb-4
@@ -103,7 +103,7 @@ export default function Footer() {
             >
               Spartasite by the Spartabots
             </h1>
-            <p className="text-justify">
+            <p className="textColor text-justify">
               The Spartasite is the online home of the Spartabots. Here, we
               share our goals, values, and accomplishments. Team 2976 is always
               reaching for the stars, and we're so excited to share our journey
