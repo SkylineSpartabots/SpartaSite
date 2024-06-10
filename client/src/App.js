@@ -13,7 +13,6 @@ import AccountManage from "./pages/AccountManage";
 import AddAccount from "./pages/AddAccount";
 import ComingSoon from "./pages/ComingSoon";
 import Dashboard from "./pages/Dashboard";
-import FontDemo from "./pages/FontDemo";
 import Home from "./pages/Home";
 import Join from "./pages/Join";
 import Login from "./pages/Login";
@@ -25,21 +24,11 @@ import Purchase from "./pages/Purchase";
 import Sponsors from "./pages/Sponsors";
 import Software from "./pages/Software";
 import Mentors from "./pages/Mentors";
-import {useEffect, useState} from "react";
+import { useState } from "react";
 
 function App() {
     const {user} = useAuthContext();
     const [bool, setbool] = useState(true)
-    const [themebool, setthemebool] = useState(true)
-
-    useEffect(() => {
-        setthemebool(JSON.parse(localStorage.getItem("theme")))
-    }, [])
-
-
-    useEffect(() => {
-        setthemebool(JSON.parse(localStorage.getItem("theme")))
-    }, [bool])
 
     return (
         // routing for the entire site
@@ -87,7 +76,7 @@ function App() {
                 {/*  year="2023"*/}
                 {/*  robotName="ZEUS"*/}
                 {/*  robotNameBlurb="The God of the Sky"*/}
-                {/*  splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/} // TODO get a higher quality picture please somebody
+                {/*  splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/} {/* TODO: get a higher quality picture please somebody*/}
                 {/*  robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/}
                 {/*  robotInfo="Insert robot info here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"*/}
                 {/*  gameImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"*/}

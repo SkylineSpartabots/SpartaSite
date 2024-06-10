@@ -1,18 +1,7 @@
-import {useEffect, useState} from "react";
 import Splash from "../components/Splash";
-import Card from "../components/Card";
 import InfoBlock from "../components/InfoBlock";
 
 const Mentors = ({mentors}) => {
-    const [themebool, setthemebool] = useState(true)
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
-    useEffect(() => {
-        setthemebool(JSON.parse(localStorage.getItem("theme")))
-    }, []);
-
     var rows = [];
     var row = [];
 

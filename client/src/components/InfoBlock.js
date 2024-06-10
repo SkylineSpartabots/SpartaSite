@@ -1,6 +1,5 @@
 import Button from "./Button";
 import {useNavigate} from "react-router-dom";
-import LazyImage from "./LazyImage";
 
 const InfoBlock = ({title, text, image, imageAlt, buttonPath, buttonText, className}) => {
     const navigate = useNavigate();
