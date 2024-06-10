@@ -24,6 +24,7 @@ import HistoryPage from "./pages/HistoryPage";
 import Purchase from "./pages/Purchase";
 import Sponsors from "./pages/Sponsors";
 import Software from "./pages/Software";
+import Mentors from "./pages/Mentors";
 import {useEffect, useState} from "react";
 
 function App() {
@@ -114,6 +115,28 @@ function App() {
                 <Route path="/comingsoon" element={<ComingSoon/>}/>
                 <Route path="/purchase" element={<Purchase/>}/>
                 <Route path="/software" element={<Software/>}/>
+                <Route path="/mentors" element={<Mentors mentors={[
+                        {
+                            name: <div className="antiWrap"> Name </div>,
+                            portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
+                            text: "Insert text info here."
+                        },
+                        {
+                            name: <div className="antiWrap"> Name </div>,
+                            portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
+                            text: "Insert text info here."
+                        },
+                        {
+                            name: <div className="antiWrap"> Name </div>,
+                            portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
+                            text: "Insert text info here."
+                        },
+                        {
+                            name: <div className="antiWrap"> Name </div>,
+                            portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
+                            text: "Insert text info here."
+                        }
+                    ]}/>}/>
                 <Route
                     path="/login"
                     element={!user ? <Login/> : <Navigate to="/dashboard"/>}
