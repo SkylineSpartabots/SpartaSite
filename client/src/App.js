@@ -67,7 +67,7 @@ function App() {
                             text: "Awarded for our custom 3D printed bumper spacers to both absorb impacts and expand the Artemis' perimeter without changing the drivetrain size."
                         },
                         {
-                            title: <div className="antiWrap"> Sammamish Semi-Finalist </div>,
+                            title: "Sammamish Semi‑Finalist",
                             image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
                             text: "Ranking number 15 in the qualification matches and being picked by the 3rd Alliance to join 9036 Ramen Robotics and 9442 Miso Mechanics, Artemis made it to the semi-finals of the Sammamish District Event."
                         }]}
