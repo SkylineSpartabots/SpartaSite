@@ -24,7 +24,7 @@ import Purchase from "./pages/Purchase";
 import Sponsors from "./pages/Sponsors";
 import Software from "./pages/Software";
 import Mentors from "./pages/Mentors";
-import { useState } from "react";
+import {useState} from "react";
 
 function App() {
     const {user} = useAuthContext();
@@ -73,69 +73,77 @@ function App() {
                         }]}
                 />}/>
                 <Route path="/history/2023" element={<HistoryPage
-                  year="2023"
-                  robotName="ZEUS"
-                  robotNameBlurb="The God of the Sky"
-                  splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"  // TODO: get a higher quality picture please somebody
-                  robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"
-                  robotInfo="Zeus was the Spartabots' 2023 robot. A tall and mighty robot with an elevator to raise its arm and a swerve drive, Zeus was selected for the 5th and 6th alliances at Sammamish and Glacier Peak regional events, respectively."
-                  gameVideo="https://www.youtube.com/embed/0zpflsYc4PA"
-                  gameName="CHARGED UP"
-                  gameInfo="Alliances compete to score points by placing cubes and cones onto platforms and poles located in front of the driver station walls. Groups of 3 game pieces form Links, creating enough Links awards the Alliance the Sustainability Bonus. In the Endgame robots attempt to balance themselves upon the Charge Station."
-                  performance={[
-                    {title: "Sammamish Alliance 5", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "Zeus was ranked number 8 and was the first pick of Alliance 5. Zeus competed alongside 1899 Saints Robotics and 9023 Future Martians, making it to only the 3rd round of the playoffs."},
-                    {title: "Glacier Peak Alliance 6", image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus", text: "The first choice of Alliance 6 at Glacier Peak, Zeus teamed up with 4681 Murphy's Law and 3049 BremerTron making it only 2 rounds into the playoffs."}]}
-                  />} />
+                    year="2023"
+                    robotName="ZEUS"
+                    robotNameBlurb="The God of the Sky"
+                    splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"  // TODO: get a higher quality picture please somebody
+                    robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"
+                    robotInfo="Zeus was the Spartabots' 2023 robot. A tall and mighty robot with an elevator to raise its arm and a swerve drive, Zeus was selected for the 5th and 6th alliances at Sammamish and Glacier Peak regional events, respectively."
+                    gameVideo="https://www.youtube.com/embed/0zpflsYc4PA"
+                    gameName="CHARGED UP"
+                    gameInfo="Alliances compete to score points by placing cubes and cones onto platforms and poles located in front of the driver station walls. Groups of 3 game pieces form Links, creating enough Links awards the Alliance the Sustainability Bonus. In the Endgame robots attempt to balance themselves upon the Charge Station."
+                    performance={[
+                        {
+                            title: "Sammamish Alliance 5",
+                            image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus",
+                            text: "Zeus was ranked number 8 and was the first pick of Alliance 5. Zeus competed alongside 1899 Saints Robotics and 9023 Future Martians, making it to only the 3rd round of the playoffs."
+                        },
+                        {
+                            title: "Glacier Peak Alliance 6",
+                            image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus",
+                            text: "The first choice of Alliance 6 at Glacier Peak, Zeus teamed up with 4681 Murphy's Law and 3049 BremerTron making it only 2 rounds into the playoffs."
+                        }]}
+                />}/>
                 <Route path="/history/2022" element={<HistoryPage
-                  year="2022"
-                  robotName="CHRONOS"
-                  robotNameBlurb="The Personification of Time"
-                  splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
-                  robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
-                  robotInfo="Equipped with a stowable intake and LimeLight vision system, Chronos was the Spartabots' 2022 robot. Chronos was a Quarter-Finalist in the Hopper Division and a Finalist in the Auburn, Bonney Lake, and Pacific Northwest District Events."
-                  gameVideo="https://www.youtube.com/embed/LgniEjI9cCM"
-                  gameName="RAPID REACT"
-                  gameInfo="Alliances compete to score points by launching balls into the Lower and Upper Hubs. Robots may collect game pieces from Terminals on either side of the field. In the Edngame robots try to climb up a set of bars in the Hanger to earn additional points."
-                  performance={[
-                    {
-                        title: "Hopper Divison Quarter-Finalist",
-                        image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos",
-                        text: "Chronos was the 3rd pick of Alliance 5 in the Hopper Division. The alliance made it to the quarter-finals, but lost to the 4th Alliance."
-                    },
-                      {
-                          title: "Pacific Northwest District Finalist",
-                          image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos",
-                          text: "Chronos was the Captain of Alliance 2, selecting 488 XBOT and 2046 Bear Metal as partners. The alliance made it to the finals, but lost to the 1st Alliance."
-                      }
+                    year="2022"
+                    robotName="CHRONOS"
+                    robotNameBlurb="The Personification of Time"
+                    splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
+                    robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
+                    robotInfo="Equipped with a stowable intake and LimeLight vision system, Chronos was the Spartabots' 2022 robot. Chronos was a Quarter-Finalist in the Hopper Division and a Finalist in the Auburn, Bonney Lake, and Pacific Northwest District Events."
+                    gameVideo="https://www.youtube.com/embed/LgniEjI9cCM"
+                    gameName="RAPID REACT"
+                    gameInfo="Alliances compete to score points by launching balls into the Lower and Upper Hubs. Robots may collect game pieces from Terminals on either side of the field. In the Edngame robots try to climb up a set of bars in the Hanger to earn additional points."
+                    performance={[
+                        {
+                            title: "Hopper Divison Quarter-Finalist",
+                            image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos",
+                            text: "Chronos was the 3rd pick of Alliance 5 in the Hopper Division. The alliance made it to the quarter-finals, but lost to the 4th Alliance."
+                        },
+                        {
+                            title: "Pacific Northwest District Finalist",
+                            image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos",
+                            text: "Chronos was the Captain of Alliance 2, selecting 488 XBOT and 2046 Bear Metal as partners. The alliance made it to the finals, but lost to the 1st Alliance."
+                        }
 
-                  ]}/>} />
+                    ]}/>}/>
                 <Route path="/sponsors" element={<Sponsors/>}/>
                 <Route path="/join" element={<Join/>}/>
                 <Route path="/comingsoon" element={<ComingSoon/>}/>
                 <Route path="/purchase" element={<Purchase/>}/>
                 <Route path="/software" element={<Software/>}/>
                 <Route path="/mentors" element={<Mentors mentors={[
-                        {
-                            name: <div className="antiWrap"> Name </div>,
-                            portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
-                            text: "Insert text info here."
-                        },
-                        {
-                            name: <div className="antiWrap"> Name </div>,
-                            portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
-                            text: "Insert text info here."
-                        },
-                        {
-                            name: <div className="antiWrap"> Name </div>,
-                            portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
-                            text: "Insert text info here."
-                        },
-                        {
-                            name: <div className="antiWrap"> Name </div>,
-                            portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
-                            text: "Insert text info here."
-                        }
-                    ]}/>}/>
+                    {
+                        name: <div className="antiWrap"> Name </div>,
+                        portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
+                        text: "Insert text info here."
+                    },
+                    {
+                        name: <div className="antiWrap"> Name </div>,
+                        portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
+                        text: "Insert text info here."
+                    },
+                    {
+                        name: <div className="antiWrap"> Name </div>,
+                        portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
+                        text: "Insert text info here."
+                    },
+                    {
+                        name: <div className="antiWrap"> Name </div>,
+                        portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
+                        text: "Insert text info here."
+                    }
+                ]}/>}/>
                 <Route
                     path="/login"
                     element={!user ? <Login/> : <Navigate to="/dashboard"/>}
