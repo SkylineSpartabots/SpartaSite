@@ -7,7 +7,7 @@ import {useState} from "react";
 const NavbarItem = ({path, name, loc}) => {
     return (
         <Link
-            className="font-semibold text-3xl md:text-xl whitespace-nowrap no-underline text-white m-3 mt-4"
+            className="navbar-item font-semibold text-3xl md:text-xl whitespace-nowrap no-underline text-white m-3 mt-4"
             to={path}
         >
             {name}
