@@ -117,6 +117,29 @@ function App() {
                         }
 
                     ]}/>}/>
+                <Route path="/history/2020" element={<HistoryPage
+                    year="2020"
+                    robotName="OLYMPUS"
+                    robotNameBlurb="The Personification of Time"
+                    splashImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
+                    robotImage="https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"
+                    robotInfo="Equipped with a stowable intake and LimeLight vision system, Chronos was the Spartabots' 2022 robot. Chronos was a Quarter-Finalist in the Hopper Division and a Finalist in the Auburn, Bonney Lake, and Pacific Northwest District Events."
+                    gameVideo="https://www.youtube.com/embed/LgniEjI9cCM"
+                    gameName="RAPID REACT"
+                    gameInfo="Alliances compete to score points by launching balls into the Lower and Upper Hubs. Robots may collect game pieces from Terminals on either side of the field. In the Edngame robots try to climb up a set of bars in the Hanger to earn additional points."
+                    performance={[
+                        {
+                            title: "Hopper Divison Quarter-Finalist",
+                            image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos",
+                            text: "Chronos was the 3rd pick of Alliance 5 in the Hopper Division. The alliance made it to the quarter-finals, but lost to the 4th Alliance."
+                        },
+                        {
+                            title: "Pacific Northwest District Finalist",
+                            image: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos",
+                            text: "Chronos was the Captain of Alliance 2, selecting 488 XBOT and 2046 Bear Metal as partners. The alliance made it to the finals, but lost to the 1st Alliance."
+                        }
+
+                    ]}/>}/>
                 <Route path="/sponsors" element={<Sponsors/>}/>
                 <Route path="/join" element={<Join/>}/>
                 <Route path="/comingsoon" element={<ComingSoon/>}/>
