@@ -24,7 +24,15 @@ import Purchase from "./pages/Purchase";
 import Sponsors from "./pages/Sponsors";
 import Software from "./pages/Software";
 import Mentors from "./pages/Mentors";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+
+const LoginRedirect = () => {
+    useEffect(() => {
+        window.location.href = "https://docs.google.com/spreadsheets/d/1Oej3ELY0IZs_41ULVrvsGiq36o6mAh5lx8zxWlClZmg/edit?gid=0#gid=0";
+    }, []);
+
+    return null; // or you can return a loading spinner or message if you want
+};
 
 function App() {
     const {user} = useAuthContext();
@@ -167,10 +175,7 @@ function App() {
                         text: "Insert text info here."
                     }
                 ]}/>}/>
-                <Route
-                    path="/login"
-                    element={!user ? <Login/> : <Navigate to="/dashboard"/>}
-                />
+                <Route path="/login" element={<LoginRedirect />} />
 
                 <Route
                     path="/dashboard"
