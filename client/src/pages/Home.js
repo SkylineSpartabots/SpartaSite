@@ -18,7 +18,7 @@ const Home = () => {
                 <Card
                     title="ABOUT US"
                     text="The Spartabots were founded in 2008 at Skyline High School located in Sammamish, WA. We participate in the FIRST Robotics Competition as Team 2976 and we operate as a high school club."
-                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/yanda"}
+                    image={"./Yanda.jpg"}
                     alt="Group photo of the Spartabots team"
                 />
                 <Card
