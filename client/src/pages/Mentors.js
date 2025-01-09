@@ -29,7 +29,7 @@ const Mentors = ({mentors}) => {
             />
             <div className="containerColor flex flex-col gap-8 items-center p-8">
                 {(rows.map(row => 
-                <div className="hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bgColor rounded">
+                <div className="hidden sm:flex flex-row flex-initial px-6 py-8 max-w-[1000px] bgColor rounded-2xl">
                         {(row.map(info => {
                             return (<InfoBlock
                                 title={info.name}

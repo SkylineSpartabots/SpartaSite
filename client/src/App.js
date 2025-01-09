@@ -124,6 +124,11 @@ function App() {
                             name: <div className="antiWrap"> Name </div>,
                             portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
                             text: "Insert text info here."
+                        },
+                        {
+                            name: <div className="antiWrap"> Name </div>,
+                            portrait: "https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Sammamish_2024_Semi-Finalist_Image_ih1gva.jpg",
+                            text: "Insert text info here."
                         }
                     ]}/>}/>
                 <Route
