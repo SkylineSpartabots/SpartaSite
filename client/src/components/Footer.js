@@ -149,6 +149,7 @@ export default function Footer() {
                 ></path>
               </svg>
               No :)
+              {/*<a href="tel:248-434-5508">No :)</a>*/}
             </p>
           </div>
         </div>
