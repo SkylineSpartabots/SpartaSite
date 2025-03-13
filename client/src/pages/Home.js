@@ -2,9 +2,9 @@ import {useEffect} from "react";
 import Card from "../components/Card.js";
 import InfoBlock from "../components/InfoBlock.js";
 import SpartaBotsGroupPhoto from "../graphics/images/Awards2.webp"
-import WideShotWorldsImg from "../graphics/images/WideShotWorlds.JPG"
+import WideShotWorldsImg from "../graphics/images/Worldsshot.JPG"
 import ChronosBot from "../graphics/images/Chronos.webp"
-import Video from "./graphics/Videos/SpartabotsVideo.mp4"
+import Video from "../graphics/Videos/SpartabotsVideo.mp4"
 
 import {VideoSplash} from "../components/VideoSplash.js";
 

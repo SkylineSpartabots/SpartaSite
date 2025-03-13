@@ -1,6 +1,6 @@
 import Splash from "../components/Splash";
 import {useEffect} from "react";
-
+import img from "../graphics/images/LeadWatch.JPG"
 const Join = () => {
     // this function scrolls to the top of the page when first navigated to
     useEffect(() => {
@@ -11,7 +11,7 @@ const Join = () => {
             <Splash
                 title="JOIN US"
                 subtitle="BECOME A MEMBER"
-                image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/2024%20Award%202"}
+                image={img}
             />
             <div className={`containerColor flex flex-col p-8 gap-8 items-center`}>
                 <div className="bgColor box">

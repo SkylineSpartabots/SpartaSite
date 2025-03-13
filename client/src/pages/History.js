@@ -1,6 +1,12 @@
 import {useEffect, useState} from "react";
 import Splash from "../components/Splash";
 import Card from "../components/Card";
+import HistorySplash from "../graphics/images/WorldsStage.jpg"
+import ArtemisImg from "../graphics/images/Artemis.JPG"
+import ZeusImg from "../graphics/images/Zeus.png"
+import ChronosImg from "../graphics/images/Chronos.webp"
+import Olympus from "../graphics/images/OLD/Olympus.JPG"
+import Khaos from "../graphics/images/OLD/Khaos.jpg"
 
 const History = () => {
     const [themebool, setthemebool] = useState(true)
@@ -17,37 +23,37 @@ const History = () => {
             <Splash
                 title="HISTORY"
                 subtitle="2009 — 2024"
-                image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/RobotBlur"}
+                image={HistorySplash}
             />
             <div className="containerColor flex flex-col gap-8 items-center p-8">
                 <Card
                     title="[history/2024](2024 — ARTEMIS)"
                     text={["Artemis is the Spartabots' current robot for the FIRST Challenge CRESCENDO, this robot was an Event Finalist at Auburn and a Semi-Finalist at Sammamish!", "Currently In Use"]}
-                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis_cropped_aspect_uwgkdb.jpg"}
+                    image={ArtemisImg}
                     alt="2024 FRC robot named artemis"
                 />
                 <Card
                     title="[history/2023](2023 — ZEUS)"
                     text={["Zeus was the Spartabots' 2023 robot for the FIRST Challenge CHARGED UP, this robot was apart of Alliance 5 at Sammamish and Alliance 6 at Glacier Peak!"]}
-                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Zeus"}
+                    image={ZeusImg}
                     alt="2023 FRC robot named zeus"
                 />
                 <Card
                     title="[history/2022](2022 — CHRONOS)"
                     text={["Chronos was the Spartabots' 2022 competition robot for the FIRST challenge RAPID REACT, this robot made it to World's in the Hopper divison as a Semi-Finalist."]}
-                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Chronos"}
+                    image={ChronosImg}
                     alt="2022 FRC robot named chronos"
                 />
                 <Card
                     title="[history/2020](2020 — OLYMPUS)"
                     text={["Olympus was the Spartabots' 2020 robot for the FIRST Challenge INFINITE RECHARGE, we were Glacier Peak finalists with a qualifying record of 11-7-0."]}
-                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/v1/RobotImages/2020%20Bot%20(OLYMPUS)%20~%20FIRST%20INFINITE%20RECHARGE"}
+                    image={Olympus}
                     alt="2020 FRC Competition Robot OLYMPUS"
                 />
                 <Card
                     title="[history/2019](2019 — KHAOS)"
                     text={["Khaos was the Spartabots' 2019 robot for the FIRST Challenge DEEP SPACE, we were Hopper Division finalists with a qualifying record of 39-29-0."]}
-                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/v1/RobotImages/2019%20Bot%20(KHAOS)%20~%20FIRST%20DEEP%20SPACE"}
+                    image={Khaos}
                     alt="2019 FRC Competition Robot KHAOS"
                 />
                 <Card
