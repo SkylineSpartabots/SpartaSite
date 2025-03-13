@@ -1,6 +1,10 @@
 import {useEffect} from "react";
 import Card from "../components/Card.js";
 import InfoBlock from "../components/InfoBlock.js";
+import SpartaBotsGroupPhoto from "../graphics/images/Awards2.webp"
+import WideShotWorldsImg from "../graphics/images/WideShotWorlds.JPG"
+import ChronosBot from "../graphics/images/Chronos.webp"
+import Video from "./graphics/Videos/SpartabotsVideo.mp4"
 
 import {VideoSplash} from "../components/VideoSplash.js";
 
@@ -13,25 +17,25 @@ const Home = () => {
     return (
         <div className="overflow-hidden">
             <VideoSplash title="TEAM 2976" subtitle="THE SPARTABOTS"
-                         video={"https://res.cloudinary.com/spartasite/video/upload/f_auto:video,q_auto/CoverV2"}/>
+                         video={Video}/>
             <div className={`containerColor flex flex-col gap-8 items-center p-8`}>
                 <Card
                     title="ABOUT US"
                     text="The Spartabots were founded in 2008 at Skyline High School located in Sammamish, WA. We participate in the FIRST Robotics Competition as Team 2976 and we operate as a high school club."
-                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/yanda"}
+                    image={SpartaBotsGroupPhoto}
                     alt="Group photo of the Spartabots team"
                 />
                 <Card
                     title="WHAT IS FIRST ROBOTICS?"
                     text="FRC stands for the FIRST Robotics Competition, which is an international high school robotics competition operated by FIRST (For Inspiration and Recognition of Science and Technology). The game of the competition changes each year to keep the excitement fresh and keep teams innovating. The game for 2025 is called REEFSCAPE."
-                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/CRESENDO%20Game"}
+                    image={WideShotWorldsImg}
                     alt="Wide shot of the FIRST Robotics Competition"
                     allowLinks="true"
                 />
                 <Card
                     title="WHY SHOULD I JOIN?"
                     text="Being part of a FIRST robotics team is fun! It doesn't matter whether you have experience with robotics or not, you'll gain amazing experiences and learn valuable skills that you can carry to college and beyond."
-                    image={"https://res.cloudinary.com/spartasite/image/upload/f_auto,q_auto/Artemis%20In%20Game"}
+                    image={ChronosBot}
                     alt="Picture of the CHRONOS bot"
                 />
                 <div style={{backgroundColor: "var(--bgColor)"}}
