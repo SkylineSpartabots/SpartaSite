@@ -1,5 +1,10 @@
 import {useEffect, useState} from "react";
 import Splash from "../components/Splash";
+<<<<<<< Updated upstream
+=======
+import sponsorsSplashImg from "../graphics/images/tuffbot.webp"
+import bannerImg from "../graphics/images/Final_Sponsors2024.webp"
+>>>>>>> Stashed changes
 
 import sponsors from "../graphics/images/Final_Sponsors2024.webp"
 import sponsorSplash from "../graphics/images/OLD/TeamNumber-min.webp"
