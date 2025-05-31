@@ -25,7 +25,7 @@ import Sponsors from "./pages/Sponsors";
 import Software from "./pages/Software";
 import Mentors from "./pages/Mentors";
 import {useEffect, useState} from "react";
-
+import Links from "./pages/Links.js"
 const LoginRedirect = () => {
     useEffect(() => {
         window.location.href = "https://docs.google.com/spreadsheets/d/1Oej3ELY0IZs_41ULVrvsGiq36o6mAh5lx8zxWlClZmg/edit?gid=0#gid=0";
@@ -150,6 +150,7 @@ function App() {
                 {/*    ]}/>}/>*/}
                 <Route path="/sponsors" element={<Sponsors/>}/>
                 <Route path="/join" element={<Join/>}/>
+                <Route path='/Links' element = {<Links/>}/>
                 <Route path="/comingsoon" element={<ComingSoon/>}/>
                 <Route path="/purchase" element={<Purchase/>}/>
                 <Route path="/software" element={<Software/>}/>

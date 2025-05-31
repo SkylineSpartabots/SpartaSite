@@ -1,0 +1,28 @@
+
+:root {
+    --speed: 500ms;
+}
+
+.block1 {
+    border: 10px solid transparent;
+    border-image: linear-gradient(60deg, rgb(0, 110, 255),rgb(255, 0, 0),rgb(255, 251, 0));
+    border-image-slice: 1;
+    height: 45px;
+    cursor:pointer;   
+    transition: height 1.2s;
+    background-color: rgba(0, 0, 0, 0.815)
+}
+
+.block1 {transition-timing-function: ease;}
+
+.block1:hover {
+    height:300px
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: aliceblue;
+}
+

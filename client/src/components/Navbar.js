@@ -3,7 +3,7 @@ import {Link, useLocation} from "react-router-dom";
 import {BiMenu} from "react-icons/bi";
 import useIsMobile from "../hooks/useIsMobile";
 import {useState} from "react";
-
+//import Links from '../pages/Links.js'
 const NavbarItem = ({path, name, loc}) => {
     return (
         <Link
@@ -147,6 +147,7 @@ const Navbar = ({bool, setbool}) => {
                 <NavbarItem path="/history" name="History" loc={location}/>
                 <NavbarItem path="/sponsors" name="Sponsors" loc={location}/>
                 <NavbarItem path="/join" name="Join" loc={location}/>
+                <NavbarItem path='/Links' name='Links' loc={location}/>
                 {/* The break fixes the spacing. */}
                 <br/>
             </div>
